@@ -1,6 +1,6 @@
 # F1 Portal
 
-Um portal estático desenvolvido com Vanilla JavaScript para consulta de dados em tempo real da Fórmula 1. O projeto foca em performance, acessibilidade e resiliência, utilizando técnicas modernas de desenvolvimento web sem a dependência de frameworks pesados.
+Um portal estático desenvolvido com Vanilla JavaScript para consulta de dados publicados da Fórmula 1. O projeto foca em performance, acessibilidade e resiliência, utilizando técnicas modernas de desenvolvimento web sem a dependência de frameworks pesados.
 
 Acesse a demonstração: [https://andersoncav.github.io/F1/](https://andersoncav.github.io/F1/)
 
@@ -17,7 +17,7 @@ O objetivo deste portal é fornecer uma interface rápida e intuitiva para entus
 
 ## ✨ Funcionalidades
 
-- **Dashboard:** Próximo Grande Prêmio com countdown em tempo real e resultados da última corrida.
+- **Dashboard:** Próximo Grande Prêmio com contagem até o horário programado e resultados da última corrida.
 - **Classificação Dinâmica:** Tabelas de pilotos e construtores com filtros e ordenação personalizada.
 - **Grid Completo:** Detalhes técnicos de equipes e pilotos, incluindo fotos e estatísticas históricas.
 - **Histórico de Campeões:** Galeria completa de todos os campeões mundiais desde 1950.
@@ -75,11 +75,26 @@ O projeto utiliza módulos ES6, o que requer um servidor web para rodar localmen
 - Dados com menos de 60 minutos são reutilizados. Se a rede falhar após esse prazo ou durante RELOAD, o último dado válido pode ser mostrado por até 7 dias, com o aviso **DADOS SALVOS · SEM ATUALIZAÇÃO** e sua data original. Sem dados utilizáveis, a página oferece tentar novamente.
 - RELOAD força uma consulta na próxima navegação usando o parâmetro temporário `f1-refresh=1`, removido da URL ao iniciar. Ele preserva filtros e dados anteriores até a atualização terminar. Não apaga preferências, outros projetos ou todo o `localStorage`. Quando o armazenamento é bloqueado, o cache em memória atende a página atual; ele não persiste após navegar.
 - O cache da API é limitado a 64 entradas reconhecidas do portal. Na gravação de dados válidos, entradas fora da retenção ou excedentes são removidas. Outros nomes de armazenamento são preservados.
-- O Service Worker guarda somente os 18 recursos locais do shell em `f1-portal:<diretório>:static-v4`. Não guarda API, fontes ou imagens de terceiros. O diretório inicial e parâmetros das páginas/CSS são normalizados para as entradas do shell. O shell e o placeholder funcionam offline após uma instalação bem-sucedida; dados nunca consultados online podem ficar indisponíveis offline.
+- O Service Worker guarda somente os 25 recursos locais do shell em `f1-portal:<diretório>:static-v5`. Não guarda API, fontes ou imagens de terceiros. O diretório inicial e parâmetros das páginas/CSS são normalizados para as entradas do shell. O shell e o placeholder funcionam offline após uma instalação bem-sucedida; dados nunca consultados online podem ficar indisponíveis offline.
 - **Ao alterar qualquer recurso do shell, incremente `CACHE_VERSION` em `sw.js`.** O precache usa `addAll`, verifica status/MIME/redirecionamentos e rejeita a instalação incompleta. O worker anterior continua atendendo suas abas; feche as abas do portal para ativar uma versão em espera. A ativação remove apenas o namespace desse diretório e os nomes legados exatos `f1-portal-v<número>`, incluindo o antigo `v13`.
 - A fonte única da política é `scripts/sync-csp.mjs`: execute `npm run sync:csp` após editar a política ou o pequeno script de base da 404. `npm run check:csp` detecta divergências em todas as páginas. Não há `unsafe-inline`, `unsafe-eval` ou hosts curinga. O único script inline, necessário para caminhos 404 aninhados, é autorizado pelo hash exato.
 - A CSP em `<meta>` precisa aparecer antes dos recursos; ela não oferece `frame-ancestors`, `sandbox`, modo Report-Only nem relatórios de violação equivalentes aos cabeçalhos HTTP. Esses recursos exigiriam configuração de hospedagem, fora desta fase. A 404 usa a raiz local ou o diretório `F1` informado pela URL canônica; ao renomear o projeto, atualize essa URL e sincronize a CSP.
 - Imagens externas usam o placeholder local uma única vez em caso de erro. A disponibilidade dos arquivos remotos continua dependendo dos provedores.
+
+## Integridade dos dados — fase 2
+
+O [relatório técnico](docs/phase-2/REPORT.md) registra fontes, correções e resultados. A galeria contém os **35 campeões de 1950 a 2025**, incluindo Giuseppe Farina e Lando Norris. Os 33 retratos da fase 1.1 e seus créditos foram preservados; as duas novas aprovações estão em [image-audit.json](docs/phase-2/image-audit.json).
+
+- A temporada vem das respostas da Jolpica. Consultas relacionadas usam esse ano explicitamente; o ano do navegador não decide a temporada. Nomes de corridas preservam o nome esportivo da API, sem reaproveitar patrocínios de 2026.
+- Posição, pontos e vitórias de GP pertencem à classificação da temporada. Pontos incluem sprints; vitórias de GP não incluem sprints. Número permanente, nascimento e nacionalidade vêm do perfil da API. Poles e outros agregados sem fonte verificável ficam indisponíveis.
+- Vitórias históricas e títulos têm recorte **até 2025**. Construtores não herdam automaticamente resultados de organizações anteriores. Pilotos listados são participantes da temporada, incluindo substitutos; múltiplas equipes não comprovam o vínculo atual.
+- Metadados técnicos das equipes são snapshots das páginas oficiais da F1, verificados em 01/11/2026 e válidos para a temporada indicada. Uniformes, carros e mapas também têm temporada. Distâncias e recordes de circuito sem verificação não são publicados como fatos.
+- Uma largada passada sem resultado confirmado gera **AGUARDANDO RESULTADO**. Conclusão exige resultado publicado da mesma temporada, etapa, circuito e data. Horário ausente não vira meio-dia; o contador termina sem anunciar uma transmissão ao vivo. Ausência de resultado não comprova cancelamento.
+- A validação de domínio rejeita identidades ausentes, duplicatas, temporada incorreta, paginação incompleta e regressões sobre snapshots válidos. O transporte mantém os mesmos 60 minutos de frescor e sete dias de fallback; timestamps antigos não são renovados.
+
+Os módulos de referência são reexportados por `static-data.js` para preservar os imports existentes. O shell v5 inclui todos os sete módulos novos, sem precache de fotografias externas. Testes controlados também cobrem v4 → v5, virada de ano, calendário não publicado, fusos e 320px/390px.
+
+`npm run test:api:live` executa a validação opcional dos endpoints reais. `npm run test:browser` inclui as três suítes controladas. Para refazer a auditoria externa, os scripts `verify-history.mjs`, `verify-constructors.mjs`, `verify-champion-seasons.mjs` e `audit-phase2.mjs` salvam evidências em `docs/phase-2/sources`; revise-as antes de reconstruir referências com `node scripts/build-phase2-references.mjs`. Uma coleta nova não equivale à aprovação automática de conteúdo ou licença.
 
 ## Fotografias dos campeões — fase 1.1
 

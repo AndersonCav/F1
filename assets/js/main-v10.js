@@ -1,16 +1,19 @@
+import { raceStart, countdownText, confirmedRaceKeys, resolveNextEvent } from './season.js';
+import { displayValue } from './data-model.js';
 import {
   fetchCurrentConstructorStandings,
   fetchCurrentDriverStandings,
   fetchCurrentResults,
   fetchCurrentSchedule,
-  fetchScheduleBySeason
+  fetchScheduleBySeason,
+  fetchSeasonWinners
 } from "./api.js";
 import {
   CIRCUIT_STATIC,
   DRIVER_STATIC,
   PLACEHOLDER_DRIVER_IMAGE,
   formatRaceDate,
-  getOfficialRaceName2026,
+  getOfficialRaceName,
   setupNavActiveState,
   TEAM_STATIC,
   toFlagUrl,
@@ -42,25 +45,6 @@ function createSkeletonBlock(lines = 4) {
   return card;
 }
 
-function raceDateToTimestamp(race) {
-  const isoDate = race.time ? `${race.date}T${race.time}` : `${race.date}T12:00:00Z`;
-  return new Date(isoDate).getTime();
-}
-
-function formatCountdown(milliseconds) {
-  const totalSeconds = Math.max(0, Math.floor(milliseconds / 1000));
-  const days = Math.floor(totalSeconds / 86400);
-  const hours = Math.floor((totalSeconds % 86400) / 3600);
-  const minutes = Math.floor((totalSeconds % 3600) / 60);
-  const seconds = totalSeconds % 60;
-
-  return `${days}d ${String(hours).padStart(2, "0")}h ${String(minutes).padStart(2, "0")}m ${String(seconds).padStart(2, "0")}s`;
-}
-
-function cleanRaceName(name) {
-  return name.replace(/^[A-Z]{2,3}\s+/, "");
-}
-
 function buildDetailItem(label, value) {
   const item = document.createElement("div");
   item.className = "detail-item";
@@ -86,43 +70,44 @@ function normalizeDriverKey(value) {
     .replace(/^_+|_+$/g, "");
 }
 
-function resolveDriverStaticInfo(driver) {
+function resolveDriverStaticInfo(driver, season) {
   const byId = normalizeDriverKey(driver?.driverId);
   if (byId && DRIVER_STATIC[byId]) {
-    return DRIVER_STATIC[byId];
+    return DRIVER_STATIC[byId].season === Number(season) ? DRIVER_STATIC[byId] : {};
   }
 
   const fullNameKey = normalizeDriverKey(`${driver?.givenName || ""}_${driver?.familyName || ""}`);
   if (fullNameKey && DRIVER_STATIC[fullNameKey]) {
-    return DRIVER_STATIC[fullNameKey];
+    return DRIVER_STATIC[fullNameKey].season === Number(season) ? DRIVER_STATIC[fullNameKey] : {};
   }
 
   return {};
 }
 
-function resolveConstructorLogo(constructorId) {
+function resolveConstructorLogo(constructorId, season) {
   const key = (constructorId || "").toLowerCase().replace(/[^a-z0-9]+/g, "_");
-  if (TEAM_STATIC[key]) {
+  if (TEAM_STATIC[key]?.season === Number(season)) {
     return TEAM_STATIC[key].logo;
   }
   return null;
 }
 
-function buildPodiumComponent(results) {
+function buildPodiumComponent(results, season) {
   const container = document.createElement("div");
   container.className = "podium-grid";
 
   const rankSuffixes = ["ST", "ND", "RD"];
 
-  results.forEach((result, index) => {
+  results.forEach((result) => {
     const card = document.createElement("div");
     card.className = "podium-card";
 
     const rankEl = document.createElement("div");
     rankEl.className = "podium-rank";
-    rankEl.innerHTML = `${index + 1}<span>${rankSuffixes[index]}</span>`;
+    const position = Number(result.position);
+    rankEl.innerHTML = `${position}<span>${rankSuffixes[position - 1] || ''}</span>`;
     
-    const staticInfo = resolveDriverStaticInfo(result.Driver);
+    const staticInfo = resolveDriverStaticInfo(result.Driver, season);
     
     const avatar = document.createElement("img");
     avatar.className = "podium-avatar";
@@ -143,12 +128,12 @@ function buildPodiumComponent(results) {
 
     const time = document.createElement("div");
     time.className = "podium-time";
-    if (index === 0) {
+    if (position === 1) {
       time.classList.add("winner");
       time.textContent = result.Time ? result.Time.time : "Vencedor";
     } else {
       time.classList.add("gap");
-      time.textContent = result.Time ? `+${result.Time.time}` : "Interv.";
+      time.textContent = result.Time ? result.Time.time.startsWith("+") ? result.Time.time : `+${result.Time.time}` : "Interv.";
     }
 
     info.append(code, time);
@@ -164,14 +149,15 @@ function buildRaceDetailsGrid(race) {
   grid.className = "race-details-grid";
 
   const circuitKey = race.Circuit.circuitId.replace(/-/g, "_");
-  const staticInfo = CIRCUIT_STATIC[circuitKey] || { laps: "-", length: "-", distance: "-", firstGP: "-" };
+  const reference = CIRCUIT_STATIC[circuitKey];
+  const staticInfo = reference?.season === Number(race.season) ? reference : {};
 
   grid.append(
     buildDetailItem("CIRCUITO", race.Circuit.circuitName),
-    buildDetailItem("EXTENSÃO", staticInfo.length),
-    buildDetailItem("DISTÂNCIA", staticInfo.distance),
-    buildDetailItem("VOLTAS", staticInfo.laps),
-    buildDetailItem("ESTREIA", staticInfo.firstGP),
+    buildDetailItem("EXTENSÃO", displayValue(staticInfo.length)),
+    buildDetailItem("DISTÂNCIA", displayValue(staticInfo.distance)),
+    buildDetailItem("VOLTAS", displayValue(staticInfo.laps)),
+    buildDetailItem("ESTREIA", displayValue(staticInfo.firstGP)),
     buildDetailItem("DATA LOCAL", formatRaceDate(race.date, race.time))
   );
 
@@ -195,16 +181,18 @@ function buildCountdownHud(eventTime) {
   timer.className = "timer";
   
   const updateTimer = () => {
-    const diff = eventTime - Date.now();
-    timer.textContent = diff > 0 ? formatCountdown(diff) : "AO VIVO";
+    timer.textContent = countdownText(eventTime);
+    if (eventTime === null || eventTime <= Date.now()) {
+      window.clearInterval(countdownInterval);
+      countdownInterval = null;
+    }
   };
-  
-  updateTimer();
 
   if (countdownInterval) {
     window.clearInterval(countdownInterval);
   }
-  countdownInterval = window.setInterval(updateTimer, 1000);
+  countdownInterval = eventTime !== null && eventTime > Date.now() ? window.setInterval(updateTimer, 1000) : null;
+  updateTimer();
   
   const wrapper = document.createElement("div");
   wrapper.className = "timer-wrapper";
@@ -223,7 +211,7 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
 
   const title = document.createElement("h3");
   title.className = "card-title official";
-  title.textContent = isSeasonClosed ? "Temporada encerrada" : getOfficialRaceName2026(cleanRaceName(nextRace.raceName));
+  title.textContent = getOfficialRaceName(nextRace.raceName, nextRace.season);
 
   const flag = document.createElement("img");
   flag.className = "flag-icon";
@@ -238,7 +226,7 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
     subtitle.className = "card-subtitle";
   subtitle.textContent = nextRace.Circuit.Location.locality + ", " + translateCountry(nextRace.Circuit.Location.country);
 
-  const eventTime = raceDateToTimestamp(nextRace);
+  const eventTime = raceStart(nextRace);
   const hud = buildCountdownHud(eventTime);
   const grid = buildRaceDetailsGrid(nextRace);
 
@@ -257,7 +245,8 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
   mainInfo.append(headerTop, subtitle, hud, grid, footer);
 
   const circuitKey = nextRace.Circuit.circuitId.replace(/-/g, "_");
-  const staticInfo = CIRCUIT_STATIC[circuitKey] || {};
+  const reference = CIRCUIT_STATIC[circuitKey];
+  const staticInfo = reference?.season === Number(nextRace.season) ? reference : {};
 
   if (staticInfo.image) {
     const circuitContainer = document.createElement("div");
@@ -289,7 +278,7 @@ function buildLastRaceCard(lastRace) {
 
   const title = document.createElement("h3");
   title.className = "card-title";
-  title.textContent = getOfficialRaceName2026(cleanRaceName(lastRace.raceName));
+  title.textContent = getOfficialRaceName(lastRace.raceName, lastRace.season);
 
   const flag = document.createElement("img");
   flag.className = "flag-icon";
@@ -304,8 +293,8 @@ function buildLastRaceCard(lastRace) {
   subtitle.className = "card-subtitle";
   subtitle.textContent = `Etapa ${lastRace.round} - ${translateCountry(lastRace.Circuit.Location.country)}`;
 
-  const results = (lastRace.Results || []).slice(0, 3);
-  const podiumWrapper = buildPodiumComponent(results);
+  const results = (lastRace.Results || []).filter(result => Number(result.position) <= 3).slice(0, 3);
+  const podiumWrapper = buildPodiumComponent(results, lastRace.season);
 
   if (results.length === 0) {
     const empty = document.createElement("p");
@@ -326,7 +315,8 @@ function buildLastRaceCard(lastRace) {
   mainInfo.append(headerTop, subtitle, podiumWrapper, grid);
 
   const circuitKey = lastRace.Circuit.circuitId.replace(/-/g, "_");
-  const staticInfo = CIRCUIT_STATIC[circuitKey] || {};
+  const reference = CIRCUIT_STATIC[circuitKey];
+  const staticInfo = reference?.season === Number(lastRace.season) ? reference : {};
 
   if (staticInfo.image) {
     const circuitContainer = document.createElement("div");
@@ -349,7 +339,7 @@ function buildLastRaceCard(lastRace) {
   return card;
 }
 
-function createTable(titleText, rows, isConstructorTable = false) {
+function createTable(titleText, rows, isConstructorTable = false, season = null) {
   const card = document.createElement("article");
   card.className = "card reveal-up";
 
@@ -377,12 +367,12 @@ function createTable(titleText, rows, isConstructorTable = false) {
     const secondary = document.createElement("td");
     const points = document.createElement("td");
 
-    pos.textContent = entry.position;
-    points.textContent = entry.points;
+    pos.textContent = displayValue(entry.position);
+    points.textContent = displayValue(entry.points);
 
     if (isConstructorTable) {
       main.textContent = getOfficialTeamName(entry.Constructor.name);
-      const logoUrl = resolveConstructorLogo(entry.Constructor.constructorId);
+      const logoUrl = resolveConstructorLogo(entry.Constructor.constructorId, season);
       if (logoUrl) {
         const img = document.createElement("img");
         img.className = "team-logo-mini";
@@ -397,8 +387,9 @@ function createTable(titleText, rows, isConstructorTable = false) {
     } else {
       main.textContent = `${entry.Driver.givenName} ${entry.Driver.familyName}`;
       
-      const constructor = entry.Constructors?.[0];
-      const logoUrl = resolveConstructorLogo(constructor?.constructorId);
+      const constructors = entry.Constructors || [];
+      const constructor = constructors.length === 1 ? constructors[0] : null;
+      const logoUrl = resolveConstructorLogo(constructor?.constructorId, season);
       if (logoUrl) {
         const img = document.createElement("img");
         img.className = "team-logo-mini";
@@ -412,7 +403,7 @@ function createTable(titleText, rows, isConstructorTable = false) {
         img.style.borderRadius = "2px";
         secondary.replaceChildren(img);
       } else {
-        secondary.textContent = getOfficialTeamName(constructor?.name || "-");
+        secondary.textContent = constructors.map(c => c.name).join(" / ") || "Não disponível";
       }
     }
 
@@ -425,47 +416,42 @@ function createTable(titleText, rows, isConstructorTable = false) {
   return card;
 }
 
-async function resolveNextRace(schedule) {
-  const now = Date.now();
-  const ordered = [...schedule].sort((a, b) => raceDateToTimestamp(a) - raceDateToTimestamp(b));
-  const futureRace = ordered.find((race) => raceDateToTimestamp(race) > now);
-
-  if (futureRace) {
-    return { race: futureRace, isSeasonClosed: false };
-  }
-
-  const nextSeason = new Date().getFullYear() + 1;
-  const nextSeasonScheduleResult = await fetchScheduleBySeason(nextSeason);
-  const firstRound = [...nextSeasonScheduleResult.items].sort((a, b) => raceDateToTimestamp(a) - raceDateToTimestamp(b))[0];
-
-  if (!firstRound) {
-    throw new Error("Não foi possível identificar a próxima corrida.");
-  }
-
-  return { race: firstRound, isSeasonClosed: true, freshness: nextSeasonScheduleResult };
-}
-
 async function loadHomeData() {
   nextRaceState.replaceChildren(createSkeletonBlock(4));
   lastRaceState.replaceChildren(createSkeletonBlock(4));
   quickStandingsState.replaceChildren(createSkeletonBlock(6));
 
-  const [scheduleState, resultsState, driversState, constructorsState] = await Promise.allSettled([
-    fetchCurrentSchedule(),
-    fetchCurrentResults(),
-    fetchCurrentDriverStandings(),
-    fetchCurrentConstructorStandings()
+  if (countdownInterval) window.clearInterval(countdownInterval);
+  countdownInterval = null;
+  let schedule;
+  try { schedule = await fetchCurrentSchedule(); }
+  catch {
+    renderError(nextRaceState, "Falha ao carregar a próxima corrida.", loadHomeData);
+    renderError(lastRaceState, "Falha ao identificar a temporada.", loadHomeData);
+    renderError(quickStandingsState, "Falha ao identificar a temporada.", loadHomeData);
+    return;
+  }
+  if (currentYearElement && schedule.season) currentYearElement.textContent = schedule.season;
+  const scheduleState = { status: 'fulfilled', value: schedule };
+  const [resultsState, driversState, constructorsState, winnersState] = await Promise.allSettled([
+    fetchCurrentResults(schedule.season), fetchCurrentDriverStandings(schedule.season),
+    fetchCurrentConstructorStandings(schedule.season), fetchSeasonWinners(schedule.season)
   ]);
 
-  const freshness = [scheduleState, resultsState, driversState, constructorsState]
+  const freshness = [scheduleState, resultsState, driversState, constructorsState, winnersState]
     .filter(result => result.status === "fulfilled").map(result => result.value);
   showCacheFeedback(...freshness);
 
-  if (scheduleState.status === "fulfilled" && Array.isArray(scheduleState.value.items) && scheduleState.value.items.length > 0) {
+  if (scheduleState.status === "fulfilled" && Array.isArray(scheduleState.value.items)) {
     try {
-      const nextRaceInfo = await resolveNextRace(scheduleState.value.items);
+      const confirmed = confirmedRaceKeys(schedule.items, winnersState.status === 'fulfilled' ? winnersState.value.items : []);
+      const nextRaceInfo = await resolveNextEvent(schedule, confirmed, fetchScheduleBySeason);
       if (nextRaceInfo.freshness) showCacheFeedback(...freshness, nextRaceInfo.freshness);
-      nextRaceState.replaceChildren(buildNextRaceCard(nextRaceInfo.race, nextRaceInfo.isSeasonClosed));
+      if (nextRaceInfo.race) nextRaceState.replaceChildren(buildNextRaceCard(nextRaceInfo.race, nextRaceInfo.isSeasonClosed));
+      else {
+        const note = document.createElement('article'); note.className = 'state-card'; note.textContent = nextRaceInfo.message;
+        nextRaceState.replaceChildren(note);
+      }
     } catch {
       renderError(nextRaceState, "Falha ao carregar a próxima corrida.", loadHomeData);
     }
@@ -474,7 +460,8 @@ async function loadHomeData() {
   }
 
   if (resultsState.status === "fulfilled" && Array.isArray(resultsState.value.items)) {
-    const lastRace = [...resultsState.value.items].sort((a, b) => Number(b.round) - Number(a.round))[0];
+    const published = confirmedRaceKeys(schedule.items, resultsState.value.items);
+    const lastRace = [...resultsState.value.items].filter(r => published.has(r.season + ':' + r.round)).sort((a, b) => Number(b.round) - Number(a.round))[0];
     if (lastRace) {
       try {
         lastRaceState.replaceChildren(buildLastRaceCard(lastRace));
@@ -499,6 +486,13 @@ async function loadHomeData() {
     : [];
 
   if (driverStandings.length === 0 && constructorStandings.length === 0) {
+    if (driversState.status === 'fulfilled' && constructorsState.status === 'fulfilled') {
+      const empty = document.createElement('article');
+      empty.className = 'state-card';
+      empty.textContent = `Classificação ainda não publicada para a temporada ${schedule.season || 'não informada'}.`;
+      quickStandingsState.replaceChildren(empty);
+      return;
+    }
     renderError(quickStandingsState, "Falha ao carregar a classificação rápida.", loadHomeData);
     return;
   }
@@ -507,11 +501,11 @@ async function loadHomeData() {
   tablesWrap.className = "table-wrap";
 
   if (driverStandings.length > 0) {
-    tablesWrap.append(createTable("Top 5 pilotos", driverStandings.slice(0, 5), false));
+    tablesWrap.append(createTable(`Top 5 pilotos · ${schedule.season}`, driverStandings.slice(0, 5), false, schedule.season));
   }
 
   if (constructorStandings.length > 0) {
-    tablesWrap.append(createTable("Top 5 construtores", constructorStandings.slice(0, 5), true));
+    tablesWrap.append(createTable(`Top 5 construtores · ${schedule.season}`, constructorStandings.slice(0, 5), true, schedule.season));
   }
 
   quickStandingsState.replaceChildren(tablesWrap);
@@ -519,7 +513,7 @@ async function loadHomeData() {
 
 function init() {
   setupNavActiveState();
-  if (currentYearElement) currentYearElement.textContent = String(new Date().getFullYear());
+  if (currentYearElement) currentYearElement.textContent = "—";
   loadHomeData();
 }
 

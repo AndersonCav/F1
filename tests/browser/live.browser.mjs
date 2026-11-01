@@ -40,7 +40,7 @@ test('live external services with real browser network and no resource mocks', {
         await page.waitForFunction(() => [...document.images].every(image => image.complete));
         const images = await page.evaluate(() => [...document.images].map(image => ({ url: image.currentSrc, loaded: image.naturalWidth > 0 })));
         const fallbacks = images.filter(image => image.url.endsWith('/placeholder-driver.svg')).length;
-        assert.equal(images.length, 33);
+        assert.equal(images.length, 35);
         assert.ok(images.every(image => image.loaded), 'Every genuine photograph must decode');
         assert.equal(fallbacks, 0, 'A placeholder does not count as a recovered photograph');
         t.diagnostic(`Champion photographs: ${images.length} decoded; ${fallbacks} local fallbacks.`);

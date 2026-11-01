@@ -1,0 +1,86 @@
+Branch: main
+Initial HEAD: 5269a9e694ba2ac2cd6ddc686c0d6dda7c33ea24
+Final HEAD: 5269a9e694ba2ac2cd6ddc686c0d6dda7c33ea24
+Initial working tree: clean
+Modified tracked files: 22
+New untracked files: 54
+Staged changes: 0
+All modified tracked files: unstaged
+No branch, commit, push, merge or deploy occurred.
+
+ M README.md
+ M assets/css/styles-v7.css
+ M assets/js/api.js
+ M assets/js/calendar.js
+ M assets/js/champions.js
+ M assets/js/drivers-v10.js
+ M assets/js/main-v10.js
+ M assets/js/static-data.js
+ M assets/js/teams-v10.js
+ M assets/js/ui-utils.js
+ M calendar.html
+ M drivers.html
+ M index.html
+ M package.json
+ M sw.js
+ M tests/browser/champion-images.browser.mjs
+ M tests/browser/champion-images.live.mjs
+ M tests/browser/live.browser.mjs
+ M tests/browser/phase1.browser.mjs
+ M tests/champion-images.test.js
+ M tests/helpers/champion-browser.js
+ M tests/helpers/http-server.js
+?? assets/js/champion-history.js
+?? assets/js/circuit-metadata.js
+?? assets/js/constructor-metadata.js
+?? assets/js/data-model.js
+?? assets/js/driver-metadata.js
+?? assets/js/historical-snapshots.js
+?? assets/js/season.js
+?? docs/phase-2/REPORT.md
+?? docs/phase-2/browser/404.html.png
+?? docs/phase-2/browser/champions.html.png
+?? docs/phase-2/browser/desktop-first.png
+?? docs/phase-2/browser/desktop-last.png
+?? docs/phase-2/browser/desktop-middle.png
+?? docs/phase-2/browser/identity-contact-sheet.png
+?? docs/phase-2/browser/index.html.png
+?? docs/phase-2/browser/mobile-first.png
+?? docs/phase-2/browser/mobile-last.png
+?? docs/phase-2/browser/mobile-middle.png
+?? docs/phase-2/browser/phase2-results.json
+?? docs/phase-2/browser/results.json
+?? docs/phase-2/image-audit.json
+?? docs/phase-2/initial-state.json
+?? docs/phase-2/sources/championship-seasons.json
+?? docs/phase-2/sources/constructor-metadata-2026.json
+?? docs/phase-2/sources/constructor-titles-through-2025.json
+?? docs/phase-2/sources/farina-commons.json
+?? docs/phase-2/sources/farina-probe.json
+?? docs/phase-2/sources/gp-winners-through-2025.json
+?? docs/phase-2/sources/norris-commons.json
+?? docs/phase-2/sources/norris-probe.json
+?? docs/phase-2/sources/official-hall-of-fame.json
+?? docs/phase-2/validation/controlled-chrome.txt
+?? docs/phase-2/validation/csp.txt
+?? docs/phase-2/validation/git-status.txt
+?? docs/phase-2/validation/git-whitespace.txt
+?? docs/phase-2/validation/historical-data.txt
+?? docs/phase-2/validation/live-api.json
+?? docs/phase-2/validation/live-api.txt
+?? docs/phase-2/validation/live-images.txt
+?? docs/phase-2/validation/live-pages.txt
+?? docs/phase-2/validation/node-tests.txt
+?? docs/phase-2/validation/service-worker.txt
+?? docs/phase-2/validation/summary.json
+?? docs/phase-2/validation/syntax.txt
+?? scripts/audit-phase2.mjs
+?? scripts/build-phase2-references.mjs
+?? scripts/verify-champion-seasons.mjs
+?? scripts/verify-constructors.mjs
+?? scripts/verify-history.mjs
+?? tests/api-domain.test.js
+?? tests/browser/live-api.mjs
+?? tests/browser/phase2.browser.mjs
+?? tests/data-integrity.test.js
+?? tests/helpers/sporting-fixtures.js

@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-11-01T23:42:40.596Z",
+  "phase": "PHASE_2_COMPLETE_WITH_DEBT",
+  "checks": {
+    "native": {
+      "total": 205,
+      "passed": 205,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "node-tests.txt"
+    },
+    "controlledChrome": {
+      "total": 35,
+      "passed": 35,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "controlled-chrome.txt"
+    },
+    "livePages": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "live-pages.txt"
+    },
+    "liveImages": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "live-images.txt"
+    },
+    "liveAPI": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "live-api.txt"
+    },
+    "historicalSubset": {
+      "total": 144,
+      "passed": 144,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "historical-data.txt"
+    },
+    "serviceWorkerSubset": {
+      "total": 17,
+      "passed": 17,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "service-worker.txt"
+    },
+    "syntax": {
+      "passed": 39,
+      "failed": 0
+    },
+    "csp": {
+      "passed": 1,
+      "failed": 0
+    },
+    "gitWhitespace": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "totalRunnerResults": 259
+}

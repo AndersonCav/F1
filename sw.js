@@ -1,5 +1,5 @@
 // Bump this version whenever an application-shell resource changes.
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const APP_BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `f1-portal:${APP_BASE.pathname}:`;
 const STATIC_CACHE = `${CACHE_PREFIX}static-${CACHE_VERSION}`;
@@ -11,6 +11,10 @@ const ASSETS_TO_CACHE = [
   './assets/js/api.js', './assets/js/calendar.js', './assets/js/champions.js',
   './assets/js/drivers-v10.js', './assets/js/main-v10.js', './assets/js/static-data.js',
   './assets/js/teams-v10.js', './assets/js/ui-utils.js',
+  './assets/js/season.js', './assets/js/data-model.js',
+  './assets/js/driver-metadata.js', './assets/js/constructor-metadata.js',
+  './assets/js/circuit-metadata.js', './assets/js/champion-history.js',
+  './assets/js/historical-snapshots.js',
   './assets/images/placeholder-driver.svg', './manifest.json'
 ];
 const SHELL_URLS = new Set(ASSETS_TO_CACHE.map(path => new URL(path, APP_BASE).href));

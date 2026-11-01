@@ -90,7 +90,7 @@ function createCard(champion) {
 
   const meta = document.createElement("p");
   meta.className = "meta";
-  meta.textContent = `${toFlag(champion.nationality)} ${champion.nationality}`;
+  meta.textContent = `${toFlag(champion.nationalityCode)} ${champion.nationality}`;
 
   const years = document.createElement("p");
   years.className = "muted";
@@ -98,7 +98,7 @@ function createCard(champion) {
 
   const wins = document.createElement("p");
   wins.className = "muted";
-  wins.textContent = `Vitórias: ${champion.wins}`;
+  wins.textContent = `Vitórias de GP até ${champion.throughSeason}: ${champion.wins}`;
 
   textWrap.append(name, meta, years, wins);
 
@@ -115,7 +115,7 @@ function createCard(champion) {
   const pairs = [
     ["Primeiro título", String(champion.titleYears[0])],
     ["Último título", String(champion.titleYears[champion.titleYears.length - 1])],
-    ["Vitórias totais", String(champion.wins)],
+    ["Vitórias de GP até 2025", String(champion.wins)],
     ["Equipes campeãs", champion.teams.join(" / ")]
   ];
 
@@ -128,6 +128,10 @@ function createCard(champion) {
   });
 
   details.appendChild(dl);
+  const historySource = document.createElement('a');
+  historySource.href = champion.source;
+  historySource.textContent = 'Fonte: F1 Hall of Fame · títulos até 2025';
+  details.appendChild(historySource);
 
   const credit = document.createElement("p");
   credit.className = "photo-credit muted";

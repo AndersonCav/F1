@@ -1,32 +1,14 @@
+import { sortDrivers as applySort, filterDrivers, mapDriver, displayValue } from './data-model.js';
 import { fetchCurrentDriverStandings, fetchDrivers } from "./api.js";
-import { DRIVER_STATIC, PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, getOfficialTeamName, setImageFallback, setupNavActiveState, toFlagUrl } from "./static-data.js";
+import { DRIVER_STATIC, PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, setImageFallback, setupNavActiveState, toFlagUrl } from "./static-data.js";
 import { renderSkeleton, renderError, renderEmptyState, showCacheFeedback, announceToScreenReader } from "./ui-utils.js";
 
 const stateContainer = document.getElementById("drivers-state");
 const searchInput = document.getElementById("search-input");
 const sortSelect = document.getElementById("sort-select");
 
-const TEAM_COLOR_MAP = {
-  ferrari: "#e10600",
-  mercedes: "#00d2be",
-  mclaren: "#ff8000",
-  "red bull": "#1e5bc6",
-  "red bull racing": "#1e5bc6",
-  "racing bulls": "#2b5cff",
-  rb: "#2b5cff",
-  "rb f1 team": "#2b5cff",
-  alpine: "#0090ff",
-  williams: "#005aff",
-  "aston martin": "#006f62",
-  "haas": "#b6babd",
-  "haas f1 team": "#b6babd",
-  audi: "#c70000",
-  sauber: "#00c087",
-  "stake f1 team kick sauber": "#00c087",
-  cadillac: "#9ca3af"
-};
-
 let driversData = [];
+let loadedSeason = null;
 let expandedCardId = null;
 
 function updateSortInUrl(value) {
@@ -41,63 +23,11 @@ function getSortFromUrl() {
   return allowed.includes(value) ? value : "standing";
 }
 
-function applySort(items, sortBy) {
-  const sorted = [...items];
-
-  sorted.sort((a, b) => {
-    if (sortBy === "name") {
-      return a.fullName.localeCompare(b.fullName, "pt-BR");
-    }
-
-    if (sortBy === "team") {
-      return (a.team || "").localeCompare(b.team || "", "pt-BR");
-    }
-
-    if (sortBy === "points") {
-      return b.points - a.points;
-    }
-
-    if (sortBy === "wins") {
-      return b.wins - a.wins;
-    }
-
-    if (sortBy === "poles") {
-      return b.poles - a.poles;
-    }
-
-    return a.position - b.position;
-  });
-
-  return sorted;
-}
-
-function filterDrivers(items, query) {
-  const normalized = query.trim().toLowerCase();
-  if (!normalized) {
-    return items;
-  }
-
-  return items.filter((driver) => driver.fullName.toLowerCase().includes(normalized));
-}
-
 function createBadge(label, value) {
   const badge = document.createElement("span");
   badge.className = "badge";
-  badge.textContent = `${label} ${value}`;
+  badge.textContent = `${label} ${displayValue(value)}`;
   return badge;
-}
-
-function normalizeTeamName(teamName) {
-  return String(teamName || "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim();
-}
-
-function resolveTeamColor(teamName, staticColor) {
-  const normalized = normalizeTeamName(teamName);
-  return TEAM_COLOR_MAP[normalized] || staticColor || "#e10600";
 }
 
 function normalizeDriverKey(value) {
@@ -142,7 +72,7 @@ function appendDetailRow(container, label, value, linkHref = "") {
     link.textContent = `Acessar ${label.toLowerCase()}`;
     dd.appendChild(link);
   } else {
-    dd.textContent = value;
+    dd.textContent = displayValue(value);
   }
 
   item.append(dt, dd);
@@ -197,8 +127,8 @@ function buildDriverCard(driver) {
   badges.className = "kpis";
   badges.append(
     createBadge("PTS", driver.points),
-    createBadge("VITORIAS", driver.wins),
-    createBadge("POLES", driver.poles)
+    createBadge("VITÓRIAS GP", driver.wins),
+    createBadge("POLES GP", driver.poles)
   );
 
   textWrap.append(name, meta, badges);
@@ -206,7 +136,8 @@ function buildDriverCard(driver) {
   const number = document.createElement("span");
   number.className = "driver-number";
   number.style.color = driver.teamColor;
-  number.textContent = String(driver.number || "-");
+  number.textContent = driver.number || "—";
+  number.title = "Número permanente informado pela API";
 
   header.append(image, textWrap, number);
 
@@ -229,11 +160,13 @@ function buildDriverCard(driver) {
     const detailsGrid = document.createElement("div");
     detailsGrid.className = "race-details-grid"; // Reusing the same grid style for expanded details
 
-    appendDetailRow(detailsGrid, "Posicao", String(driver.position));
+    appendDetailRow(detailsGrid, "Posicao", displayValue(driver.position));
     appendDetailRow(detailsGrid, "Equipe", driver.fullTeam);
-    appendDetailRow(detailsGrid, "Pontos", String(driver.points));
-    appendDetailRow(detailsGrid, "Vitorias", String(driver.wins));
-    appendDetailRow(detailsGrid, "Poles", String(driver.poles));
+    appendDetailRow(detailsGrid, "Vínculo", driver.association);
+    appendDetailRow(detailsGrid, "Estatísticas", `Jolpica · temporada ${driver.season}, etapa ${driver.round}. Pontos incluem sprints; vitórias contam apenas GP. Poles de GP não agregadas.`);
+    appendDetailRow(detailsGrid, "Pontos", displayValue(driver.points));
+    appendDetailRow(detailsGrid, "Vitorias", displayValue(driver.wins));
+    appendDetailRow(detailsGrid, "Poles", displayValue(driver.poles));
     appendDetailRow(detailsGrid, "Nascimento", driver.dateOfBirth || "-");
     appendDetailRow(detailsGrid, "Local de nascimento", driver.placeOfBirth || "-");
     appendDetailRow(detailsGrid, "Nacionalidade", driver.nationality || "-");
@@ -259,7 +192,7 @@ function renderDrivers() {
   const sorted = applySort(filtered, sortBy);
 
   if (sorted.length === 0) {
-    renderEmptyState(stateContainer, "Nenhum piloto encontrado com os filtros atuais.");
+    renderEmptyState(stateContainer, driversData.length ? "Nenhum piloto encontrado com os filtros atuais." : `Classificação de pilotos ainda não publicada para a temporada ${loadedSeason || 'não informada'}.`);
     return;
   }
 
@@ -281,47 +214,17 @@ async function loadDrivers() {
   renderSkeleton(stateContainer);
 
   try {
-    const currentYear = new Date().getFullYear();
-    const [driverStandingsResult, allDriversResult] = await Promise.all([
-      fetchCurrentDriverStandings(),
-      fetchDrivers(currentYear)
-    ]);
-
-    const driverStandings = driverStandingsResult.items;
-    const allDrivers = allDriversResult.items;
-    
-    showCacheFeedback(driverStandingsResult, allDriversResult);
-
-    const driversById = new Map(allDrivers.map((entry) => [entry.driverId, entry]));
-
-    driversData = driverStandings.map((standing) => {
-      const driver = standing.Driver || {};
-      const id = driver.driverId;
-      const profile = driversById.get(id) || driver;
-      const staticData = resolveDriverStaticData(driver, profile);
-      const constructorId = standing.Constructors?.[0]?.constructorId || "";
-      const rawTeamName = standing.Constructors?.[0]?.name || "Equipe nao informada";
-
-      return {
-        id,
-        position: Number(standing.position || 0),
-        fullName: `${driver.givenName || ""} ${driver.familyName || ""}`.trim(),
-        shortTeam: rawTeamName,
-        fullTeam: getOfficialTeamName(rawTeamName),
-        points: Number(standing.points || 0),
-        wins: Number(standing.wins || 0),
-        poles: Number(staticData.poles || 0),
-        number: staticData.number || profile.permanentNumber || "-",
-        nationality: profile.nationality || driver.nationality || "",
-        dateOfBirth: staticData.dateOfBirth || profile.dateOfBirth || "",
-        placeOfBirth: staticData.placeOfBirth || "",
-        photo: staticData.photo || PLACEHOLDER_DRIVER_IMAGE,
-        website: staticData.website || "",
-        teamLogo: TEAM_STATIC[constructorId]?.logo || "",
-        teamColor: resolveTeamColor(rawTeamName, staticData.teamColor)
-      };
+    const driverStandingsResult = await fetchCurrentDriverStandings();
+    const season = driverStandingsResult.season;
+    loadedSeason = season;
+    const allDriversResult = season ? await fetchDrivers(season).catch(() => null) : null;
+    showCacheFeedback(driverStandingsResult, ...[allDriversResult].filter(Boolean));
+    const profiles = new Map((allDriversResult?.items || []).map(d => [d.driverId, d]));
+    driversData = driverStandingsResult.items.map(standing => {
+      const profile = profiles.get(standing.Driver.driverId) || standing.Driver;
+      const driver = mapDriver(standing, profile, resolveDriverStaticData(standing.Driver, profile), season, TEAM_STATIC);
+      return { ...driver, photo: driver.photo || PLACEHOLDER_DRIVER_IMAGE, round: driverStandingsResult.round };
     });
-
     renderDrivers();
   } catch {
     renderError(stateContainer, "Não foi possível carregar os pilotos agora.", loadDrivers);
@@ -333,13 +236,20 @@ function init() {
 
   const sortFromUrl = getSortFromUrl();
   sortSelect.value = sortFromUrl;
+  searchInput.value = new URL(window.location.href).searchParams.get('q') || '';
 
   sortSelect.addEventListener("change", () => {
     updateSortInUrl(sortSelect.value);
     renderDrivers();
   });
 
-  searchInput.addEventListener("input", renderDrivers);
+  searchInput.addEventListener("input", () => {
+    const url = new URL(window.location.href);
+    if (searchInput.value) url.searchParams.set('q', searchInput.value);
+    else url.searchParams.delete('q');
+    window.history.replaceState({}, '', url);
+    renderDrivers();
+  });
 
   loadDrivers();
 }

@@ -8,6 +8,7 @@ import { startServer } from '../helpers/http-server.js';
 import { chromium, launchOptions, observe, loadAll, assertClean } from '../helpers/champion-browser.js';
 
 const approved = JSON.parse(await readFile(new URL('../../docs/phase-1.1/image-audit.json', import.meta.url)));
+approved.records.push(...JSON.parse(await readFile(new URL('../../docs/phase-2/image-audit.json', import.meta.url))).records);
 const output = resolve(process.env.F1_IMAGE_AUDIT_DIR || join(tmpdir(), 'f1-champion-image-audit'));
 const imageProvider = /^https:\/\/(thumb|upload)\.wikimedia\.org\//;
 
@@ -54,7 +55,7 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
     }
   }
 
-  await t.test('desktop: all 33 real photographs decode, match approved sources and never use placeholders', async () => {
+  await t.test('desktop: all 35 real photographs decode, match approved sources and never use placeholders', async () => {
     const { context, page, errors } = await setup('desktop', { viewport: { width: 1440, height: 1000 } });
     await page.goto(`${server.origin}/F1/champions.html`, { waitUntil: 'domcontentloaded' });
     const images = await loadAll(page);
@@ -83,7 +84,7 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     await screenshots(page, 'desktop');
     await clean(page, errors, 'desktop');
-    report.scenarios.desktop = { genuine: 33, fallbacks: 0, failures: 0 };
+    report.scenarios.desktop = { genuine: 35, fallbacks: 0, failures: 0 };
 
     // A labeled overview makes visual identity review possible without treating a byte check as face recognition.
     const sheet = await context.newPage();
@@ -99,17 +100,17 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
         figure.append(image, caption); main.append(figure);
       });
     }, approved.records);
-    await sheet.waitForFunction(() => document.images.length === 33 && [...document.images].every(image => image.complete && image.naturalWidth > 0));
+    await sheet.waitForFunction(() => document.images.length === 35 && [...document.images].every(image => image.complete && image.naturalWidth > 0));
     await sheet.screenshot({ path: join(output, 'identity-contact-sheet.png'), fullPage: true });
     await context.close();
   });
 
-  await t.test('mobile: 33 genuine photographs, accessible credits, no overflow and reduced-motion support', async () => {
+  await t.test('mobile: 35 genuine photographs, accessible credits, no overflow and reduced-motion support', async () => {
     const { context, page, errors } = await setup('mobile', { viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
     await page.goto(`${server.origin}/F1/champions.html`);
     const images = await loadAll(page);
-    assert.equal(images.filter(image => !image.fallback && image.width > 0 && image.height > 0).length, 33);
-    assert.equal(await page.locator('.photo-credit a').count(), 66);
+    assert.equal(images.filter(image => !image.fallback && image.width > 0 && image.height > 0).length, 35);
+    assert.equal(await page.locator('.photo-credit a').count(), 70);
     assert.ok(await page.locator('.bottom-nav').isVisible());
     assert.equal(await page.locator('.champion-card').first().evaluate(element => getComputedStyle(element).animationName), 'none');
     for (const width of [320, 390]) {
@@ -118,7 +119,7 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
     }
     await screenshots(page, 'mobile');
     await clean(page, errors, 'mobile');
-    report.scenarios.mobile = { genuine: 33, fallbacks: 0, failures: 0, widths: [320, 390], reducedMotion: true };
+    report.scenarios.mobile = { genuine: 35, fallbacks: 0, failures: 0, widths: [320, 390], reducedMotion: true };
     await context.close();
   });
 
@@ -130,14 +131,14 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
     const images = await loadAll(page);
     const fallback = images.find(image => image.name === broken.name);
     assert.ok(fallback.fallback && fallback.width > 0 && fallback.height > 0);
-    assert.equal(images.filter(image => !image.fallback && image.width > 0).length, 32);
+    assert.equal(images.filter(image => !image.fallback && image.width > 0).length, 34);
     assert.deepEqual(await page.evaluate(() => imageAudit.failures), { [`Foto de ${broken.name}`]: 1 });
     await clean(page, errors, 'intentional-failure');
-    report.scenarios.intentionalFailure = { genuine: 32, fallbacks: 1, expectedSourceFailures: 1, retriesPerImage: 1 };
+    report.scenarios.intentionalFailure = { genuine: 34, fallbacks: 1, expectedSourceFailures: 1, retriesPerImage: 1 };
     await context.close();
   });
 
-  await t.test('offline navigation retains all 33 records, decoded local fallbacks and the 18-resource shell', async () => {
+  await t.test('offline navigation retains all 35 records, decoded local fallbacks and the 25-resource shell', async () => {
     const { context, page, errors } = await setup('offline');
     await page.goto(`${server.origin}/F1/champions.html`);
     await page.waitForFunction(() => navigator.serviceWorker.controller);
@@ -145,16 +146,16 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
     await context.route(imageProvider, route => route.abort('internetdisconnected'));
     assert.equal((await page.goto(`${server.origin}/F1/champions.html?sort=name`)).status(), 200);
     const images = await loadAll(page);
-    assert.equal(images.filter(image => image.fallback && image.width > 0).length, 33);
+    assert.equal(images.filter(image => image.fallback && image.width > 0).length, 35);
     const cached = await page.evaluate(async () => {
-      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v4')));
+      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v5')));
       return (await cache.keys()).map(request => request.url);
     });
-    assert.equal(cached.length, 18);
+    assert.equal(cached.length, 25);
     assert.ok(cached.every(url => url.startsWith(`${server.origin}/F1/`)));
     assert.equal((await page.goto(`${server.origin}/F1/404.html`)).status(), 200);
     await clean(page, errors, 'offline');
-    report.scenarios.offline = { records: 33, fallbacks: 33, shellEntries: cached.length, crossOriginCacheEntries: 0 };
+    report.scenarios.offline = { records: 35, fallbacks: 35, shellEntries: cached.length, crossOriginCacheEntries: 0 };
     await context.close();
   });
   t.diagnostic(`Evidence and gallery screenshots: ${output}`);

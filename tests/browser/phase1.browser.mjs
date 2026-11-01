@@ -9,14 +9,14 @@ const { chromium } = await import(process.env.F1_PLAYWRIGHT_MODULE
 const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" fill="red"/></svg>';
 const driver = { driverId: 'max_verstappen', givenName: 'Max', familyName: 'Verstappen', nationality: 'Dutch', code: 'VER' };
 const constructor = { constructorId: 'red_bull', name: 'Red Bull' };
-const race = { round: '1', raceName: 'Brazilian Grand Prix', date: '2099-11-01', time: '17:00:00Z',
+const race = { season: '2026', round: '1', raceName: 'Brazilian Grand Prix', date: '2026-12-06', time: '17:00:00Z',
   Circuit: { circuitId: 'interlagos', circuitName: 'Interlagos', Location: { country: 'Brazil', locality: 'São Paulo' } },
   Results: [{ Driver: driver, position: '1', Time: { time: '1:30:00' } }] };
 function apiData(url) {
-  if (url.includes('constructorStandings')) return { MRData: { StandingsTable: { StandingsLists: [{ ConstructorStandings: [{ position: '1', points: '100', wins: '2', Constructor: constructor }] }] } } };
-  if (url.includes('driverStandings')) return { MRData: { StandingsTable: { StandingsLists: [{ DriverStandings: [{ position: '1', points: '100', wins: '2', Driver: driver, Constructors: [constructor] }] }] } } };
-  if (url.includes('drivers.json')) return { MRData: { DriverTable: { Drivers: [driver] } } };
-  return { MRData: { RaceTable: { Races: [race] } } };
+  if (url.includes('constructorStandings')) return { MRData: { total: '1', offset: '0', StandingsTable: { season: '2026', StandingsLists: [{ season: '2026', round: '2', ConstructorStandings: [{ position: '1', points: '100', wins: '2', Constructor: constructor }] }] } } };
+  if (url.includes('driverStandings')) return { MRData: { total: '1', offset: '0', StandingsTable: { season: '2026', StandingsLists: [{ season: '2026', round: '2', DriverStandings: [{ position: '1', points: '100', wins: '2', Driver: driver, Constructors: [constructor] }] }] } } };
+  if (url.includes('drivers.json')) return { MRData: { total: '1', offset: '0', DriverTable: { season: '2026', Drivers: [driver] } } };
+  return { MRData: { total: '1', offset: '0', RaceTable: { season: '2026', Races: [race] } } };
 }
 async function fixtures(context, state = {}) {
   await context.route('https://api.jolpi.ca/**', route => {
@@ -26,11 +26,16 @@ async function fixtures(context, state = {}) {
   await context.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }));
   await context.route(/^https:\/\/(media\.formula1\.com|flagsapi\.com|upload\.wikimedia\.org|thumb\.wikimedia\.org)\//,
     route => state.imagesFail ? route.abort('failed') : route.fulfill({ contentType: 'image/svg+xml', body: svg }));
-  await context.addInitScript(() => {
+  await context.addInitScript(offset => {
+    const NativeDate = Date;
+    window.Date = class extends NativeDate {
+      constructor(...args) { super(...(args.length ? args : [NativeDate.now() + offset])); }
+      static now() { return NativeDate.now() + offset; }
+    };
     window.validation = { violations: [], rejections: [] };
     document.addEventListener('securitypolicyviolation', event => window.validation.violations.push({ directive: event.effectiveDirective, uri: event.blockedURI }));
     window.addEventListener('unhandledrejection', event => window.validation.rejections.push(String(event.reason)));
-  });
+  }, Date.parse('2026-11-01T12:00:00Z') - Date.now());
 }
 async function controlled(page) {
   await page.waitForFunction(() => navigator.serviceWorker.controller);
@@ -53,10 +58,10 @@ test('Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibili
     await controlled(page);
     await page.locator('.standings-table').first().waitFor();
     const caches = await page.evaluate(async () => {
-      const name = (await window.caches.keys()).find(name => name.includes('static-v4'));
+      const name = (await window.caches.keys()).find(name => name.includes('static-v5'));
       return (await (await window.caches.open(name)).keys()).map(request => request.url);
     });
-    assert.equal(caches.length, 18);
+    assert.equal(caches.length, 25);
     assert.ok(caches.every(url => url.startsWith(`${server.origin}/F1/`)));
     assert.ok(!server.state.requests.some(request => request.status === 404));
     for (const path of ['drivers.html', 'teams.html', 'champions.html', 'calendar.html', 'index.html']) {
@@ -141,10 +146,10 @@ test('Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibili
     await controlled(page);
     await page.locator('.calendar-item').waitFor();
     const timestamp = await page.evaluate(() => JSON.parse(localStorage.getItem('f1_current_schedule')).timestamp);
-    assert.equal(state.apiRequests, 1);
+    assert.equal(state.apiRequests, 2);
     await page.locator('#clear-cache-btn').click();
     await page.waitForFunction(previous => JSON.parse(localStorage.getItem('f1_current_schedule')).timestamp > previous, timestamp);
-    assert.equal(state.apiRequests, 2);
+    assert.equal(state.apiRequests, 4);
     assert.ok(!(await page.url()).includes('f1-refresh'));
     await context.close();
   });
@@ -280,7 +285,7 @@ test('Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibili
     await page.waitForFunction(async () => !(await caches.keys()).includes('f1-portal-v13'));
     const names = await page.evaluate(() => caches.keys());
     assert.ok(names.includes('other-project-v1'));
-    assert.ok(names.includes('f1-portal:/F1/:static-v4'));
+    assert.ok(names.includes('f1-portal:/F1/:static-v5'));
     assert.equal(await page.evaluate(async () => (await (await caches.open('other-project-v1')).match('/other/data')).text()), 'keep');
     assert.equal(await page.evaluate(() => localStorage.getItem('unrelated-preference')), 'keep');
     await context.setOffline(true);

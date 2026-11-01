@@ -1,6 +1,8 @@
+import { mapConstructor, compareNumber, displayValue } from './data-model.js';
+import { CONSTRUCTOR_SNAPSHOTS } from './historical-snapshots.js';
 import { fetchCurrentConstructorStandings, fetchCurrentDriverStandings } from "./api.js";
-import { PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, getOfficialTeamName, setImageFallback, setupNavActiveState } from "./static-data.js";
-import { renderSkeleton, renderError, showCacheFeedback, announceToScreenReader } from "./ui-utils.js";
+import { PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, setImageFallback, setupNavActiveState } from "./static-data.js";
+import { renderSkeleton, renderError, showCacheFeedback } from "./ui-utils.js";
 
 const stateContainer = document.getElementById("teams-state");
 const sortSelect = document.getElementById("sort-select");
@@ -29,14 +31,14 @@ function applySort(items, sortBy) {
     }
 
     if (sortBy === "wins") {
-      return b.historicWins - a.historicWins;
+      return compareNumber(a.historicWins, b.historicWins, true) || a.shortName.localeCompare(b.shortName, "pt-BR");
     }
 
     if (sortBy === "championships") {
-      return b.championships - a.championships;
+      return compareNumber(a.championships, b.championships, true) || a.shortName.localeCompare(b.shortName, "pt-BR");
     }
 
-    return a.position - b.position;
+    return compareNumber(a.position, b.position) || a.shortName.localeCompare(b.shortName, "pt-BR");
   });
 
   return sorted;
@@ -51,7 +53,7 @@ function createTeamCard(team) {
 
   const logo = document.createElement("img");
   logo.className = "logo";
-  logo.src = team.logo;
+  logo.src = team.logo || PLACEHOLDER_DRIVER_IMAGE;
   logo.alt = `Logo da equipe ${team.name}`;
   logo.loading = "lazy";
   // Force styles inline to bypass zombie CSS caches
@@ -73,25 +75,26 @@ function createTeamCard(team) {
 
   const meta = document.createElement("p");
   meta.className = "meta";
-  meta.textContent = `PILOTOS ${team.drivers.join(" / ") || "-"}`;
+  meta.textContent = `PILOTOS NA TEMPORADA ${team.drivers.join(" / ") || "Não disponíveis"}`;
 
   const badges = document.createElement("div");
   badges.className = "kpis";
 
   const positionBadge = document.createElement("span");
   positionBadge.className = "badge badge-accent";
-  positionBadge.textContent = `POS ${team.position}`;
+  positionBadge.textContent = `POS ${displayValue(team.position)}`;
 
   const pointsBadge = document.createElement("span");
   pointsBadge.className = "badge";
-  pointsBadge.textContent = `${team.points} PTS`;
+  pointsBadge.textContent = `${displayValue(team.points)} PTS`;
 
   badges.append(positionBadge, pointsBadge);
   textWrap.append(nameBrand, nameOfficial, meta, badges);
 
   const metrics = document.createElement("span");
   metrics.className = "driver-number";
-  metrics.textContent = String(team.historicWins);
+  metrics.textContent = displayValue(team.historicWins);
+  metrics.title = "Vitórias de GP até 2025; mesma identidade de construtor";
   metrics.style.fontSize = "1.55rem";
 
   header.append(logo, textWrap, metrics);
@@ -134,8 +137,11 @@ function createTeamCard(team) {
       ["Chassi", team.chassis],
       ["Motor", team.powerUnit],
       ["Base", team.base],
-      ["Vitórias históricas", String(team.historicWins)],
-      ["Campeonatos", String(team.championships)]
+      ["Vitórias de GP até 2025", displayValue(team.historicWins)],
+      ["Títulos de construtores até 2025", displayValue(team.championships)],
+      ["Vitórias de GP na temporada", displayValue(team.wins)],
+      ["Temporada da classificação", displayValue(team.season)],
+      ["Referência dos metadados", team.referenceDate ? `F1 · temporada ${team.season} · verificado ${team.referenceDate}` : null]
     ];
 
     pairs.forEach(([label, value]) => {
@@ -148,7 +154,7 @@ function createTeamCard(team) {
 
       const dd = document.createElement("div");
       dd.className = "detail-value";
-      dd.textContent = value || "-";
+      dd.textContent = displayValue(value);
 
       item.append(dt, dd);
       detailsGrid.append(item);
@@ -183,51 +189,13 @@ async function loadTeams() {
   renderSkeleton(stateContainer, 6, "grid");
 
   try {
-    const [constructorStandingsResult, driverStandingsResult] = await Promise.all([
-      fetchCurrentConstructorStandings(),
-      fetchCurrentDriverStandings()
-    ]);
-
-    const constructorStandings = constructorStandingsResult.items;
-    const driverStandings = driverStandingsResult.items;
-    
-    showCacheFeedback(constructorStandingsResult, driverStandingsResult);
-
-    const driverGroups = new Map();
-    driverStandings.forEach((entry) => {
-      const constructor = entry.Constructors?.[0];
-      if (!constructor) {
-        return;
-      }
-      const list = driverGroups.get(constructor.constructorId) || [];
-      list.push(`${entry.Driver.givenName} ${entry.Driver.familyName}`.trim());
-      driverGroups.set(constructor.constructorId, list);
-    });
-
-    teamsData = constructorStandings.map((entry) => {
-      const id = entry.Constructor.constructorId;
-      const staticData = TEAM_STATIC[id] || {};
-      const rawName = entry.Constructor.name;
-      return {
-        id,
-        shortName: rawName,
-        name: getOfficialTeamName(rawName),
-        position: Number(entry.position || 0),
-        points: Number(entry.points || 0),
-        wins: Number(entry.wins || 0),
-        drivers: driverGroups.get(id) || [],
-        logo: staticData.logo || PLACEHOLDER_DRIVER_IMAGE,
-        carImage: staticData.carImage || null,
-        chassis: staticData.chassis || "-",
-        powerUnit: staticData.powerUnit || "-",
-        base: staticData.base || "-",
-        technicalChief: staticData.technicalChief || "-",
-        historicWins: Number(staticData.historicWins || 0),
-        championships: Number(staticData.championships || 0),
-        principal: staticData.principal || "-"
-      };
-    });
-
+    const constructorStandingsResult = await fetchCurrentConstructorStandings();
+    const season = constructorStandingsResult.season;
+    const driverStandingsResult = season ? await fetchCurrentDriverStandings(season).catch(() => null) : null;
+    showCacheFeedback(constructorStandingsResult, ...[driverStandingsResult].filter(Boolean));
+    teamsData = constructorStandingsResult.items.map(entry => mapConstructor(entry,
+      driverStandingsResult?.items || [], TEAM_STATIC[entry.Constructor.constructorId],
+      CONSTRUCTOR_SNAPSHOTS[entry.Constructor.constructorId], season));
     renderTeams();
   } catch {
     renderError(stateContainer, "Não foi possível carregar as equipes agora.", loadTeams);

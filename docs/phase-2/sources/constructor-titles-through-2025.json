@@ -1,0 +1,617 @@
+{
+  "checkedAt": "2026-11-01T23:14:30.547Z",
+  "champions": [
+    {
+      "season": 1958,
+      "round": "11",
+      "constructorId": "vanwall",
+      "url": "https://en.wikipedia.org/wiki/Vanwall",
+      "name": "Vanwall",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1958/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1959,
+      "round": "9",
+      "constructorId": "cooper-climax",
+      "url": "https://en.wikipedia.org/wiki/Cooper_Car_Company",
+      "name": "Cooper-Climax",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1959/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1960,
+      "round": "10",
+      "constructorId": "cooper-climax",
+      "url": "https://en.wikipedia.org/wiki/Cooper_Car_Company",
+      "name": "Cooper-Climax",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1960/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1961,
+      "round": "8",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1961/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1962,
+      "round": "9",
+      "constructorId": "brm",
+      "url": "https://en.wikipedia.org/wiki/British_Racing_Motors",
+      "name": "BRM",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1962/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1963,
+      "round": "10",
+      "constructorId": "lotus-climax",
+      "url": "https://en.wikipedia.org/wiki/Team_Lotus",
+      "name": "Lotus-Climax",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1963/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1964,
+      "round": "10",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1964/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1965,
+      "round": "10",
+      "constructorId": "lotus-climax",
+      "url": "https://en.wikipedia.org/wiki/Team_Lotus",
+      "name": "Lotus-Climax",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1965/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1966,
+      "round": "9",
+      "constructorId": "brabham-repco",
+      "url": "https://en.wikipedia.org/wiki/Brabham",
+      "name": "Brabham-Repco",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1966/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1967,
+      "round": "11",
+      "constructorId": "brabham-repco",
+      "url": "https://en.wikipedia.org/wiki/Brabham",
+      "name": "Brabham-Repco",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1967/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1968,
+      "round": "12",
+      "constructorId": "lotus-ford",
+      "url": "https://en.wikipedia.org/wiki/Team_Lotus",
+      "name": "Lotus-Ford",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1968/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1969,
+      "round": "11",
+      "constructorId": "matra-ford",
+      "url": "https://en.wikipedia.org/wiki/Matra",
+      "name": "Matra-Ford",
+      "nationality": "French",
+      "source": "https://api.jolpi.ca/ergast/f1/1969/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1970,
+      "round": "13",
+      "constructorId": "team_lotus",
+      "url": "https://en.wikipedia.org/wiki/Team_Lotus",
+      "name": "Team Lotus",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1970/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1971,
+      "round": "11",
+      "constructorId": "tyrrell",
+      "url": "https://en.wikipedia.org/wiki/Tyrrell_Racing",
+      "name": "Tyrrell",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1971/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1972,
+      "round": "12",
+      "constructorId": "team_lotus",
+      "url": "https://en.wikipedia.org/wiki/Team_Lotus",
+      "name": "Team Lotus",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1972/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1973,
+      "round": "15",
+      "constructorId": "team_lotus",
+      "url": "https://en.wikipedia.org/wiki/Team_Lotus",
+      "name": "Team Lotus",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1973/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1974,
+      "round": "15",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1974/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1975,
+      "round": "14",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1975/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1976,
+      "round": "16",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1976/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1977,
+      "round": "17",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1977/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1978,
+      "round": "16",
+      "constructorId": "team_lotus",
+      "url": "https://en.wikipedia.org/wiki/Team_Lotus",
+      "name": "Team Lotus",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1978/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1979,
+      "round": "15",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1979/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1980,
+      "round": "14",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1980/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1981,
+      "round": "15",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1981/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1982,
+      "round": "16",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1982/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1983,
+      "round": "15",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1983/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1984,
+      "round": "16",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1984/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1985,
+      "round": "16",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1985/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1986,
+      "round": "16",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1986/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1987,
+      "round": "16",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1987/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1988,
+      "round": "16",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1988/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1989,
+      "round": "16",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1989/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1990,
+      "round": "16",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1990/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1991,
+      "round": "16",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1991/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1992,
+      "round": "16",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1992/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1993,
+      "round": "16",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1993/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1994,
+      "round": "16",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1994/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1995,
+      "round": "17",
+      "constructorId": "benetton",
+      "url": "https://en.wikipedia.org/wiki/Benetton_Formula",
+      "name": "Benetton",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1995/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1996,
+      "round": "16",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1996/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1997,
+      "round": "17",
+      "constructorId": "williams",
+      "url": "https://en.wikipedia.org/wiki/Williams_Racing",
+      "name": "Williams",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1997/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1998,
+      "round": "16",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/1998/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 1999,
+      "round": "16",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/1999/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2000,
+      "round": "17",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/2000/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2001,
+      "round": "17",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/2001/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2002,
+      "round": "17",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/2002/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2003,
+      "round": "16",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/2003/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2004,
+      "round": "18",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/2004/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2005,
+      "round": "19",
+      "constructorId": "renault",
+      "url": "https://en.wikipedia.org/wiki/Renault_in_Formula_One",
+      "name": "Renault",
+      "nationality": "French",
+      "source": "https://api.jolpi.ca/ergast/f1/2005/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2006,
+      "round": "18",
+      "constructorId": "renault",
+      "url": "https://en.wikipedia.org/wiki/Renault_in_Formula_One",
+      "name": "Renault",
+      "nationality": "French",
+      "source": "https://api.jolpi.ca/ergast/f1/2006/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2007,
+      "round": "17",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/2007/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2008,
+      "round": "18",
+      "constructorId": "ferrari",
+      "url": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+      "name": "Ferrari",
+      "nationality": "Italian",
+      "source": "https://api.jolpi.ca/ergast/f1/2008/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2009,
+      "round": "17",
+      "constructorId": "brawn",
+      "url": "https://en.wikipedia.org/wiki/Brawn_GP",
+      "name": "Brawn",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/2009/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2010,
+      "round": "19",
+      "constructorId": "red_bull",
+      "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+      "name": "Red Bull",
+      "nationality": "Austrian",
+      "source": "https://api.jolpi.ca/ergast/f1/2010/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2011,
+      "round": "19",
+      "constructorId": "red_bull",
+      "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+      "name": "Red Bull",
+      "nationality": "Austrian",
+      "source": "https://api.jolpi.ca/ergast/f1/2011/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2012,
+      "round": "20",
+      "constructorId": "red_bull",
+      "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+      "name": "Red Bull",
+      "nationality": "Austrian",
+      "source": "https://api.jolpi.ca/ergast/f1/2012/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2013,
+      "round": "19",
+      "constructorId": "red_bull",
+      "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+      "name": "Red Bull",
+      "nationality": "Austrian",
+      "source": "https://api.jolpi.ca/ergast/f1/2013/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2014,
+      "round": "19",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2014/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2015,
+      "round": "19",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2015/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2016,
+      "round": "21",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2016/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2017,
+      "round": "20",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2017/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2018,
+      "round": "21",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2018/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2019,
+      "round": "21",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2019/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2020,
+      "round": "17",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2020/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2021,
+      "round": "22",
+      "constructorId": "mercedes",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+      "name": "Mercedes",
+      "nationality": "German",
+      "source": "https://api.jolpi.ca/ergast/f1/2021/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2022,
+      "round": "22",
+      "constructorId": "red_bull",
+      "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+      "name": "Red Bull",
+      "nationality": "Austrian",
+      "source": "https://api.jolpi.ca/ergast/f1/2022/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2023,
+      "round": "22",
+      "constructorId": "red_bull",
+      "url": "https://en.wikipedia.org/wiki/Red_Bull_Racing",
+      "name": "Red Bull",
+      "nationality": "Austrian",
+      "source": "https://api.jolpi.ca/ergast/f1/2023/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2024,
+      "round": "24",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/2024/constructorStandings/1.json?limit=100"
+    },
+    {
+      "season": 2025,
+      "round": "24",
+      "constructorId": "mclaren",
+      "url": "https://en.wikipedia.org/wiki/McLaren",
+      "name": "McLaren",
+      "nationality": "British",
+      "source": "https://api.jolpi.ca/ergast/f1/2025/constructorStandings/1.json?limit=100"
+    }
+  ]
+}

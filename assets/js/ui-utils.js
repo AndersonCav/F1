@@ -91,7 +91,7 @@ export function showCacheFeedback(...results) {
   info.className = "cache-feedback reveal-up";
   info.setAttribute("role", "status");
   info.innerHTML = `
-    <span>${stale ? "DADOS SALVOS · SEM ATUALIZAÇÃO" : "TELEMETRY CACHE"} (${timeStr})</span>
+    <span>${stale ? "DADOS SALVOS · SEM ATUALIZAÇÃO" : "DADOS DA API"} (${timeStr})</span>
     <button id="clear-cache-btn" type="button" title="Forçar atualização" aria-label="Buscar dados atualizados da API">RELOAD</button>
   `;
 

@@ -1,7 +1,10 @@
+import { decodeResponse } from './data-model.js';
+import { seasonNumber } from './season.js';
+import { CHAMPIONS_HISTORY, CHAMPIONS_VERIFIED_AT } from './champion-history.js';
 const API_BASE = "https://api.jolpi.ca/ergast/f1";
 const MAX_CACHE_AGE = 7 * 24 * 60 * 60 * 1000;
 const MAX_CACHE_ENTRIES = 64;
-const API_CACHE_KEY = /^f1_(current_(driver_standings|constructor_standings|schedule)|last_results|drivers_(current|\d{4})|all_time_champions|schedule_\d{4}|results_\d{4}_\d+)$/;
+const API_CACHE_KEY = /^f1_(current_(driver_standings|constructor_standings|schedule)|last_results|drivers_(current|\d{4})|all_time_champions|schedule_\d{4}|results_\d{4}_\d+|(?:driver_standings|constructor_standings|last_results|winners)_\d{4})$/;
 const memoryCache = new Map();
 const pendingRequests = new Map();
 
@@ -101,126 +104,65 @@ export async function fetchWithCache(url, cacheKey, ttlMinutes = 60, {
   finally { pendingRequests.delete(cacheKey); }
 }
 
-function getByPath(root, path, fallback) {
-  let current = root;
-  for (const key of path) {
-    if (current == null || typeof current !== "object" || !(key in current)) {
-      return fallback;
-    }
-    current = current[key];
-  }
-  return current;
-}
 
-async function safeFetchArray(url, cacheKey, path) {
-  try {
-    const result = await fetchWithCache(url, cacheKey, 60, {
-      validate: data => Array.isArray(data?.MRData?.[path[1]]?.[path[2]])
-        && (data.MRData[path[1]][path[2]].length === 0 || Array.isArray(getByPath(data, path, null)))
-    });
-    return {
-      items: getByPath(result.data, path, []),
-      timestamp: result.timestamp,
-      stale: result.stale,
-      source: result.source
-    };
-  } catch (error) {
-    throw new Error("Não foi possível carregar dados da API no momento.");
-  }
+async function sportingRequest(route, key, kind, season = null, round = null) {
+  const expected = season === null ? null : seasonNumber(season);
+  if (season !== null && expected === null) throw new Error('Temporada inválida.');
+  let previous;
+  try { previous = decodeResponse(readCache(key)?.data, kind, expected, round); } catch { /* No previously valid domain snapshot. */ }
+  const result = await fetchWithCache(API_BASE + route, key, 60, { validate: data => {
+    try {
+      const next = decodeResponse(data, kind, expected, round);
+      if (previous?.items.length && previous.season === next.season) {
+        if (!next.items.length) return false;
+        if (kind.includes('standings')) {
+          if (next.round < previous.round) return false;
+          if (next.round === previous.round) {
+            const id = entry => entry.Driver?.driverId || entry.Constructor?.constructorId;
+            const ids = new Set(next.items.map(id));
+            if (previous.items.some(entry => !ids.has(id(entry)))) return false;
+          }
+        }
+        if (kind === 'winners' && previous.items.some(race => !next.items.some(r => r.round === race.round))) return false;
+        if (kind === 'results' && Math.max(...next.items.map(r => Number(r.round))) < Math.max(...previous.items.map(r => Number(r.round)))) return false;
+      }
+      return true;
+    } catch { return false; }
+  } });
+  return { ...decodeResponse(result.data, kind, expected, round), timestamp: result.timestamp, stale: result.stale, source: result.source };
 }
-
-export async function fetchCurrentDriverStandings() {
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/current/driverStandings.json`,
-      "f1_current_driver_standings",
-      ["MRData", "StandingsTable", "StandingsLists", 0, "DriverStandings"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar a classificacao de pilotos.");
-  }
+export function fetchCurrentDriverStandings(season = null) {
+  return sportingRequest('/' + (season || 'current') + '/driverStandings.json?limit=100',
+    season ? 'f1_driver_standings_' + season : 'f1_current_driver_standings', 'driver-standings', season);
 }
-
-export async function fetchCurrentConstructorStandings() {
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/current/constructorStandings.json`,
-      "f1_current_constructor_standings",
-      ["MRData", "StandingsTable", "StandingsLists", 0, "ConstructorStandings"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar a classificacao de construtores.");
-  }
+export function fetchCurrentConstructorStandings(season = null) {
+  return sportingRequest('/' + (season || 'current') + '/constructorStandings.json?limit=100',
+    season ? 'f1_constructor_standings_' + season : 'f1_current_constructor_standings', 'constructor-standings', season);
 }
-
-export async function fetchCurrentSchedule() {
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/current/races.json?limit=30`,
-      "f1_current_schedule",
-      ["MRData", "RaceTable", "Races"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar o calendario da temporada.");
-  }
+export function fetchCurrentSchedule() {
+  return sportingRequest('/current/races.json?limit=100', 'f1_current_schedule', 'schedule');
 }
-
-export async function fetchCurrentResults() {
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/current/last/results.json`,
-      "f1_last_results",
-      ["MRData", "RaceTable", "Races"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar os resultados recentes.");
-  }
+export function fetchCurrentResults(season = null) {
+  return sportingRequest('/' + (season || 'current') + '/last/results.json?limit=100',
+    season ? 'f1_last_results_' + season : 'f1_last_results', 'results', season);
 }
-
-export async function fetchDrivers(season) {
-  const year = season || "current";
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/${year}/drivers.json`,
-      `f1_drivers_${year}`,
-      ["MRData", "DriverTable", "Drivers"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar os pilotos da temporada.");
-  }
+export function fetchDrivers(season = null) {
+  return sportingRequest('/' + (season || 'current') + '/drivers.json?limit=100', 'f1_drivers_' + (season || 'current'), 'drivers', season);
 }
-
+// The old cross-season standings endpoint is no longer supported by Jolpica.
+// A reviewed, completed-season archive must survive API unavailability indefinitely.
 export async function fetchAllTimeChampions() {
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/driverStandings/1.json?limit=100`,
-      "f1_all_time_champions",
-      ["MRData", "StandingsTable", "StandingsLists"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar os campeoes historicos da API.");
-  }
+  return { items: CHAMPIONS_HISTORY, season: 2025, source: 'verified-snapshot', stale: false,
+    timestamp: Date.parse(CHAMPIONS_VERIFIED_AT), throughSeason: 2025 };
 }
-
-export async function fetchScheduleBySeason(season) {
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/${season}/races.json?limit=30`,
-      `f1_schedule_${season}`,
-      ["MRData", "RaceTable", "Races"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar o calendario da temporada solicitada.");
-  }
+export function fetchScheduleBySeason(season) {
+  return sportingRequest('/' + season + '/races.json?limit=100', 'f1_schedule_' + season, 'schedule', season);
 }
-export async function fetchRaceResults(season, round) {
-  try {
-    return await safeFetchArray(
-      `${API_BASE}/${season}/${round}/results.json`,
-      `f1_results_${season}_${round}`,
-      ["MRData", "RaceTable", "Races", 0, "Results"]
-    );
-  } catch {
-    throw new Error("Nao foi possivel carregar os resultados da corrida.");
-  }
+export function fetchRaceResults(season, round) {
+  if (!/^[1-9]\d*$/.test(String(round))) throw new Error('Etapa inválida.');
+  return sportingRequest('/' + season + '/' + round + '/results.json?limit=100', 'f1_results_' + season + '_' + round, 'results', season, round)
+    .then(result => ({ ...result, races: result.items, items: result.items[0]?.Results || [] }));
+}
+export function fetchSeasonWinners(season) {
+  return sportingRequest('/' + season + '/results/1.json?limit=100', 'f1_winners_' + season, 'winners', season);
 }

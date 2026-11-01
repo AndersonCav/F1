@@ -1,0 +1,50 @@
+
+> f1-portal@1.0.0 test:browser
+> node --test tests/browser/phase1.browser.mjs tests/browser/champion-images.browser.mjs tests/browser/phase2.browser.mjs
+
+▶ controlled champion image reliability (fixture images are not photograph evidence)
+  ✔ lazy dimensions, accessible source/license credits and correct association survive sorting/filtering (1671.2972ms)
+  ✔ all 35 unavailable sources use one decoded local fallback, preserving alt and dimensions (767.6213ms)
+  ✔ offline gallery degrades to the shell placeholder without caching any photographs (878.1574ms)
+  ✔ Phase 1 v3 upgrades to v5 after old clients close, preserving unrelated caches (5572.3124ms)
+✔ controlled champion image reliability (fixture images are not photograph evidence) (9381.4286ms)
+▶ Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibility
+  ✔ fresh /F1/ installation, all pages, desktop/mobile links, reduced motion and inline style compatibility (4099.5502ms)
+  ✔ offline application-shell navigation, saved data, manual refresh failure and unknown nested route (2336.4325ms)
+  ✔ API unavailability without saved data gives an accessible retry state (1165.4422ms)
+  ✔ successful manual refresh bypasses a fresh entry and records the new validation time (1194.0596ms)
+  ✔ CSP actively blocks an unauthorized image origin (239.1234ms)
+  ✔ all external images and the placeholder can fail without repeated retries (594.6749ms)
+  ✔ storage denial keeps network content and refresh functional (1107.8466ms)
+  ✔ local root installation and nested server 404 resolve assets/home correctly (334.4342ms)
+  ✔ missing required asset rejects installation without activating an incomplete shell (182.2712ms)
+  ✔ actual broken v2 baseline fails on its four obsolete asset paths (194.8625ms)
+  ✔ actual v13 worker from eaa7335 upgrades after old clients close and preserves unrelated caches (3165.4655ms)
+✔ Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibility (15089.5158ms)
+▶ Phase 2 deterministic Chrome sporting-data scenarios
+  ✔ all driver sorting options, accent search, query state and expanded details compose (2166.6677ms)
+  ✔ profile endpoint failure preserves valid standings, honest poles and permanent-number fallback (405.9839ms)
+  ✔ replacement drivers and multi-constructor history are season participants with API points (1246.0418ms)
+  ✔ calendar before start, at start and after published results in America/Sao_Paulo (678.0912ms)
+  ✔ calendar before start, at start and after published results in Pacific/Honolulu (520.0647ms)
+  ✔ calendar before start, at start and after published results in Asia/Tokyo (547.6804ms)
+  ✔ countdown stops at the scheduled instant without claiming live race status (395.2746ms)
+  ✔ date-only next event uses truthful fallback rather than a fabricated noon (353.1892ms)
+  ✔ final scheduled start without results stays pending and does not request a new season (367.9962ms)
+  ✔ dashboard podium follows actual published finishing positions in unordered responses (289.1005ms)
+  ✔ confirmed final race and unpublished next season show an offseason state (254.7651ms)
+  ✔ confirmed final race and unavailable next season show an offseason state (260.8977ms)
+  ✔ published upcoming season keeps its year and neutral event name after calendar-year rollover (274.2587ms)
+  ✔ valid empty upcoming season shows unpublished states without request-failure alerts (236.5164ms)
+  ✔ incomplete API refresh keeps previously verified standings and the original timestamp (271.0167ms)
+  ✔ all primary pages retain mobile navigation and fit 320px and 390px widths (1583.3596ms)
+  ✔ actual Phase 1.1 v4 shell upgrades to v5 after all old clients close (4518.2248ms)
+✔ Phase 2 deterministic Chrome sporting-data scenarios (14921.0348ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15525.5489

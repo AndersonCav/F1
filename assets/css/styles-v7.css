@@ -311,7 +311,7 @@ img {
 .toolbar {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   margin-bottom: 3rem;
   background: var(--surface);
   padding: 1.5rem;
@@ -321,6 +321,7 @@ img {
 
 .field {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: 0.75rem;
 }
@@ -335,6 +336,8 @@ img {
 
 .field input,
 .field select {
+  min-width: 0;
+  width: 100%;
   background: var(--bg);
   border: 1px solid var(--border-strong);
   color: var(--text);
@@ -380,7 +383,7 @@ img {
 .team-header,
 .champion-header {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 1.5rem;
   align-items: center;
   padding: 2rem;
@@ -451,6 +454,14 @@ img {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.driver-header > div,
+.team-header > div,
+.champion-header > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .driver-flag-inline {
@@ -709,7 +720,7 @@ img {
 }
 
 .countdown-hud::before {
-  content: "LIVE TELEMETRY";
+  content: "HORÁRIO PROGRAMADO";
   position: absolute;
   top: 8px;
   left: 12px;
@@ -1041,7 +1052,7 @@ img {
   .driver-header,
   .team-header,
   .champion-header {
-    grid-template-columns: 66px 1fr;
+    grid-template-columns: 66px minmax(0, 1fr);
   }
 
   .driver-number,

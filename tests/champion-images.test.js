@@ -7,6 +7,8 @@ import { createWorker } from './helpers/sw-harness.js';
 
 // Independently reviewed source/identity/license evidence, not fetched during unit tests.
 const audit = JSON.parse(await readFile(new URL('../docs/phase-1.1/image-audit.json', import.meta.url)));
+const previousAudit = [...audit.records];
+audit.records.push(...JSON.parse(await readFile(new URL('../docs/phase-2/image-audit.json', import.meta.url))).records);
 const imageOrigins = new Set(['https://upload.wikimedia.org', 'https://thumb.wikimedia.org']);
 
 for (const champion of CHAMPIONS_HISTORY) {
@@ -40,33 +42,43 @@ for (const champion of CHAMPIONS_HISTORY) {
   });
 }
 
-test('all 33 approved champions have distinct photograph resources and complete audit entries', () => {
-  assert.equal(CHAMPIONS_HISTORY.length, 33);
-  assert.equal(audit.records.length, 33);
-  assert.equal(new Set(CHAMPIONS_HISTORY.map(champion => champion.name)).size, 33);
-  assert.equal(new Set(CHAMPIONS_HISTORY.map(champion => champion.photo)).size, 33);
-  assert.deepEqual(CHAMPIONS_HISTORY.map(champion => champion.name), audit.records.map(record => record.name));
+test('all 35 approved champions have distinct photograph resources and complete audit entries', () => {
+  assert.equal(CHAMPIONS_HISTORY.length, 35);
+  assert.equal(audit.records.length, 35);
+  assert.equal(new Set(CHAMPIONS_HISTORY.map(champion => champion.name)).size, 35);
+  assert.equal(new Set(CHAMPIONS_HISTORY.map(champion => champion.photo)).size, 35);
+  assert.deepEqual(CHAMPIONS_HISTORY.map(champion => champion.name).sort(), audit.records.map(record => record.name).sort());
+  assert.equal(previousAudit.length, 33);
 });
 
-test('image recovery preserves every historical field and record order from Phase 1', () => {
-  const historicalData = CHAMPIONS_HISTORY.map(({ photo, photoCredit, ...record }) => record);
-  assert.equal(createHash('sha256').update(JSON.stringify(historicalData)).digest('hex'), audit.nonImageDataSha256);
+test('Phase 2 preserves all 33 existing photographs, credits, title years and relative record order', async () => {
+  const baseline = JSON.parse(await readFile(new URL('../docs/phase-2/initial-state.json', import.meta.url))).champions;
+  assert.equal(createHash('sha256').update(JSON.stringify(baseline.map(({ photo, photoCredit, ...record }) => record))).digest('hex'), audit.nonImageDataSha256);
+  const existing = CHAMPIONS_HISTORY.filter(c => baseline.some(b => b.name === c.name));
+  assert.deepEqual(existing.map(c => c.name), baseline.map(c => c.name));
+  for (const before of baseline) {
+    const after = existing.find(c => c.name === before.name);
+    for (const field of ['name', 'nationality', 'teams', 'titleYears', 'photo', 'photoCredit']) assert.deepEqual(after[field], before[field]);
+    assert.equal(after.wins, before.name === 'Max Verstappen' ? 71 : before.wins);
+  }
 });
 
-test('the local fallback is a real SVG and stays in the unchanged 18-resource mandatory shell', async () => {
+test('the local fallback is a real SVG and stays in the expanded 25-resource mandatory shell', async () => {
   await access(new URL(PLACEHOLDER_DRIVER_IMAGE));
   assert.match(await readFile(new URL(PLACEHOLDER_DRIVER_IMAGE), 'utf8'), /<svg\b/);
   const assets = createWorker().ASSETS_TO_CACHE;
-  assert.equal(assets.length, 18);
+  assert.equal(assets.length, 25);
   assert.ok(assets.includes('./assets/images/placeholder-driver.svg'));
   assert.ok(!assets.some(path => /wikimedia|champions\/.+\.(jpg|webp)/.test(path)));
 });
 
 test('special public-domain grants and OGL notice remain documented', () => {
-  for (const record of audit.records.filter(record => record.replacement.credit.license === 'Public domain')) {
+  for (const record of previousAudit.filter(record => record.replacement.credit.license === 'Public domain')) {
     assert.match(record.replacement.licenseBasis, /PD-/);
     assert.ok(record.replacement.credit.licenseUrl.endsWith('#Licensing'));
   }
+  const farina = CHAMPIONS_HISTORY.find(champion => champion.id === 'farina');
+  assert.equal(farina.photoCredit.licenseUrl, 'https://creativecommons.org/licenses/by/4.0');
   assert.match(CHAMPIONS_HISTORY.find(champion => champion.name === 'Lewis Hamilton').photoCredit.attribution,
     /Contains public sector information licensed under the Open Government Licence v3\.0/);
 });

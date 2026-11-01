@@ -24,7 +24,7 @@ test('controlled champion image reliability (fixture images are not photograph e
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${server.origin}/F1/champions.html`);
     await page.locator('.champion-card').first().waitFor();
-    assert.equal(await page.locator('.champion-card').count(), 33);
+    assert.equal(await page.locator('.champion-card').count(), 35);
     for (const sort of ['titles', 'name', 'firstYear']) {
       await page.locator('#sort-select').selectOption(sort);
       for (const filter of ['all', '1', '2', '3plus', '5plus']) {
@@ -52,7 +52,7 @@ test('controlled champion image reliability (fixture images are not photograph e
     await context.close();
   });
 
-  await t.test('all 33 unavailable sources use one decoded local fallback, preserving alt and dimensions', async () => {
+  await t.test('all 35 unavailable sources use one decoded local fallback, preserving alt and dimensions', async () => {
     const context = await browser.newContext();
     await fixtures(context, true);
     const page = await context.newPage();
@@ -66,7 +66,7 @@ test('controlled champion image reliability (fixture images are not photograph e
       document.querySelectorAll('.portrait').forEach(image => { setImageFallback(image); setImageFallback(image); });
     });
     const failures = await page.evaluate(() => imageAudit.failures);
-    assert.equal(Object.keys(failures).length, 33);
+    assert.equal(Object.keys(failures).length, 35);
     assert.ok(Object.values(failures).every(count => count === 1));
     await assertClean(page, errors);
     await context.close();
@@ -83,18 +83,18 @@ test('controlled champion image reliability (fixture images are not photograph e
     await context.setOffline(true);
     assert.equal((await page.reload()).status(), 200);
     const images = await loadAll(page);
-    assert.equal(images.filter(image => image.fallback && image.width > 0).length, 33);
+    assert.equal(images.filter(image => image.fallback && image.width > 0).length, 35);
     const entries = await page.evaluate(async () => {
-      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v4')));
+      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v5')));
       return (await cache.keys()).map(request => request.url);
     });
-    assert.equal(entries.length, 18);
+    assert.equal(entries.length, 25);
     assert.ok(entries.every(url => url.startsWith(`${server.origin}/F1/`)));
     await assertClean(page, errors);
     await context.close();
   });
 
-  await t.test('Phase 1 v3 upgrades to v4 after old clients close, preserving unrelated caches', async () => {
+  await t.test('Phase 1 v3 upgrades to v5 after old clients close, preserving unrelated caches', async () => {
     const context = await browser.newContext();
     await fixtures(context);
     const errors = [];
@@ -113,7 +113,7 @@ test('controlled champion image reliability (fixture images are not photograph e
     assert.ok((await page.locator('.portrait').first().getAttribute('src')).includes('/512px-'));
     let nextWorker;
     for (const worker of context.serviceWorkers()) {
-      if (await worker.evaluate(() => CACHE_VERSION) === 'v4') nextWorker = worker;
+      if (await worker.evaluate(() => CACHE_VERSION) === 'v5') nextWorker = worker;
     }
     assert.ok(nextWorker);
     await page.close();
@@ -121,13 +121,13 @@ test('controlled champion image reliability (fixture images are not photograph e
     await nextWorker.evaluate(async () => {
       const deadline = Date.now() + 30000;
       while (self.registration.waiting || self.registration.installing || self.registration.active?.state !== 'activated') {
-        if (Date.now() > deadline) throw new Error('v4 did not activate after old clients closed');
+        if (Date.now() > deadline) throw new Error('v5 did not activate after old clients closed');
         await new Promise(resolve => setTimeout(resolve, 10));
       }
     });
     page = await context.newPage();
     await page.goto(`${server.origin}/F1/champions.html`);
-    await page.waitForFunction(async () => (await caches.keys()).includes('f1-portal:/F1/:static-v4'));
+    await page.waitForFunction(async () => (await caches.keys()).includes('f1-portal:/F1/:static-v5'));
     await page.waitForFunction(async () => !(await caches.keys()).includes('f1-portal:/F1/:static-v3'));
     const images = await loadAll(page);
     assert.deepEqual(images.filter(image => image.url !== CHAMPIONS_HISTORY.find(champion => champion.name === image.name).photo), []);

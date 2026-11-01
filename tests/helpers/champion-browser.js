@@ -24,7 +24,7 @@ export async function loadAll(page) {
   await page.locator('.champion-card').first().waitFor();
   // Only the audit forces eagerly loading offscreen images. Production remains lazy.
   await page.locator('.portrait').evaluateAll(images => images.forEach(image => { image.loading = 'eager'; }));
-  await page.waitForFunction(() => document.querySelectorAll('.portrait').length === 33 &&
+  await page.waitForFunction(() => document.querySelectorAll('.portrait').length === 35 &&
     [...document.querySelectorAll('.portrait')].every(image => image.complete), null, { timeout: 45000 });
   return page.locator('.champion-card').evaluateAll(cards => cards.map(card => {
     const image = card.querySelector('img');
