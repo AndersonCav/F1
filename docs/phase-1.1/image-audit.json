@@ -1,0 +1,1395 @@
+{
+  "auditDate": "2026-11-01",
+  "baselineHead": "1e54313a866b1c5227067bb0deceee8916806e86",
+  "nonImageDataSha256": "14145312ff76816b3b5fa4a09760c35a320f9977f906e9e3d8951ebe7a09b40d",
+  "records": [
+    {
+      "name": "Juan Manuel Fangio",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Juan_Manuel_Fangio_1957.jpg/512px-Juan_Manuel_Fangio_1957.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Fangio_in_1955_%28cropped%29.jpg/250px-Fangio_in_1955_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 13357,
+        "sha256": "eefe4bf9be40f0407f8155376da3b70a2d01ea3c08672153cf2c720ffb093ca0",
+        "width": 250,
+        "height": 333,
+        "sourceFile": "File:Fangio in 1955 (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/20/Fangio_in_1955_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "92535cdae9ff114b3b5b56f0381ea4984581185f",
+        "credit": {
+          "attribution": "Bjørn Fjørtoft / Riksarkivet",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fangio_in_1955_(cropped).jpg",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Bildet er hentet fra Arkivverket.\n<p>Grand Prix i Kristianstad. NÅ nr. 33, 1955\n</p>\n<ul><li>Arkivinstitusjon : Riksarkivet</li>\n<li>Arkivnavn : Billedbladet NÅ</li>\n<li>Sted : Sverige, Skåne, Kristianstad, Råbelövsbanan</li>\n<li>Emneord: billøp, racing, motorsport</li>\n<li>Avbildet:</li></ul>",
+        "artistHTML": "<bdi><a href=\"https://www.wikidata.org/wiki/Q11961360\" class=\"extiw\" title=\"d:Q11961360\"><span title=\"Norwegian photographer (1928-2015)\">Bjørn Fjørtoft</span></a></bdi>",
+        "creditHTML": "<bdi><a href=\"https://www.wikidata.org/wiki/Q4793570\" class=\"extiw\" title=\"d:Q4793570\"><span title=\"heritage institution\">National Archives of Norway (Riksarkivet)</span></a>\n</bdi>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Juan_Manuel_Fangio",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Alberto Ascari",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Alberto_Ascari_circa_1950s.jpg/512px-Alberto_Ascari_circa_1950s.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Ascari_last_photo_in_car.jpg/250px-Ascari_last_photo_in_car.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 35501,
+        "sha256": "acc3889f40dff7931cdb35cdb51310c40d8288db74e17bd3e9471a964f32e6ca",
+        "width": 250,
+        "height": 384,
+        "sourceFile": "File:Ascari last photo in car.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/69/Ascari_last_photo_in_car.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "5bdcaad7646d1abe13c035883ad7162e3bc3e8df",
+        "credit": {
+          "attribution": "Autor desconhecido / El Gráfico",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ascari_last_photo_in_car.jpg",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ascari_last_photo_in_car.jpg#Licensing"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Last photo of racer Alberto Ascari driving a car, before a test in Montecarlo.",
+        "artistHTML": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.elgrafico.com.ar/articulo/1088/33615/1955-la-muerte-de-alberto-ascari\"><i>El Gráfico</i></a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "PD-AR-Photo and PD-1996 (Argentina); Commons file description",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Alberto_Ascari",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Mike Hawthorn",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mike_Hawthorn_1958.jpg/512px-Mike_Hawthorn_1958.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mike_Hawthorn%2C_autocoureur_verongelukt%2C_Bestanddeelnr_910-1117.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 51245,
+        "sha256": "2e6f2eb5b0e590b3885950c1d25b7eef12359835b8e8025bae2dfb3a1274b122",
+        "width": 217,
+        "height": 308,
+        "sourceFile": "File:Mike Hawthorn, autocoureur verongelukt, Bestanddeelnr 910-1117.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mike_Hawthorn%2C_autocoureur_verongelukt%2C_Bestanddeelnr_910-1117.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "23cc9a31275eccecedaa04b987fcb2f6e7d458fb",
+        "credit": {
+          "attribution": "Herbert Behrens / Anefo",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mike_Hawthorn,_autocoureur_verongelukt,_Bestanddeelnr_910-1117.jpg",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Collectie / Archief : Fotocollectie Anefo<br>\n<p>Reportage / Serie : [ onbekend ]<br>\nBeschrijving : Mike Hawthorn , autocoureur verongelukt<br>\nDatum : 22 januari 1959<br>\nTrefwoorden : autocoureurs<br>\nFotograaf : Behrens, Herbert / Anefo<br>\nAuteursrechthebbende : Nationaal Archief<br>\nMateriaalsoort : Glasnegatief<br>\nNummer archiefinventaris : bekijk toegang 2.24.01.09<br>\n</p>\nBestanddeelnummer : 910-1117",
+        "artistHTML": "Herbert Behrens / Anefo",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"http://proxy.handle.net/10648/a98c779a-d0b4-102d-bcf8-003048976d84\">http://proxy.handle.net/10648/a98c779a-d0b4-102d-bcf8-003048976d84</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Zero, Public Domain Dedication",
+        "identityEvidence": {
+          "url": "https://commons.wikimedia.org/wiki/File:Mike_Hawthorn,_autocoureur_verongelukt,_Bestanddeelnr_910-1117.jpg",
+          "method": "Named subject in archive file description"
+        },
+        "dimensionNote": "API thumbwidth=250/thumbheight=355 are requested presentation dimensions; the unscaled JPEG actually decodes at 217 × 308."
+      }
+    },
+    {
+      "name": "Jack Brabham",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Jack_Brabham_1966.jpg/512px-Jack_Brabham_1966.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/BrabhamJack1966B.jpg/250px-BrabhamJack1966B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 26397,
+        "sha256": "b271e98f5a08c5afa2ff215f27968421100bba0063e2f5ef7dae91b99bbbf631",
+        "width": 250,
+        "height": 352,
+        "sourceFile": "File:BrabhamJack1966B.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/e7/BrabhamJack1966B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "8e118370416628e1723ff3d89cfbb35ba0b02b0a",
+        "credit": {
+          "attribution": "Lothar Spurzem",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BrabhamJack1966B.jpg",
+          "license": "CC BY-SA 2.0 de",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Jack Brabham 1966",
+        "artistHTML": "<a href=\"https://de.wikipedia.org/wiki/Benutzer:Lothar_Spurzem\" class=\"extiw\" title=\"de:Benutzer:Lothar Spurzem\">Lothar Spurzem</a>",
+        "creditHTML": "<p>Originally from <a class=\"external text\" data-mw-original-href=\"http://de.wikipedia.org\" href=\"https://de.wikipedia.org\">de.wikipedia</a>; description page is (was) <a href=\"https://de.wikipedia.org/wiki/Image:BrabhamJack1966B.jpg\" class=\"extiw\" title=\"de:Image:BrabhamJack1966B.jpg\">here</a>\n</p>\n<ul><li>first upload in de wikipedia on 21:59, 14. Jun 2006 by Spurzem (774 x 1090 (240.018 Byte) (* Bildbeschreibung: Jack Brabham 1966 * Fotograf: Lothar Spurzem * Datum: 1966 Bild-CC-by-sa/2.0/de)</li></ul>",
+        "attributionHTML": "<a href=\"https://de.wikipedia.org/wiki/Benutzer:Lothar_Spurzem\" class=\"extiw\" title=\"de:Benutzer:Lothar Spurzem\">Lothar Spurzem</a>",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 2.0 de",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Jack_Brabham",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Phil Hill",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Phil_Hill_1962.jpg/512px-Phil_Hill_1962.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Phil_Hill_1991_USA_%28cropped%29.jpg/250px-Phil_Hill_1991_USA_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 27467,
+        "sha256": "9d11c065d4b069a7c4c248cf1449e4d889e3b4cffa6fd67e9ba34d5ac97df99a",
+        "width": 250,
+        "height": 388,
+        "sourceFile": "File:Phil Hill 1991 USA (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/8/84/Phil_Hill_1991_USA_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "32c91de6065e2f60fe76f32c8864246d4a0c3f1e",
+        "credit": {
+          "attribution": "Stuart Seeger",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phil_Hill_1991_USA_(cropped).jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "<a href=\"//commons.wikimedia.org/w/index.php?title=Phil_Hill&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Phil Hill (page does not exist)\">Phil Hill</a> (left) and <a href=\"//commons.wikimedia.org/wiki/Jackie_Stewart\" title=\"Jackie Stewart\">Jackie Stewart</a> (right) at the 1991 United States Grand Prix.",
+        "artistHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/50203533@N00\">Stuart Seeger</a> from College Station, Texas, USA",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/50203533@N00/3095022504/\">Hill And Stewart</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Phil_Hill",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Graham Hill",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Graham_Hill_1969.jpg/512px-Graham_Hill_1969.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Graham_Hill_Bestanddeelnr_924-6564.jpg/250px-Graham_Hill_Bestanddeelnr_924-6564.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 21182,
+        "sha256": "c70eb07c2ebdfcb27a7aef6fa7c22c5b4f34d47e5e57c83fe1c9484b5db149a5",
+        "width": 250,
+        "height": 313,
+        "sourceFile": "File:Graham Hill Bestanddeelnr 924-6564.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Graham_Hill_Bestanddeelnr_924-6564.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "1a0b9de7dc361a1afc253a25c1b65ac1a6864b7e",
+        "credit": {
+          "attribution": "Anefo / Nationaal Archief",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Graham_Hill_Bestanddeelnr_924-6564.jpg",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Collectie / Archief : Fotocollectie Anefo<br>\n<p>Reportage / Serie : Grand Prix , Zandvoort, training<br>\nBeschrijving : Graham Hill<br>\nAnnotatie : Randnummers negatiefstrook: 4, 5: Graham Hill<br>\nDatum : 16 juni 1971<br>\nLocatie : Noord-Holland, Zandvoort<br>\nTrefwoorden : autosport, circuits, portretten, races, sporttrainingen<br>\nPersoonsnaam : Hill, Graham<br>\nFotograaf : Fotograaf Onbekend / Anefo, [onbekend]<br>\nAuteursrechthebbende : Nationaal Archief <br>\nMateriaalsoort : Negatief (zwart/wit)<br>\nNummer archiefinventaris : bekijk toegang 2.24.01.05<br>\nBestanddeelnummer : 924-6564<br>\n</p><p>Reacties\nGeplaatst door Archiefhist op 27 juni 2014 - 19:45.\n</p>\nGetuige een andere foto in deze reeks genomen met een overzicht van de pitsstraat staat Hill te praten met mede-coureur Ronnie Peterson.",
+        "artistHTML": "Anefo",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"http://proxy.handle.net/10648/abc362da-d0b4-102d-bcf8-003048976d84\">http://proxy.handle.net/10648/abc362da-d0b4-102d-bcf8-003048976d84</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Zero, Public Domain Dedication",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Graham_Hill",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Jim Clark",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Jim_Clark_1965.jpg/512px-Jim_Clark_1965.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": true,
+        "canonicalURL": "https://upload.wikimedia.org/wikipedia/commons/0/02/Jim_Clark_1965.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "rootCause": "Unsupported 512px thumbnail; incorrect storage path (or renamed file)"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Jim_Clark_in_1963_%28cropped%29.JPG/250px-Jim_Clark_in_1963_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 20831,
+        "sha256": "c84e7b2c163ceaa972f60780e831af97ff7b251508ea2570d0133ac891f31bf1",
+        "width": 250,
+        "height": 333,
+        "sourceFile": "File:Jim Clark in 1963 (cropped).JPG",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Jim_Clark_in_1963_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "6b5f987ffceff2368b4b97e14e6654ad02826c05",
+        "credit": {
+          "attribution": "Joop van Bilsen / Anefo",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jim_Clark_in_1963_(cropped).JPG",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Collectie / Archief : Fotocollectie Anefo<br>\n<p>Reportage / Serie : [ onbekend ]<br>\nBeschrijving : Jim Clark winnaar Grote Prijs van Nederland in 1963. Met krans en beker<br>\nDatum : 23 juni 1963<br>\nTrefwoorden : Winnaars, bekers<br>\nPersoonsnaam : Grote prijs van Nederland, Jim Clark<br>\nFotograaf : Bilsen, Joop van / Anefo<br>\nAuteursrechthebbende : Nationaal Archief <br>\nMateriaalsoort : Negatief (zwart/wit)<br>\nNummer archiefinventaris : bekijk toegang 2.24.01.04<br>\n</p>\nBestanddeelnummer : 915-2892",
+        "artistHTML": "Joop van Bilsen / Anefo",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"https://proxy.handle.net/10648/aa3bf454-d0b4-102d-bcf8-003048976d84\">https://proxy.handle.net/10648/aa3bf454-d0b4-102d-bcf8-003048976d84</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Zero, Public Domain Dedication",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Jim_Clark",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "John Surtees",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/John_Surtees_1964.jpg/512px-John_Surtees_1964.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Training_Grand_Prix_te_Zandvoort%2C_John_Surtees_bij_zijn_nieuwe_wagen%2C_Bestanddeelnr_916-4625_%28cropped%29.jpg/250px-Training_Grand_Prix_te_Zandvoort%2C_John_Surtees_bij_zijn_nieuwe_wagen%2C_Bestanddeelnr_916-4625_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 26589,
+        "sha256": "bdc348664e64635a9415918f80e60923f1a5fb7d1edea56778043a68a829740d",
+        "width": 250,
+        "height": 325,
+        "sourceFile": "File:Training Grand Prix te Zandvoort, John Surtees bij zijn nieuwe wagen, Bestanddeelnr 916-4625 (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Training_Grand_Prix_te_Zandvoort%2C_John_Surtees_bij_zijn_nieuwe_wagen%2C_Bestanddeelnr_916-4625_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "1b88f6b2247fecfb09951d1a9e186924e3070841",
+        "credit": {
+          "attribution": "Harry Pot / Anefo",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Training_Grand_Prix_te_Zandvoort,_John_Surtees_bij_zijn_nieuwe_wagen,_Bestanddeelnr_916-4625_(cropped).jpg",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Collectie / Archief : Fotocollectie Anefo<br>\n<p>Reportage / Serie : [ onbekend ]<br>\nBeschrijving : Training Grand Prix te Zandvoort, John Surtees bij zijn nieuwe wagen<br>\nDatum : 22 mei 1964<br>\nLocatie : Noord-Holland, Zandvoort<br>\nTrefwoorden : wagens<br>\nPersoonsnaam : surtees<br>\nFotograaf : Pot, Harry / Anefo<br>\nAuteursrechthebbende : Nationaal Archief <br>\nMateriaalsoort : Negatief (zwart/wit)<br>\nNummer archiefinventaris : bekijk toegang 2.24.01.05<br>\n</p>\nBestanddeelnummer : 916-4625",
+        "artistHTML": "Harry Pot / Anefo",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"http://proxy.handle.net/10648/aa6a2aea-d0b4-102d-bcf8-003048976d84\">http://proxy.handle.net/10648/aa6a2aea-d0b4-102d-bcf8-003048976d84</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Zero, Public Domain Dedication",
+        "identityEvidence": {
+          "url": "https://commons.wikimedia.org/wiki/File:Training_Grand_Prix_te_Zandvoort,_John_Surtees_bij_zijn_nieuwe_wagen,_Bestanddeelnr_916-4625_(cropped).jpg",
+          "method": "Named subject in archive file description"
+        }
+      }
+    },
+    {
+      "name": "Denny Hulme",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Denny_Hulme_1967.jpg/512px-Denny_Hulme_1967.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/HulmeDenis196508_%28cropped%29.jpg/250px-HulmeDenis196508_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 22421,
+        "sha256": "e114efcaecdfb76e7a20541c8efe49ac15478de2b3d456a202cc5f601942fdab",
+        "width": 250,
+        "height": 249,
+        "sourceFile": "File:HulmeDenis196508 (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/92/HulmeDenis196508_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "342ff3aa29d5b3cbdcee08b87b145f43dbc22746",
+        "credit": {
+          "attribution": "Lothar Spurzem",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:HulmeDenis196508_(cropped).jpg",
+          "license": "CC BY-SA 2.0 de",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Denis Hulme 1965 im Brabham Climax im Fahrerlager des Nürburgrings",
+        "artistHTML": "<a href=\"https://de.wikipedia.org/wiki/Benutzer:Spurzem\" class=\"extiw\" title=\"de:Benutzer:Spurzem\">Lothar Spurzem</a>",
+        "creditHTML": "<p>Originally from <a class=\"external text\" data-mw-original-href=\"http://de.wikipedia.org\" href=\"https://de.wikipedia.org\">de.wikipedia</a>; description page is (was) <a href=\"https://de.wikipedia.org/wiki/Image:HulmeDenis196508.jpg\" class=\"extiw\" title=\"de:Image:HulmeDenis196508.jpg\">here</a>\n</p>\n<ul><li>first upload in de wikipedia on 17:38, 12. Jun 2006 by Spurzem (2714 x 2035 (1.452.368 Byte) (* Bildbeschreibung: Denis Hulme 1965 im Brabham Climax * Fotograf: Lothar Spurzem * Datum: 30. oder 31.07.1965 im Fahrerlager des Nürburgrings Bild-CC-by-sa/2.0/de)</li></ul>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 2.0 de",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Denny_Hulme",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Jackie Stewart",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Jackie_Stewart_1973.jpg/512px-Jackie_Stewart_1973.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Jackie_Stewart_at_the_2014_WEC_Silverstone_round.jpg/250px-Jackie_Stewart_at_the_2014_WEC_Silverstone_round.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 23844,
+        "sha256": "719f68f8fc217633066240c2b5e2ea57f5deaffd3a650a089e7a34aa37410dd2",
+        "width": 250,
+        "height": 376,
+        "sourceFile": "File:Jackie Stewart at the 2014 WEC Silverstone round.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jackie_Stewart_at_the_2014_WEC_Silverstone_round.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "dfec7e83bca420c3e1c8c12c373f8ecf62e5417a",
+        "credit": {
+          "attribution": "David Merrett",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jackie_Stewart_at_the_2014_WEC_Silverstone_round.jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "<p>Three Times Formula 1 World Champion and Tireless Campaigner motor racing safety\n</p>\n6 Hours of Silverstone (WEC) 2014",
+        "artistHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/14265068@N00\">David Merrett</a> from Daventry, England",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/davehamster/13997739414/\">Sir Jackie Stewart</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Jackie_Stewart",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Jochen Rindt",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Jochen_Rindt_1970.jpg/512px-Jochen_Rindt_1970.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Rindt_at_1970_Dutch_Grand_Prix_%282C%29.jpg/250px-Rindt_at_1970_Dutch_Grand_Prix_%282C%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 28832,
+        "sha256": "fd26449b6219308f87d9874c75028256b2f07b06c11d5f1248027d0225e2dc9c",
+        "width": 250,
+        "height": 334,
+        "sourceFile": "File:Rindt at 1970 Dutch Grand Prix (2C).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Rindt_at_1970_Dutch_Grand_Prix_%282C%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "6c5278038eb541355a0081abb189fd9b60314412",
+        "credit": {
+          "attribution": "Joost Evers / Anefo",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rindt_at_1970_Dutch_Grand_Prix_(2C).jpg",
+          "license": "CC BY-SA 3.0 nl",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Grand Prix 1970 van Nederland voor Formule I wagens , Zandvoort; J. Rindt in krans, kop.",
+        "artistHTML": "Evers, Joost / Anefo / neg. stroken, 1945-1989, 2.24.01.05, item number 923-6109",
+        "creditHTML": "crop of <a href=\"//commons.wikimedia.org/wiki/File:Rindt_at_1970_Dutch_Grand_Prix_(2).jpg\" title=\"File:Rindt at 1970 Dutch Grand Prix (2).jpg\">File:Rindt at 1970 Dutch Grand Prix (2).jpg</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 3.0 nl",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Jochen_Rindt",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emerson_Fittipaldi_1974.jpg/512px-Emerson_Fittipaldi_1974.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Emerson_Fittipaldi_in_2020_%28cropped%29.JPG/250px-Emerson_Fittipaldi_in_2020_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 26842,
+        "sha256": "1af5a8a3ea197476b56835d75f740e064234d900557871652bb4b72027d76905",
+        "width": 250,
+        "height": 351,
+        "sourceFile": "File:Emerson Fittipaldi in 2020 (cropped).JPG",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Emerson_Fittipaldi_in_2020_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "225c89cdbba122ceaaca6e0f826e4f9bf16537a8",
+        "credit": {
+          "attribution": "Alan Santos / PR / Palácio do Planalto",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emerson_Fittipaldi_in_2020_(cropped).JPG",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "(Miami - Flórida, 10/03/2020) Presidente da República Jair Bolsonaro posa para fotografia ao lado do Empresário Emerson Fittipaldi e do lutador de artes marciais Vítor Belfort.\nFoto: Alan Santos/PR",
+        "artistHTML": "Palácio do Planalto",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/palaciodoplanalto/49644242672/\">https://www.flickr.com/photos/palaciodoplanalto/49644242672/</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Emerson_Fittipaldi",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Niki Lauda",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Niki_Lauda_1984.jpg/512px-Niki_Lauda_1984.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Lauda_at_1982_Dutch_Grand_Prix.jpg/250px-Lauda_at_1982_Dutch_Grand_Prix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 24298,
+        "sha256": "23a4dd40fe53de0753486775f7dc1f290536631f01f7267f423e0822ded5da45",
+        "width": 250,
+        "height": 343,
+        "sourceFile": "File:Lauda at 1982 Dutch Grand Prix.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Lauda_at_1982_Dutch_Grand_Prix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "fa6db3ddb6a7531c5fb2b52fe1092c10d77929b4",
+        "credit": {
+          "attribution": "Hans van Dijk / Anefo",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lauda_at_1982_Dutch_Grand_Prix.jpg",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Eerste trainingsdag Grand Prix van Zandvoort , Formule 1: Niki Lauda. Parmalat",
+        "artistHTML": "<p><a href=\"//commons.wikimedia.org/wiki/Category:Hans_van_Dijk\" title=\"Category:Hans van Dijk\">Hans van Dijk</a> for <a href=\"//commons.wikimedia.org/wiki/Category:Anefo\" title=\"Category:Anefo\">Anefo</a> \n</p>\n/ neg. stroken, 1945-1989, 2.24.01.05, item number 932-2315",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"https://proxy.handle.net/10648/ad1a871c-d0b4-102d-bcf8-003048976d84\">https://proxy.handle.net/10648/ad1a871c-d0b4-102d-bcf8-003048976d84</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Zero, Public Domain Dedication",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Niki_Lauda",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "James Hunt",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/James_Hunt_1977.jpg/512px-James_Hunt_1977.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/J._Hunt_in_1977_%28cropped%29.jpg/250px-J._Hunt_in_1977_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 25445,
+        "sha256": "1f75bb744f6f08b67c2204e21553d7db9f8d942c045e42deb86a93daa170e49b",
+        "width": 250,
+        "height": 335,
+        "sourceFile": "File:J. Hunt in 1977 (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/1/12/J._Hunt_in_1977_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "896bcc9b4802538803f9d81274e49234aa3f9ee8",
+        "credit": {
+          "attribution": "Father of Mr.choppers; digitization and alterations: Mr.choppers",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:J._Hunt_in_1977_(cropped).jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "James Hunt at some sort of conference preceding the <a href=\"https://en.wikipedia.org/wiki/1977_Swedish_Grand_Prix\" class=\"extiw\" title=\"en:1977 Swedish Grand Prix\">1977 Swedish Grand Prix</a>.",
+        "artistHTML": "Uploader's father, digitized and altered by <a href=\"//commons.wikimedia.org/wiki/User:Mr.choppers\" title=\"User:Mr.choppers\">Mr.choppers</a>",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 3.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/James_Hunt",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Mario Andretti",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mario_Andretti_1978.jpg/512px-Mario_Andretti_1978.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Mario_Andretti_Goodwood_Festival_of_Speed_2021_%28cropped%29.jpg/250px-Mario_Andretti_Goodwood_Festival_of_Speed_2021_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 25609,
+        "sha256": "2b917caf975090e77d6fdfdedce489b3981303993d44ab19258e368ab7c19d27",
+        "width": 250,
+        "height": 334,
+        "sourceFile": "File:Mario Andretti Goodwood Festival of Speed 2021 (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Mario_Andretti_Goodwood_Festival_of_Speed_2021_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "8659a7a0bdce29fbea3795bf4e4934d026cc1f99",
+        "credit": {
+          "attribution": "United Autosports",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mario_Andretti_Goodwood_Festival_of_Speed_2021_(cropped).jpg",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "AndrettiBrown-02",
+        "artistHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/48092258@N06\">United Autosports</a>",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/unitedautosports/51305826212/\">AndrettiBrown-02</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Mario_Andretti",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Jody Scheckter",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Jody_Scheckter_1979.jpg/512px-Jody_Scheckter_1979.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Jody_Scheckter_during_the_1979_Monaco_Grand_Prix.jpg/250px-Jody_Scheckter_during_the_1979_Monaco_Grand_Prix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 41369,
+        "sha256": "8a9e1b4dcdf2f6df87466f872986f1fa4927ae7f4fd4b8f0c04a7a086b7809ca",
+        "width": 250,
+        "height": 356,
+        "sourceFile": "File:Jody Scheckter during the 1979 Monaco Grand Prix.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Jody_Scheckter_during_the_1979_Monaco_Grand_Prix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "ef629d178f1420be48cbd1c7ad3d74af7a3e8a31",
+        "credit": {
+          "attribution": "PH1 John Lucas / U.S. Navy",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jody_Scheckter_during_the_1979_Monaco_Grand_Prix.jpg",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jody_Scheckter_during_the_1979_Monaco_Grand_Prix.jpg#Licensing"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "South African winner of the 1979 Monaco Grand Prix, Jody Scheckter.",
+        "artistHTML": "PH1 John Lucas, U.S. Navy",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.navy.mil/ah_online/department_arch.html\">U.S. Navy All Hands magazine</a> <a rel=\"nofollow\" class=\"external text\" href=\"http://www.navy.mil/ah_online/archpdf/ah197912.pdf\">December 1979</a>, p. 15.",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "PD-USGov-Military; official U.S. Navy All Hands photograph",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Jody_Scheckter",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Alan Jones",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Alan_Jones_1980.jpg/512px-Alan_Jones_1980.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": true,
+        "canonicalURL": "https://upload.wikimedia.org/wikipedia/commons/7/78/Alan_Jones_1980.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "rootCause": "Unsupported 512px thumbnail; incorrect storage path (or renamed file)"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Jones_alan.JPG/250px-Jones_alan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 20933,
+        "sha256": "67fbf38d99a86e085ed6ed8aec91ebfcd3eaec34c32ec0137759726b0e884db3",
+        "width": 250,
+        "height": 334,
+        "sourceFile": "File:Jones alan.JPG",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Jones_alan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "c565cac95186d6029b0b141c2b62e4a6be32d490",
+        "credit": {
+          "attribution": "Lutz H",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jones_alan.JPG",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/File:Jones_alan.JPG#Licensing"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Alan Jones",
+        "artistHTML": "ich",
+        "creditHTML": "Digitalkamera (Sony Cyber-Shot 5.0 Megapixels)",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "PD-release; original photographer Lutz H, de.wikipedia upload log",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Alan_Jones_(racing_driver)",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Nelson Piquet",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Nelson_Piquet_1983.jpg/512px-Nelson_Piquet_1983.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Cerimonia_de_entrega_da_medalha_Bras%C3%ADlia_60_anos_-_16.jpg/250px-Cerimonia_de_entrega_da_medalha_Bras%C3%ADlia_60_anos_-_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 24600,
+        "sha256": "b75d403a7da95423b9329bb1e1063252bc7b079156bcc3362e638b2e6780090a",
+        "width": 250,
+        "height": 333,
+        "sourceFile": "File:Cerimonia de entrega da medalha Brasília 60 anos - 16.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Cerimonia_de_entrega_da_medalha_Bras%C3%ADlia_60_anos_-_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "9b84292ad84445618e42ca3b28bc261874cfa0d5",
+        "credit": {
+          "attribution": "Agência Brasília",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerimonia_de_entrega_da_medalha_Bras%C3%ADlia_60_anos_-_16.jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "O Governo do Distrito Federal (GDF) homenageou, no dia 18 de abril de 2022, 120 homens e mulheres que contribuíram para a história e o desenvolvimento cultural e econômico de Brasília. Instituída por meio do Decreto nº 40.473, de 27 de fevereiro de 2020, e assinada pelo governador Ibaneis Rocha, a medalha Brasília 60 anos foi entregue na semana em que a capital federal completa 62 anos de sua fundação. As festividades de comemoração do aniversário da cidade estavam suspensas há dois anos devidos às medidas restritivas de aglomeração impostas pelas autoridades sanitárias para conter o contágio da COVID-19.",
+        "artistHTML": "Agência Brasília",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/agenciabrasilia/52013300076/\">https://www.flickr.com/photos/agenciabrasilia/52013300076/</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Nelson_Piquet",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Keke Rosberg",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Keke_Rosberg_1982.jpg/512px-Keke_Rosberg_1982.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Anefo_932-2378_Keke_Rosberg%2C_Zandvoort%2C_03-07-1982_-_Restoration.jpg/250px-Anefo_932-2378_Keke_Rosberg%2C_Zandvoort%2C_03-07-1982_-_Restoration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 36024,
+        "sha256": "38a3edaeabda4bcbfcb94e3a640d86db6349b9fae369b23b2fd17e044264985b",
+        "width": 250,
+        "height": 377,
+        "sourceFile": "File:Anefo 932-2378 Keke Rosberg, Zandvoort, 03-07-1982 - Restoration.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Anefo_932-2378_Keke_Rosberg%2C_Zandvoort%2C_03-07-1982_-_Restoration.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "29635975ebc108df8f596c0d90c9c71125a92d38",
+        "credit": {
+          "attribution": "Hans van Dijk / Anefo; restoration: Adam Cuerden",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anefo_932-2378_Keke_Rosberg,_Zandvoort,_03-07-1982_-_Restoration.jpg",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+        },
+        "attributionRequired": false,
+        "descriptionHTML": "Keke Rosberg in a black and white photographic portait taken at the 1982 Dutch Grand Prix",
+        "artistHTML": "<p><a href=\"//commons.wikimedia.org/wiki/Category:Hans_van_Dijk\" title=\"Category:Hans van Dijk\">Hans van Dijk</a> for <a href=\"//commons.wikimedia.org/wiki/Category:Anefo\" title=\"Category:Anefo\">Anefo</a> \n</p>\n<ul><li>Minor restoration by <a href=\"//commons.wikimedia.org/wiki/User:Adam_Cuerden\" title=\"User:Adam Cuerden\">Adam Cuerden</a>: No need to credit me.</li></ul>",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.gahetna.nl/en/collectie/afbeeldingen/fotocollectie/zoeken/weergave/detail/start/0/tstart/0/q/zoekterm/Keke%20Rosberg\">Gahetna in het nationaal archief</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Zero, Public Domain Dedication",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Keke_Rosberg",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Alain Prost",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alain_Prost_1988.jpg/512px-Alain_Prost_1988.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Festival_automobile_international_2015_-_Photocall_-_065_%28cropped3%29.jpg/250px-Festival_automobile_international_2015_-_Photocall_-_065_%28cropped3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 23246,
+        "sha256": "056fd2222cc65dc2f9fc1f434c81217d0381fa15505b6a052add2ec7161ca668",
+        "width": 250,
+        "height": 312,
+        "sourceFile": "File:Festival automobile international 2015 - Photocall - 065 (cropped3).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/7/74/Festival_automobile_international_2015_-_Photocall_-_065_%28cropped3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "31722ae6ddf3d6de4355266efabd7e60e1c61daa",
+        "credit": {
+          "attribution": "Thesupermat",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2015_-_Photocall_-_065_(cropped3).jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Photocall du festival automobile international 2015.",
+        "artistHTML": "<a href=\"//commons.wikimedia.org/wiki/User:Thesupermat\" title=\"User:Thesupermat\">Thesupermat</a>",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "personality",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Alain_Prost",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Ayrton Senna",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Ayrton_Senna_1991.jpg/512px-Ayrton_Senna_1991.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ayrton_Senna_Pesawat_RC_Cropped.jpg/250px-Ayrton_Senna_Pesawat_RC_Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 21688,
+        "sha256": "73379faa91bbbefcf00b1802321b7c34123be4e0aa948c04c3f81e89334f4272",
+        "width": 250,
+        "height": 318,
+        "sourceFile": "File:Ayrton Senna Pesawat RC Cropped.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Ayrton_Senna_Pesawat_RC_Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "15515004070849231c3f3112c9dc93ee11f20071",
+        "credit": {
+          "attribution": "Instituto Ayrton Senna; derivative: F1fans",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ayrton_Senna_Pesawat_RC_Cropped.jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Ayrton Senna with his favourite hobby: aeromodelism",
+        "artistHTML": "<ul><li><a href=\"//commons.wikimedia.org/wiki/File:Ayrton_Senna_2.jpg\" title=\"File:Ayrton Senna 2.jpg\">File:Ayrton Senna 2.jpg</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/institutoayrtonsenna/\">Instituto Ayrton Senna</a></li>\n<li>derivative work: <a href=\"//commons.wikimedia.org/wiki/User:F1fans\" title=\"User:F1fans\">F1fans</a></li></ul>",
+        "creditHTML": "This file was derived from:  <a href=\"//commons.wikimedia.org/wiki/File:Ayrton_Senna_2.jpg\" title=\"File:Ayrton Senna 2.jpg\">Ayrton Senna 2.jpg</a>: <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Ayrton_Senna_2.jpg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ayrton_Senna_2.jpg/60px-Ayrton_Senna_2.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"34\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ayrton_Senna_2.jpg/120px-Ayrton_Senna_2.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1004\" data-file-height=\"691\"></a></span><br>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Ayrton_Senna",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Nigel Mansell",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Nigel_Mansell_1988.jpg/512px-Nigel_Mansell_1988.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Nigel_Mansell_-_Mexican_Grand_Prix_01_%28cropped%29.jpeg/250px-Nigel_Mansell_-_Mexican_Grand_Prix_01_%28cropped%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 22562,
+        "sha256": "8daa3cb746c6ea2e9ac4a241dfd9a6e1647e3afeb07b1ec1de50e4110facdf9e",
+        "width": 250,
+        "height": 353,
+        "sourceFile": "File:Nigel Mansell - Mexican Grand Prix 01 (cropped).jpeg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Nigel_Mansell_-_Mexican_Grand_Prix_01_%28cropped%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "754d735e80ae90b9e7149f4b34185a6049ef296e",
+        "credit": {
+          "attribution": "ProtoplasmaKid",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nigel_Mansell_-_Mexican_Grand_Prix_01_(cropped).jpeg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "British F1 champion on the curve that bears his name, the 17 in the Autódromo Hermanos Rodríguez.\n<p>PitWalk Mexican Grand Prix 2015, Autódromo Hermanos Rodríguez.\n</p>\nMexico City, Mexico.",
+        "artistHTML": "<a href=\"//commons.wikimedia.org/wiki/User:ProtoplasmaKid\" title=\"User:ProtoplasmaKid\">ProtoplasmaKid</a>",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Nigel_Mansell",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Michael Schumacher",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Michael_Schumacher_2010.jpg/512px-Michael_Schumacher_2010.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Michael_Schumacher%2C_September_2005.jpg/250px-Michael_Schumacher%2C_September_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 17353,
+        "sha256": "33ced992d9e0746836c19285608e1a84d155d533d6754329df03cbdad0ee9cd7",
+        "width": 250,
+        "height": 342,
+        "sourceFile": "File:Michael Schumacher, September 2005.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Michael_Schumacher%2C_September_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "9dc6d34f80bc0025b4bb1298721ba43ff4efd58f",
+        "credit": {
+          "attribution": "Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Michael_Schumacher,_September_2005.jpg",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "German racing driver Michael Schumacher at Belo Horizonte for a charity football match. September 21, 2005.",
+        "artistHTML": "<b>Original: </b> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40723244@N02\">Aécio Neves</a> – Wellington Pedro/Imprensa MG / <b>Derivative work: </b> <a href=\"//commons.wikimedia.org/wiki/User:F1fans\" title=\"User:F1fans\">F1fans</a>, <a href=\"//commons.wikimedia.org/wiki/User:FMSky\" title=\"User:FMSky\">FMSky</a>",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/aecio_neves/4092669379/\">Aécio Neves, Michael Schumacher e Didi</a> (<a href=\"//commons.wikimedia.org/wiki/File:A%C3%A9cio_Neves,_Michael_Schumacher_e_Didi.jpg\" title=\"File:Aécio Neves, Michael Schumacher e Didi.jpg\">original photo</a>)",
+        "attributionHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40723244@N02\">Aécio Neves</a> – Wellington Pedro/Imprensa MG",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Damon Hill",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Damon_Hill_1995.jpg/512px-Damon_Hill_1995.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": true,
+        "canonicalURL": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Damon_Hill_1995-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "rootCause": "Unsupported 512px thumbnail; incorrect storage path (or renamed file)"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Damon_Hill_at_the_Atlassian_Williams_Racing_Fan_Zone_of_2026_%28028A8241%29.jpg/250px-Damon_Hill_at_the_Atlassian_Williams_Racing_Fan_Zone_of_2026_%28028A8241%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 22458,
+        "sha256": "cd0d1f520348cf5ae9d8e195d481aa35ba1cc590ee39fddd1297fa686ba85c4b",
+        "width": 250,
+        "height": 375,
+        "sourceFile": "File:Damon Hill at the Atlassian Williams Racing Fan Zone of 2026 (028A8241).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Damon_Hill_at_the_Atlassian_Williams_Racing_Fan_Zone_of_2026_%28028A8241%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "73b444c4125ce61ea2dcc5676dd86862e379dc56",
+        "credit": {
+          "attribution": "Yu Chu Chin",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Damon_Hill_at_the_Atlassian_Williams_Racing_Fan_Zone_of_2026_(028A8241).jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Damon Hill, Ambassador for Williams Racing, speaking at the Atlassian Williams Racing Fan Zone presented by Kraken at The Atrium, Federation Square.",
+        "artistHTML": "<a href=\"//commons.wikimedia.org/wiki/User:Pangalau\" title=\"User:Pangalau\">Yu Chu Chin</a>",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Damon_Hill",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Jacques_Villeneuve_1996.jpg/512px-Jacques_Villeneuve_1996.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": true,
+        "canonicalURL": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Jacques_Villeneuve_1996.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "rootCause": "Unsupported 512px thumbnail; incorrect storage path (or renamed file)"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Jacques_Villeneuve_Peugeot_208_T16_Lydden_Hill_2014_006_%28cropped2%29.jpg/250px-Jacques_Villeneuve_Peugeot_208_T16_Lydden_Hill_2014_006_%28cropped2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 20548,
+        "sha256": "05e68f85db1cf66e76b962abd457a2d35c75beb81a9625ad8454a499574ce638",
+        "width": 250,
+        "height": 314,
+        "sourceFile": "File:Jacques Villeneuve Peugeot 208 T16 Lydden Hill 2014 006 (cropped2).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Jacques_Villeneuve_Peugeot_208_T16_Lydden_Hill_2014_006_%28cropped2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "4a4a0926464e7da6070d25a4552f7e91bdbde985",
+        "credit": {
+          "attribution": "Smudge 9000",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacques_Villeneuve_Peugeot_208_T16_Lydden_Hill_2014_006_(cropped2).jpg",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "<a href=\"https://en.wikipedia.org/wiki/Jacques_Villeneuve\" class=\"extiw\" title=\"en:Jacques Villeneuve\">Jacques Villeneuve</a> testing the Peugeot 208 T16 at <a href=\"https://en.wikipedia.org/wiki/Lydden_Hill_Race_Circuit\" class=\"extiw\" title=\"en:Lydden Hill Race Circuit\">Lydden Hill</a>, in preparation for the 2014 FIA World Rallycross Championship.",
+        "artistHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/smudge9000/\">Smudge 9000</a>",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/smudge9000/12722872315\">Flickr</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Jacques_Villeneuve",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Mika Hakkinen",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mika_Hakkinen_1999.jpg/512px-Mika_Hakkinen_1999.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Mika_H%C3%A4kkinen_Champions_for_Charity_2016-07-27.jpg/250px-Mika_H%C3%A4kkinen_Champions_for_Charity_2016-07-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 25964,
+        "sha256": "68d885b4d28ee92c3c85c4bff91a9baebbef55fcc5e71fe6814b50797cea062a",
+        "width": 250,
+        "height": 375,
+        "sourceFile": "File:Mika Häkkinen Champions for Charity 2016-07-27.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Mika_H%C3%A4kkinen_Champions_for_Charity_2016-07-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "9776c4413eefad830cfd53db6f18f6707ce612c7",
+        "credit": {
+          "attribution": "Sven Mandel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mika_H%C3%A4kkinen_Champions_for_Charity_2016-07-27.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "during football match between Nowitzki All Stars and Nazionale Piloti in honor of Michael Schumacher at Opel Arena, Mainz, Rheinland Pfalz, Germany on 2016-07-27, Photo: Sven Mandel",
+        "artistHTML": "Sven Mandel",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Mika_H%C3%A4kkinen",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Fernando Alonso",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Fernando_Alonso_2018_Malaysia.jpg/512px-Fernando_Alonso_2018_Malaysia.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Alonso-68_%2824710447098%29.jpg/250px-Alonso-68_%2824710447098%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 26786,
+        "sha256": "7c4063b98aa4ea02f41e2e719c4fbcd79851e2b4e41c4e35ba683e23f9a6ecc3",
+        "width": 250,
+        "height": 375,
+        "sourceFile": "File:Alonso-68 (24710447098).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/9/97/Alonso-68_%2824710447098%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "3270c92e98072a21bc55a85b725a39643a3ab88a",
+        "credit": {
+          "attribution": "United Autosports",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alonso-68_(24710447098).jpg",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Alonso-68",
+        "artistHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/48092258@N06\">United Autosports</a>",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/unitedautosports/24710447098/\">Alonso-68</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 2.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Kimi Raikkonen",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kimi_Raikkonen_2018_Malaysia.jpg/512px-Kimi_Raikkonen_2018_Malaysia.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/F12019_Schloss_Gabelhofen_%2822%29_%28cropped%29.jpg/250px-F12019_Schloss_Gabelhofen_%2822%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 26125,
+        "sha256": "12e8124ccb321cefebd3cc14d18e444e944b570fbd92e8a17fd10d54ba993759",
+        "width": 250,
+        "height": 318,
+        "sourceFile": "File:F12019 Schloss Gabelhofen (22) (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/f/ff/F12019_Schloss_Gabelhofen_%2822%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "3043d5dbe028ebebc61cb4f2d50c53801b6db603",
+        "credit": {
+          "attribution": "XaviYuahanda",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:F12019_Schloss_Gabelhofen_(22)_(cropped).jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Formula 1 2019 / Schloss Gabelhofen",
+        "artistHTML": "<a href=\"//commons.wikimedia.org/wiki/User:XaviYuahanda\" title=\"User:XaviYuahanda\">XaviYuahanda</a>",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Lewis Hamilton",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Lewis_Hamilton_2022_Paris.jpg/512px-Lewis_Hamilton_2022_Paris.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg/250px-Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 20491,
+        "sha256": "50bbaa5d5308f3d5ddd8e071f7f417aa8a5c2b98fc373d54794bd40bd5500e10",
+        "width": 250,
+        "height": 333,
+        "sourceFile": "File:Prime Minister Keir Starmer meets Sir Lewis Hamilton (54566928382) (cropped).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_%2854566928382%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "116b6ababa0ec48531b41135361eb43217e2812e",
+        "credit": {
+          "attribution": "Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prime_Minister_Keir_Starmer_meets_Sir_Lewis_Hamilton_(54566928382)_(cropped).jpg",
+          "license": "OGL 3",
+          "licenseUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Prime Minister Keir Starmer hosts a roundtable on youth opportunity with Mission 44 Founder and F1 driver Sir Lewis Hamilton in 10 Downing Street, London, United Kingdom.",
+        "artistHTML": "Picture by Lauren Hurley / No 10 Downing Street",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/number10gov/54566928382/\">https://www.flickr.com/photos/number10gov/54566928382/</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Open Government License 3",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Jenson Button",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Jenson_Button_2014.jpg/512px-Jenson_Button_2014.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Jenson_Button_2024_WEC_Fuji.jpg/250px-Jenson_Button_2024_WEC_Fuji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 33212,
+        "sha256": "1d6006d014951bafba353b06414c4844ffa7cece4872e17a8b992c09428e3694",
+        "width": 250,
+        "height": 375,
+        "sourceFile": "File:Jenson Button 2024 WEC Fuji.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Jenson_Button_2024_WEC_Fuji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "2d78144058234fe2fe108a56f595b4e346d22812",
+        "credit": {
+          "attribution": "Morio",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jenson_Button_2024_WEC_Fuji.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "<b><a href=\"//commons.wikimedia.org/w/index.php?title=FIA_World_Endurance_Championship&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"FIA World Endurance Championship (page does not exist)\">FIA World Endurance Championship</a></b> 2024 Rd.7 6 Hours of Fuji: <a href=\"//commons.wikimedia.org/wiki/Jenson_Button\" title=\"Jenson Button\">Jenson Button</a> (Hertz Team Jota)",
+        "artistHTML": "<a href=\"//commons.wikimedia.org/wiki/User:Morio\" title=\"User:Morio\">Morio</a>",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Jenson_Button",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Sebastian Vettel",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Sebastian_Vettel_2018.jpg/512px-Sebastian_Vettel_2018.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Sebastian_Vettel_at_the_2026_Italian_Grand_Prix.jpg/250px-Sebastian_Vettel_at_the_2026_Italian_Grand_Prix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 32089,
+        "sha256": "6293108c79137c8cdf0c39cb008cf1512fd109c385338086f3020bfa434ab9d4",
+        "width": 250,
+        "height": 438,
+        "sourceFile": "File:Sebastian Vettel at the 2026 Italian Grand Prix.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/af/Sebastian_Vettel_at_the_2026_Italian_Grand_Prix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "e5715e48e3f5ec332dea864902c1fe905b8fb863",
+        "credit": {
+          "attribution": "Andrea Diodato",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sebastian_Vettel_at_the_2026_Italian_Grand_Prix.jpg",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Sebastian Vettel just before driving Michael Schumacher's Ferrari F2002.",
+        "artistHTML": "Andrea Diodato",
+        "creditHTML": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.reutersconnect.com/app/item/f1-grand-prix-of-italy/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMU5VUlBITzAwMFo4SE1WMA\">https://www.reutersconnect.com/app/item/f1-grand-prix-of-italy/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMU5VUlBITzAwMFo4SE1WMA</a>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    },
+    {
+      "name": "Nico Rosberg",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Nico_Rosberg_2016_Malaysia_3.jpg/512px-Nico_Rosberg_2016_Malaysia_3.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 404,
+        "fileExists": false,
+        "canonicalURL": null,
+        "rootCause": "Unsupported 512px thumbnail; Commons file title missing"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Nico_Rosberg_2016.jpg/250px-Nico_Rosberg_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 24016,
+        "sha256": "32dec8d79d738c9ed26fa1cc24745f860c154ee1b21a78c094aeba3bd1bb7f37",
+        "width": 250,
+        "height": 374,
+        "sourceFile": "File:Nico Rosberg 2016.jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/31/Nico_Rosberg_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "ca0bcb44b3ef7ab290443cd5e6761870436ddb5d",
+        "credit": {
+          "attribution": "Sven Mandel",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nico_Rosberg_2016.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "during football match between Nowitzki All Stars and Nazionale Piloti in honor of Michael Schumacher at Opel Arena, Mainz, Rheinland Pfalz, Germany on 2016-07-27, Photo: Sven Mandel",
+        "artistHTML": "Sven Mandel",
+        "creditHTML": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+        "attributionHTML": "",
+        "restrictions": "",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://commons.wikimedia.org/wiki/File:Nico_Rosberg_2016.jpg",
+          "method": "Named subject in source filename and Commons category Nico Rosberg at the Champions for Charity 2016; visually reviewed portrait"
+        },
+        "selectionNote": "Tighter portrait keeps the face identifiable in the existing top-centered square crop."
+      }
+    },
+    {
+      "name": "Max Verstappen",
+      "original": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Max_Verstappen_2017_Malaysia_3.jpg/512px-Max_Verstappen_2017_Malaysia_3.jpg",
+        "status": 400,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2033,
+        "standard250Status": 200,
+        "fileExists": true,
+        "canonicalURL": "https://upload.wikimedia.org/wikipedia/commons/7/75/Max_Verstappen_2017_Malaysia_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "rootCause": "Unsupported 512px thumbnail size; source file and storage path valid"
+      },
+      "replacement": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg/250px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 32725,
+        "sha256": "b43a44adfeaeb881613f949fc9499b9782f7b4b181d6b506543366e8f45e3e56",
+        "width": 250,
+        "height": 330,
+        "sourceFile": "File:2024-08-25 Motorsport, Formel 1, Großer Preis der Niederlande 2024 STP 3973 by Stepro (medium crop).jpg",
+        "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/52/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_%28medium_crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "sourceOriginalSha1": "d9cf0d28539a73c55f337b39d0d4452efc0ede42",
+        "credit": {
+          "attribution": "Steffen Prößdorf",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-08-25_Motorsport,_Formel_1,_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3973_by_Stepro_(medium_crop).jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+        },
+        "attributionRequired": true,
+        "descriptionHTML": "Motorsport, Formel 1, Großer Preis der Niederlande 2024: Max Verstappen (NED, Oracle Red Bull Racing); Siegerehrung, Award Ceremony; Zweitplatzierter, Silbermedaille, silver medal",
+        "artistHTML": "<a href=\"//commons.wikimedia.org/wiki/User:Stepro\" title=\"User:Stepro\">Steffen Prößdorf</a>",
+        "creditHTML": "<span class=\"int-own-work\">Self-photographed</span>",
+        "attributionHTML": "Steffen Prößdorf",
+        "restrictions": "personality",
+        "licenseBasis": "Creative Commons Attribution-Share Alike 4.0",
+        "identityEvidence": {
+          "url": "https://en.wikipedia.org/wiki/Max_Verstappen",
+          "method": "Champion article lead photo plus Commons description; visually reviewed contact sheet"
+        }
+      }
+    }
+  ]
+}

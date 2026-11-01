@@ -1,5 +1,5 @@
 // Bump this version whenever an application-shell resource changes.
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = 'v4';
 const APP_BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `f1-portal:${APP_BASE.pathname}:`;
 const STATIC_CACHE = `${CACHE_PREFIX}static-${CACHE_VERSION}`;

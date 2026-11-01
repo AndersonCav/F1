@@ -399,6 +399,18 @@ img {
   border: 1px solid var(--border);
 }
 
+.photo-credit {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.photo-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .team-header .logo {
   width: 72px;
   height: 72px;

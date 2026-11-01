@@ -24,8 +24,9 @@ export async function startServer() {
     try {
       if (state.workerSource && path === 'sw.js') return send(200, state.workerSource, 'js');
       if (state.missingAsset && url.pathname.endsWith(state.missingAsset)) throw new Error('test missing asset');
-      const body = state.release === 'previous'
-        ? execFileSync('git', ['show', `eaa7335:${path}`], { cwd: fileURLToPath(root), stdio: ['ignore', 'pipe', 'ignore'] })
+      const revision = state.release === 'previous' ? 'eaa7335' : state.release === 'phase1' ? '1e54313a866b1c5227067bb0deceee8916806e86' : null;
+      const body = revision
+        ? execFileSync('git', ['show', `${revision}:${path}`], { cwd: fileURLToPath(root), stdio: ['ignore', 'pipe', 'ignore'] })
         : await readFile(file);
       send(200, body, path.split('.').pop());
     } catch {

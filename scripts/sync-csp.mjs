@@ -14,7 +14,7 @@ const policy = [
   "style-src 'self' https://fonts.googleapis.com",
   "style-src-attr 'none'",
   'font-src https://fonts.gstatic.com',
-  "img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org",
+  "img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org https://thumb.wikimedia.org",
   "connect-src 'self' https://api.jolpi.ca",
   "worker-src 'self'",
   "manifest-src 'self'",

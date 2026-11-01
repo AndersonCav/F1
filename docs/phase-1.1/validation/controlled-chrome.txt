@@ -1,0 +1,31 @@
+
+> f1-portal@1.0.0 test:browser
+> node --test tests/browser/phase1.browser.mjs tests/browser/champion-images.browser.mjs
+
+▶ controlled champion image reliability (fixture images are not photograph evidence)
+  ✔ lazy dimensions, accessible source/license credits and correct association survive sorting/filtering (1307.1521ms)
+  ✔ all 33 unavailable sources use one decoded local fallback, preserving alt and dimensions (709.3773ms)
+  ✔ offline gallery degrades to the shell placeholder without caching any photographs (969.0662ms)
+  ✔ Phase 1 v3 upgrades to v4 after old clients close, preserving unrelated caches (5449.2888ms)
+✔ controlled champion image reliability (fixture images are not photograph evidence) (8931.7886ms)
+▶ Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibility
+  ✔ fresh /F1/ installation, all pages, desktop/mobile links, reduced motion and inline style compatibility (3235.9894ms)
+  ✔ offline application-shell navigation, saved data, manual refresh failure and unknown nested route (2123.6105ms)
+  ✔ API unavailability without saved data gives an accessible retry state (1098.2612ms)
+  ✔ successful manual refresh bypasses a fresh entry and records the new validation time (1171.5993ms)
+  ✔ CSP actively blocks an unauthorized image origin (243.0841ms)
+  ✔ all external images and the placeholder can fail without repeated retries (602.6721ms)
+  ✔ storage denial keeps network content and refresh functional (1154.6989ms)
+  ✔ local root installation and nested server 404 resolve assets/home correctly (373.0852ms)
+  ✔ missing required asset rejects installation without activating an incomplete shell (228.3767ms)
+  ✔ actual broken v2 baseline fails on its four obsolete asset paths (245.9024ms)
+  ✔ actual v13 worker from eaa7335 upgrades after old clients close and preserves unrelated caches (3293.4979ms)
+✔ Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibility (14359.2317ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14688.1336

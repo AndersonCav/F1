@@ -1,0 +1,42 @@
+Branch: main
+HEAD: 1e54313a866b1c5227067bb0deceee8916806e86
+Staged diff: (none)
+ M 404.html
+ M README.md
+ M assets/css/styles-v7.css
+ M assets/js/champions.js
+ M assets/js/static-data.js
+ M calendar.html
+ M champions.html
+ M drivers.html
+ M index.html
+ M package.json
+ M scripts/sync-csp.mjs
+ M sw.js
+ M teams.html
+ M tests/browser/live.browser.mjs
+ M tests/browser/phase1.browser.mjs
+ M tests/helpers/http-server.js
+ M tests/site-integrity.test.js
+?? docs/phase-1.1/REPORT.md
+?? docs/phase-1.1/browser/desktop-first.png
+?? docs/phase-1.1/browser/desktop-last.png
+?? docs/phase-1.1/browser/desktop-middle.png
+?? docs/phase-1.1/browser/identity-contact-sheet.png
+?? docs/phase-1.1/browser/mobile-first.png
+?? docs/phase-1.1/browser/mobile-last.png
+?? docs/phase-1.1/browser/mobile-middle.png
+?? docs/phase-1.1/browser/results.json
+?? docs/phase-1.1/image-audit.json
+?? docs/phase-1.1/validation/controlled-chrome.txt
+?? docs/phase-1.1/validation/csp.txt
+?? docs/phase-1.1/validation/git-status.txt
+?? docs/phase-1.1/validation/git-whitespace.txt
+?? docs/phase-1.1/validation/live-images.txt
+?? docs/phase-1.1/validation/live-pages.txt
+?? docs/phase-1.1/validation/node-tests.txt
+?? docs/phase-1.1/validation/syntax.txt
+?? tests/browser/champion-images.browser.mjs
+?? tests/browser/champion-images.live.mjs
+?? tests/champion-images.test.js
+?? tests/helpers/champion-browser.js

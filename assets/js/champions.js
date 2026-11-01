@@ -77,7 +77,10 @@ function createCard(champion) {
   image.className = "portrait";
   image.src = champion.photo;
   image.alt = `Foto de ${champion.name}`;
+  image.width = 100;
+  image.height = 100;
   image.loading = "lazy";
+  image.decoding = "async";
   setImageFallback(image);
 
   const textWrap = document.createElement("div");
@@ -125,6 +128,19 @@ function createCard(champion) {
   });
 
   details.appendChild(dl);
+
+  const credit = document.createElement("p");
+  credit.className = "photo-credit muted";
+  const source = document.createElement("a");
+  source.href = champion.photoCredit.sourceUrl;
+  source.textContent = champion.photoCredit.attribution;
+  source.title = decodeURIComponent(new URL(source.href).pathname.replace("/wiki/File:", "")).replaceAll("_", " ");
+  source.setAttribute("aria-label", `Fonte da foto de ${champion.name}: ${champion.photoCredit.attribution}`);
+  const license = document.createElement("a");
+  license.href = champion.photoCredit.licenseUrl;
+  license.textContent = champion.photoCredit.license;
+  credit.append("Foto: ", source, " · ", license, ". Miniatura enquadrada.");
+  details.appendChild(credit);
 
   article.append(header, details);
   return article;

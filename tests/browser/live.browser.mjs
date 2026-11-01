@@ -38,9 +38,12 @@ test('live external services with real browser network and no resource mocks', {
       if (path === 'champions.html') {
         await page.evaluate(() => document.querySelectorAll('img').forEach(image => { image.loading = 'eager'; }));
         await page.waitForFunction(() => [...document.images].every(image => image.complete));
-        const images = await page.evaluate(() => [...document.images].map(image => ({ url: image.src, loaded: image.naturalWidth > 0 })));
-        assert.ok(images.every(image => image.loaded), 'Images or their local fallbacks must load');
-        t.diagnostic(`Champion images: ${images.length} loaded images/fallbacks; ${images.filter(image => image.url.endsWith('/placeholder-driver.svg')).length} local fallbacks.`);
+        const images = await page.evaluate(() => [...document.images].map(image => ({ url: image.currentSrc, loaded: image.naturalWidth > 0 })));
+        const fallbacks = images.filter(image => image.url.endsWith('/placeholder-driver.svg')).length;
+        assert.equal(images.length, 33);
+        assert.ok(images.every(image => image.loaded), 'Every genuine photograph must decode');
+        assert.equal(fallbacks, 0, 'A placeholder does not count as a recovered photograph');
+        t.diagnostic(`Champion photographs: ${images.length} decoded; ${fallbacks} local fallbacks.`);
       }
       if (process.env.F1_SCREENSHOT_DIR && ['index.html', 'champions.html', '404.html'].includes(path)) {
         if (path !== 'index.html') await page.setViewportSize({ width: 390, height: 844 });

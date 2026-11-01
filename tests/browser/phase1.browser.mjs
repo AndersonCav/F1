@@ -24,7 +24,7 @@ async function fixtures(context, state = {}) {
     return state.apiFails ? route.abort('failed') : route.fulfill({ json: apiData(route.request().url()) });
   });
   await context.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }));
-  await context.route(/^https:\/\/(media\.formula1\.com|flagsapi\.com|upload\.wikimedia\.org)\//,
+  await context.route(/^https:\/\/(media\.formula1\.com|flagsapi\.com|upload\.wikimedia\.org|thumb\.wikimedia\.org)\//,
     route => state.imagesFail ? route.abort('failed') : route.fulfill({ contentType: 'image/svg+xml', body: svg }));
   await context.addInitScript(() => {
     window.validation = { violations: [], rejections: [] };
@@ -53,7 +53,7 @@ test('Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibili
     await controlled(page);
     await page.locator('.standings-table').first().waitFor();
     const caches = await page.evaluate(async () => {
-      const name = (await window.caches.keys()).find(name => name.includes('static-v3'));
+      const name = (await window.caches.keys()).find(name => name.includes('static-v4'));
       return (await (await window.caches.open(name)).keys()).map(request => request.url);
     });
     assert.equal(caches.length, 18);
@@ -280,7 +280,7 @@ test('Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibili
     await page.waitForFunction(async () => !(await caches.keys()).includes('f1-portal-v13'));
     const names = await page.evaluate(() => caches.keys());
     assert.ok(names.includes('other-project-v1'));
-    assert.ok(names.includes('f1-portal:/F1/:static-v3'));
+    assert.ok(names.includes('f1-portal:/F1/:static-v4'));
     assert.equal(await page.evaluate(async () => (await (await caches.open('other-project-v1')).match('/other/data')).text()), 'keep');
     assert.equal(await page.evaluate(() => localStorage.getItem('unrelated-preference')), 'keep');
     await context.setOffline(true);

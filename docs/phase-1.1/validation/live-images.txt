@@ -1,0 +1,20 @@
+
+> f1-portal@1.0.0 audit:images:live
+> node --test tests/browser/champion-images.live.mjs
+
+▶ live champion photograph audit: real HTTP, reviewed bytes and Chrome decoding
+  ✔ desktop: all 33 real photographs decode, match approved sources and never use placeholders (2835.9187ms)
+  ✔ mobile: 33 genuine photographs, accessible credits, no overflow and reduced-motion support (1185.4153ms)
+  ✔ intentionally unavailable third-party source produces exactly one local fallback (938.3513ms)
+  ✔ offline navigation retains all 33 records, decoded local fallbacks and the 18-resource shell (1101.1505ms)
+✔ live champion photograph audit: real HTTP, reviewed bytes and Chrome decoding (6494.9972ms)
+ℹ Evidence and gallery screenshots: C:\xampp\htdocs\F1\docs\phase-1.1\browser
+ℹ Normal desktop photograph loads: 33; placeholders are reported separately.
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6818.5763

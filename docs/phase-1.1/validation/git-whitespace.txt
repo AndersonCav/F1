@@ -1,0 +1,8 @@
+warning: in the working copy of 'assets/js/static-data.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/sync-csp.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/browser/live.browser.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/browser/phase1.browser.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/helpers/http-server.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/site-integrity.test.js', LF will be replaced by CRLF the next time Git touches it
+git diff --check exit code: 0
+New source/document whitespace and baseline verification: {"historicalBaselineVerified":true,"reportLinksVerified":true,"newSourceFilesWithoutTrailingWhitespace":7,"existingWhitespacePreserved":true,"photographs":33,"cspViolations":0,"exceptions":0,"branch":"main","head":"1e54313a866b1c5227067bb0deceee8916806e86","staged":"none","modified":17,"untracked":22}

@@ -45,7 +45,7 @@ test('CSP is generated consistently and permits required origins without unsafe-
   for (const name of pages) {
     const html = await readFile(new URL(name, root), 'utf8');
     const policy = html.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/)[1];
-    assert.match(policy, /img-src 'self' data: https:\/\/media.formula1.com https:\/\/flagsapi.com https:\/\/upload.wikimedia.org;/);
+    assert.match(policy, /img-src 'self' data: https:\/\/media.formula1.com https:\/\/flagsapi.com https:\/\/upload.wikimedia.org https:\/\/thumb.wikimedia.org;/);
     assert.doesNotMatch(policy, /unsafe-inline|unsafe-eval|\*/);
     assert.match(policy, /script-src-attr 'none'/);
     assert.match(policy, /style-src-attr 'none'/);

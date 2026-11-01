@@ -1,0 +1,23 @@
+
+> f1-portal@1.0.0 test:browser:live
+> node --test tests/browser/live.browser.mjs
+
+▶ live external services with real browser network and no resource mocks
+  ✔ live index.html (1806.1683ms)
+  ✔ live drivers.html (704.8553ms)
+  ✔ live teams.html (131.45ms)
+  ✔ live champions.html (599.5315ms)
+  ✔ live calendar.html (158.2308ms)
+  ✔ live 404.html (78.2256ms)
+✔ live external services with real browser network and no resource mocks (4372.5972ms)
+ℹ Champion photographs: 33 decoded; 0 local fallbacks.
+ℹ Real external HTTP summary: {"fonts.googleapis.com HTTP 200":12,"fonts.gstatic.com HTTP 200":29,"api.jolpi.ca HTTP 200":5,"media.formula1.com HTTP 200":27,"flagsapi.com HTTP 200":7,"thumb.wikimedia.org HTTP 200":32,"upload.wikimedia.org HTTP 200":1}
+ℹ Real failed requests: {}
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4708.3204
