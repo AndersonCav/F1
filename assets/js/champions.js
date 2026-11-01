@@ -1,4 +1,4 @@
-import { CHAMPIONS_HISTORY, setupNavActiveState, toFlag } from "./static-data.js";
+import { CHAMPIONS_HISTORY, setImageFallback, setupNavActiveState, toFlag } from "./static-data.js";
 import { renderSkeleton, renderEmptyState, announceToScreenReader } from "./ui-utils.js";
 
 const stateContainer = document.getElementById("champions-state");
@@ -78,9 +78,7 @@ function createCard(champion) {
   image.src = champion.photo;
   image.alt = `Foto de ${champion.name}`;
   image.loading = "lazy";
-  image.addEventListener("error", () => {
-    image.src = "assets/images/placeholder-driver.svg";
-  });
+  setImageFallback(image);
 
   const textWrap = document.createElement("div");
   const name = document.createElement("h3");

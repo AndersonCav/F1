@@ -15,7 +15,8 @@ import {
   TEAM_STATIC,
   toFlagUrl,
   translateCountry,
-  getOfficialTeamName
+  getOfficialTeamName,
+  setImageFallback
 } from "./static-data.js";
 import { renderError, showCacheFeedback } from "./ui-utils.js";
 
@@ -29,6 +30,8 @@ let countdownInterval = null;
 function createSkeletonBlock(lines = 4) {
   const card = document.createElement("div");
   card.className = "skeleton-card";
+  card.setAttribute("role", "status");
+  card.setAttribute("aria-label", "Carregando dados…");
 
   for (let i = 0; i < lines; i += 1) {
     const line = document.createElement("div");
@@ -124,6 +127,7 @@ function buildPodiumComponent(results) {
     const avatar = document.createElement("img");
     avatar.className = "podium-avatar";
     avatar.src = staticInfo.photo || PLACEHOLDER_DRIVER_IMAGE;
+    setImageFallback(avatar);
     avatar.alt = result.Driver.familyName;
     if (staticInfo.teamColor) {
       avatar.style.borderColor = staticInfo.teamColor;
@@ -224,6 +228,7 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
   const flag = document.createElement("img");
   flag.className = "flag-icon";
   flag.src = toFlagUrl(nextRace.Circuit.Location.country);
+  setImageFallback(flag);
   flag.alt = nextRace.Circuit.Location.country;
   flag.loading = "lazy";
 
@@ -261,6 +266,7 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
     const trackMap = document.createElement("img");
     trackMap.className = "circuit-map";
     trackMap.src = staticInfo.image;
+    setImageFallback(trackMap);
     trackMap.alt = `Mapa do circuito ${nextRace.Circuit.circuitName}`;
     trackMap.loading = "lazy";
     
@@ -288,6 +294,7 @@ function buildLastRaceCard(lastRace) {
   const flag = document.createElement("img");
   flag.className = "flag-icon";
   flag.src = toFlagUrl(lastRace.Circuit.Location.country);
+  setImageFallback(flag);
   flag.alt = lastRace.Circuit.Location.country;
   flag.loading = "lazy";
 
@@ -328,6 +335,7 @@ function buildLastRaceCard(lastRace) {
     const trackMap = document.createElement("img");
     trackMap.className = "circuit-map";
     trackMap.src = staticInfo.image;
+    setImageFallback(trackMap);
     trackMap.alt = `Mapa do circuito ${lastRace.Circuit.circuitName}`;
     trackMap.loading = "lazy";
     
@@ -379,6 +387,7 @@ function createTable(titleText, rows, isConstructorTable = false) {
         const img = document.createElement("img");
         img.className = "team-logo-mini";
         img.src = logoUrl;
+        setImageFallback(img);
         img.alt = getOfficialTeamName(entry.Constructor.name);
         img.title = getOfficialTeamName(entry.Constructor.name);
         secondary.replaceChildren(img);
@@ -394,6 +403,7 @@ function createTable(titleText, rows, isConstructorTable = false) {
         const img = document.createElement("img");
         img.className = "team-logo-mini";
         img.src = logoUrl;
+        setImageFallback(img);
         img.alt = getOfficialTeamName(constructor?.name || "-");
         img.title = getOfficialTeamName(constructor?.name || "-");
         // Protection against stale CSS backgrounds
@@ -432,7 +442,7 @@ async function resolveNextRace(schedule) {
     throw new Error("Não foi possível identificar a próxima corrida.");
   }
 
-  return { race: firstRound, isSeasonClosed: true };
+  return { race: firstRound, isSeasonClosed: true, freshness: nextSeasonScheduleResult };
 }
 
 async function loadHomeData() {
@@ -447,17 +457,14 @@ async function loadHomeData() {
     fetchCurrentConstructorStandings()
   ]);
 
-  let maxTimestamp = 0;
-  [scheduleState, resultsState, driversState, constructorsState].forEach(s => {
-    if (s.status === "fulfilled" && s.value.timestamp > maxTimestamp) {
-      maxTimestamp = s.value.timestamp;
-    }
-  });
-  if (maxTimestamp > 0) showCacheFeedback(maxTimestamp);
+  const freshness = [scheduleState, resultsState, driversState, constructorsState]
+    .filter(result => result.status === "fulfilled").map(result => result.value);
+  showCacheFeedback(...freshness);
 
   if (scheduleState.status === "fulfilled" && Array.isArray(scheduleState.value.items) && scheduleState.value.items.length > 0) {
     try {
       const nextRaceInfo = await resolveNextRace(scheduleState.value.items);
+      if (nextRaceInfo.freshness) showCacheFeedback(...freshness, nextRaceInfo.freshness);
       nextRaceState.replaceChildren(buildNextRaceCard(nextRaceInfo.race, nextRaceInfo.isSeasonClosed));
     } catch {
       renderError(nextRaceState, "Falha ao carregar a próxima corrida.", loadHomeData);

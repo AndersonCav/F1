@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "node --test \"tests/**/*.test.js\""
+    "test": "node --test \"tests/**/*.test.js\"",
+    "check:csp": "node scripts/sync-csp.mjs",
+    "sync:csp": "node scripts/sync-csp.mjs --write",
+    "test:browser": "node --test tests/browser/phase1.browser.mjs",
+    "test:browser:live": "node --test tests/browser/live.browser.mjs"
   }
 }

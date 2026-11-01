@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-bAlT4Xas+DFqu/JUoDS4KpGkXXG1hOeVl2wmdHKme3E='; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src https://fonts.gstatic.com; img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <link rel="canonical" href="https://andersoncav.github.io/F1/">
+  <script>
+    // A Pages 404 is also served at nested URLs. Resolve its assets before parsing them.
+    const project = new URL(document.querySelector('link[rel="canonical"]').href).pathname.split('/').filter(Boolean).pop();
+    const base = document.createElement('base');
+    base.href = new URL(location.pathname.split('/')[1] === project ? project + '/' : './', location.origin + '/').href;
+    document.head.appendChild(base);
+  </script>
   <title>Portal Formula 1 | 404</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root { color-scheme: dark; }
-    html, body { margin: 0; min-height: 100%; background: #0f0f0f; color: #f0f0f0; font-family: 'Titillium Web', sans-serif; }
-  </style>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles-v7.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#e10600">
 </head>

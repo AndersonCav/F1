@@ -191,7 +191,7 @@ async function loadTeams() {
     const constructorStandings = constructorStandingsResult.items;
     const driverStandings = driverStandingsResult.items;
     
-    showCacheFeedback(Math.max(constructorStandingsResult.timestamp, driverStandingsResult.timestamp));
+    showCacheFeedback(constructorStandingsResult, driverStandingsResult);
 
     const driverGroups = new Map();
     driverStandings.forEach((entry) => {

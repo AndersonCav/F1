@@ -1,5 +1,5 @@
 import { fetchCurrentDriverStandings, fetchDrivers } from "./api.js";
-import { DRIVER_STATIC, PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, getOfficialTeamName, setupNavActiveState, toFlagUrl } from "./static-data.js";
+import { DRIVER_STATIC, PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, getOfficialTeamName, setImageFallback, setupNavActiveState, toFlagUrl } from "./static-data.js";
 import { renderSkeleton, renderError, renderEmptyState, showCacheFeedback, announceToScreenReader } from "./ui-utils.js";
 
 const stateContainer = document.getElementById("drivers-state");
@@ -161,9 +161,7 @@ function buildDriverCard(driver) {
   image.src = driver.photo;
   image.alt = `Foto do piloto ${driver.fullName}`;
   image.loading = "lazy";
-  image.addEventListener("error", () => {
-    image.src = PLACEHOLDER_DRIVER_IMAGE;
-  });
+  setImageFallback(image);
 
   const textWrap = document.createElement("div");
   const name = document.createElement("h3");
@@ -178,6 +176,7 @@ function buildDriverCard(driver) {
   nationalityFlag.src = toFlagUrl(driver.nationality);
   nationalityFlag.alt = `Bandeira ${driver.nationality || ""}`.trim();
   nationalityFlag.loading = "lazy";
+  setImageFallback(nationalityFlag);
 
   const teamLogo = document.createElement("img");
   teamLogo.className = "team-logo-inline";
@@ -187,9 +186,7 @@ function buildDriverCard(driver) {
   if (!driver.teamLogo) {
     teamLogo.style.display = "none";
   }
-  teamLogo.addEventListener("error", () => {
-    teamLogo.style.display = "none";
-  });
+  setImageFallback(teamLogo);
 
   const teamName = document.createElement("span");
   teamName.textContent = driver.shortTeam;
@@ -293,8 +290,7 @@ async function loadDrivers() {
     const driverStandings = driverStandingsResult.items;
     const allDrivers = allDriversResult.items;
     
-    // Mostra feedback do cache usando o timestamp mais recente
-    showCacheFeedback(Math.max(driverStandingsResult.timestamp, allDriversResult.timestamp));
+    showCacheFeedback(driverStandingsResult, allDriversResult);
 
     const driversById = new Map(allDrivers.map((entry) => [entry.driverId, entry]));
 

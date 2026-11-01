@@ -1,4 +1,4 @@
-export const PLACEHOLDER_DRIVER_IMAGE = "assets/images/placeholder-driver.svg";
+export const PLACEHOLDER_DRIVER_IMAGE = new URL("../images/placeholder-driver.svg", import.meta.url).href;
 
 export const DRIVER_STATIC = {
   max_verstappen: {
@@ -1378,8 +1378,12 @@ export function setupNavActiveState() {
   });
 }
 
+const fallbackImages = new WeakSet();
+
 export function setImageFallback(imageElement) {
+  if (fallbackImages.has(imageElement)) return;
+  fallbackImages.add(imageElement);
   imageElement.addEventListener("error", () => {
-    imageElement.src = PLACEHOLDER_DRIVER_IMAGE;
-  });
+    if (imageElement.src !== PLACEHOLDER_DRIVER_IMAGE) imageElement.src = PLACEHOLDER_DRIVER_IMAGE;
+  }, { once: true });
 }

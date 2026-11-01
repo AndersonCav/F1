@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap');
 
 :root {
+  color-scheme: dark;
   /* Colors - Matte Technical Palette */
   --bg: #0c0c0f;
   --surface: #15151e;
@@ -831,11 +832,14 @@ img {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .cache-feedback span::before {
   content: "";
   width: 6px;
+  flex-shrink: 0;
   height: 6px;
   background: #00ff00;
   border-radius: 50%;
@@ -843,6 +847,7 @@ img {
 }
 
 .cache-feedback button {
+  flex-shrink: 0;
   background: transparent;
   border: 0;
   color: var(--accent);
@@ -1072,4 +1077,27 @@ input:focus-visible,
 select:focus-visible {
   outline: 3px solid var(--accent) !important;
   outline-offset: 4px;
+}
+
+.retry-icon { margin-right: 8px; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }

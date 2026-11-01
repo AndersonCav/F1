@@ -89,7 +89,7 @@ async function loadCalendar() {
 
   try {
     const result = await fetchCurrentSchedule();
-    showCacheFeedback(result.timestamp);
+    showCacheFeedback(result);
     renderCalendar(result.items);
   } catch {
     renderError(stateContainer, "Não foi possível carregar o calendário agora.", loadCalendar);
