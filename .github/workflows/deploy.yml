@@ -86,11 +86,25 @@ jobs:
       - name: Run production dist isolated server tests
         run: node --test tests/dist-integrity.test.js
 
+      - name: Record build revision metadata
+        env:
+          WORKFLOW_SHA: ${{ github.sha }}
+          TARGET_REF: ${{ github.ref }}
+        run: node scripts/record-build-metadata.mjs
+
       - name: Upload verified production artifact
         uses: actions/upload-artifact@v4
         with:
           name: production-dist
           path: dist/
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Upload build metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-metadata
+          path: build-metadata/
           retention-days: 1
           if-no-files-found: error
 
@@ -111,20 +125,48 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Download verified production artifact
         uses: actions/download-artifact@v4
         with:
           name: production-dist
           path: dist
 
+      - name: Download build metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: build-metadata
+          path: build-metadata
+
+      - name: Verify deployment revision freshness
+        id: freshness-check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WORKFLOW_SHA: ${{ github.sha }}
+          TARGET_REF: ${{ github.ref }}
+          EVENT_NAME: ${{ github.event_name }}
+          REPOSITORY: ${{ github.repository }}
+        run: node scripts/verify-deployment-freshness.mjs
+
       - name: Setup GitHub Pages
+        if: steps.freshness-check.outputs.eligible == 'true'
         uses: actions/configure-pages@v5
 
       - name: Upload GitHub Pages artifact
+        if: steps.freshness-check.outputs.eligible == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
       - name: Deploy to GitHub Pages
+        if: steps.freshness-check.outputs.eligible == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Record skipped deployment notice
+        if: steps.freshness-check.outputs.eligible != 'true'
+        run: |
+          echo "::notice title=Deployment Skipped::GitHub Pages publication was safely skipped because workflow revision (${{ github.sha }}) is outdated compared to current refs/heads/main HEAD."
+

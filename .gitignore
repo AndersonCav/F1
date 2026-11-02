@@ -19,3 +19,4 @@ yarn-error.log*
 
 # Production Build Output
 dist/
+build-metadata/

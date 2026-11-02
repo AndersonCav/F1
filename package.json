@@ -9,6 +9,7 @@
     "check:syntax": "node scripts/check-syntax.mjs",
     "check:whitespace": "node scripts/check-whitespace.mjs",
     "check:budget": "node scripts/check-budget.mjs",
+    "check:freshness": "node scripts/verify-deployment-freshness.mjs",
     "check:csp": "node scripts/sync-csp.mjs",
     "sync:csp": "node scripts/sync-csp.mjs --write",
     "check:all": "npm run check:syntax && npm run check:csp && npm run check:whitespace && npm run build && npm run check:dist && npm run check:budget && npm test",
