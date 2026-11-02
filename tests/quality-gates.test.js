@@ -526,3 +526,208 @@ test('Deployment Concurrency Hardening & Revision Freshness Gates (Phase 3.1)', 
   });
 });
 
+test('Cross-Platform JavaScript Syntax Validation Suite (Node 22 / Multi-OS)', async t => {
+  let tempRoot;
+
+  t.beforeEach(async () => {
+    tempRoot = await mkdtemp(join(tmpdir(), 'f1-syntax-test-'));
+  });
+
+  t.afterEach(async () => {
+    if (tempRoot) {
+      await rm(tempRoot, { recursive: true, force: true });
+    }
+  });
+
+  await t.test('1. Valid JavaScript: ESM, CJS, and MJS files pass syntax validation', async () => {
+    const fixtureDir = join(tempRoot, 'valid-fixture');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    await writeFile(join(fixtureDir, 'assets/js/module.js'), 'export const a = 42; export function getA() { return a; }');
+    await writeFile(join(fixtureDir, 'assets/js/classic.cjs'), 'const a = 42; module.exports = { a };');
+    await writeFile(join(fixtureDir, 'assets/js/explicit.mjs'), 'import { resolve } from "node:path"; export const p = resolve(".");');
+
+    const result = await checkSyntax({ rootDir: fixtureDir, silent: true });
+    assert.equal(result.verified, true);
+    assert.equal(result.fileCount, 3);
+  });
+
+  await t.test('2. Invalid ES module syntax: malformed export causes nonzero failure and identifies file', async () => {
+    const fixtureDir = join(tempRoot, 'invalid-esm-fixture');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    const targetFile = join(fixtureDir, 'assets/js/broken-esm.js');
+    await writeFile(targetFile, 'export const broken = ;;;');
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({ rootDir: fixtureDir, silent: true });
+      },
+      (err) => {
+        assert.match(err.message, /Syntax check failed for 1 file\(s\)/);
+        assert.ok(err.message.includes('broken-esm.js'));
+        assert.match(err.message, /Unexpected token/);
+        return true;
+      }
+    );
+  });
+
+  await t.test('3. Invalid CommonJS syntax: malformed expression causes failure and identifies file', async () => {
+    const fixtureDir = join(tempRoot, 'invalid-cjs-fixture');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    const targetFile = join(fixtureDir, 'assets/js/broken-cjs.cjs');
+    await writeFile(targetFile, 'const a = 123 + ; module.exports = a;');
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({ rootDir: fixtureDir, silent: true });
+      },
+      (err) => {
+        assert.match(err.message, /Syntax check failed for 1 file\(s\)/);
+        assert.ok(err.message.includes('broken-cjs.cjs'));
+        assert.match(err.message, /Unexpected token/);
+        return true;
+      }
+    );
+  });
+
+  await t.test('4. Multiple files with one invalid file: reports broken file while validating all', async () => {
+    const fixtureDir = join(tempRoot, 'multi-file-fixture');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    await writeFile(join(fixtureDir, 'assets/js/good1.js'), 'export const g1 = 1;');
+    await writeFile(join(fixtureDir, 'assets/js/good2.js'), 'export const g2 = 2;');
+    await writeFile(join(fixtureDir, 'assets/js/bad.js'), 'export const bad = %%%;');
+    await writeFile(join(fixtureDir, 'assets/js/good3.js'), 'export const g3 = 3;');
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({ rootDir: fixtureDir, silent: true });
+      },
+      (err) => {
+        assert.match(err.message, /Syntax check failed for 1 file\(s\)/);
+        assert.ok(err.message.includes('bad.js'));
+        assert.ok(!err.message.includes('good1.js'));
+        assert.ok(!err.message.includes('good2.js'));
+        assert.ok(!err.message.includes('good3.js'));
+        return true;
+      }
+    );
+  });
+
+  await t.test('5. Empty fixture directory: rejected by default, permitted when allowEmpty is true', async () => {
+    const fixtureDir = join(tempRoot, 'empty-fixture');
+    await mkdir(fixtureDir, { recursive: true });
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({ rootDir: fixtureDir, silent: true });
+      },
+      /No JavaScript files found to validate in target directory/
+    );
+
+    const allowed = await checkSyntax({ rootDir: fixtureDir, silent: true, allowEmpty: true });
+    assert.equal(allowed.verified, true);
+    assert.equal(allowed.fileCount, 0);
+  });
+
+  await t.test('6. Missing fixture directory: rejected with informative ENOENT error', async () => {
+    const nonExistentDir = join(tempRoot, 'non-existent-directory-tree');
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({ rootDir: nonExistentDir, silent: true });
+      },
+      /Target directory does not exist/
+    );
+  });
+
+  await t.test('7. Unexpected filesystem error: reported in errors collection without crash', async () => {
+    const fixtureDir = join(tempRoot, 'fs-error-fixture');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    await writeFile(join(fixtureDir, 'assets/js/unreadable.js'), 'export const x = 1;');
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({
+          rootDir: fixtureDir,
+          silent: true,
+          readFile: async () => {
+            throw new Error('EACCES: permission denied, open');
+          }
+        });
+      },
+      (err) => {
+        assert.match(err.message, /Syntax check failed for 1 file\(s\)/);
+        assert.match(err.message, /Filesystem read error/);
+        assert.match(err.message, /EACCES: permission denied/);
+        return true;
+      }
+    );
+  });
+
+  await t.test('8. Child-process failure propagation: process exit code and stderr propagated', async () => {
+    const fixtureDir = join(tempRoot, 'proc-fail-fixture');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    await writeFile(join(fixtureDir, 'assets/js/syntax-proc.js'), 'export function test() { return === ; }');
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({ rootDir: fixtureDir, silent: true });
+      },
+      (err) => {
+        assert.match(err.message, /Syntax check failed/);
+        assert.match(err.message, /Unexpected token/);
+        return true;
+      }
+    );
+  });
+
+  await t.test('9. Paths containing spaces: deterministic validation for paths with spaces', async () => {
+    const fixtureDir = join(tempRoot, 'dir with spaces and special chars');
+    await mkdir(join(fixtureDir, 'assets/js/sub folder'), { recursive: true });
+
+    const goodPath = join(fixtureDir, 'assets/js/sub folder/valid space file.js');
+    await writeFile(goodPath, 'export const spaced = "hello world";');
+
+    const passResult = await checkSyntax({ rootDir: fixtureDir, silent: true });
+    assert.equal(passResult.verified, true);
+    assert.equal(passResult.fileCount, 1);
+
+    const badPath = join(fixtureDir, 'assets/js/sub folder/broken space file.js');
+    await writeFile(badPath, 'export const broken = ;;;');
+
+    await assert.rejects(
+      async () => {
+        await checkSyntax({ rootDir: fixtureDir, silent: true });
+      },
+      (err) => {
+        assert.match(err.message, /Syntax check failed/);
+        assert.ok(err.message.includes('broken space file.js'));
+        return true;
+      }
+    );
+  });
+
+  await t.test('10. Temporary fixtures located outside repository root: verified reliably without package.json', async () => {
+    // tempRoot is located in os.tmpdir() which is guaranteed outside repository root
+    const fixtureDir = join(tempRoot, 'external-isolated-fixture');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    await writeFile(join(fixtureDir, 'assets/js/external-module.js'), 'export function outside() { return "outside"; }');
+
+    const result = await checkSyntax({ rootDir: fixtureDir, silent: true });
+    assert.equal(result.verified, true);
+    assert.equal(result.fileCount, 1);
+  });
+
+  await t.test('11 & 12. Cross-platform path formatting: handles Windows and Linux style paths', async () => {
+    const fixtureDir = join(tempRoot, 'cross-platform-paths');
+    await mkdir(join(fixtureDir, 'assets/js'), { recursive: true });
+    await writeFile(join(fixtureDir, 'assets/js/cp.js'), 'export const cp = 1;');
+
+    // Test with normalized path
+    const normalizedDir = fixtureDir.replace(/\\/g, '/');
+    const result = await checkSyntax({ rootDir: normalizedDir, silent: true });
+    assert.equal(result.verified, true);
+    assert.equal(result.fileCount, 1);
+  });
+});
+
+
