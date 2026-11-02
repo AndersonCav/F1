@@ -16,3 +16,6 @@ yarn-error.log*
 
 # Local Server
 .live-server/
+
+# Production Build Output
+dist/

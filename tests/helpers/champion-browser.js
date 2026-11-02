@@ -1,10 +1,13 @@
 import assert from 'node:assert/strict';
 import { pathToFileURL } from 'node:url';
 
-export const { chromium } = await import(process.env.F1_PLAYWRIGHT_MODULE
+const pwModule = await import(process.env.F1_PLAYWRIGHT_MODULE
   ? pathToFileURL(process.env.F1_PLAYWRIGHT_MODULE).href : 'playwright');
+export const chromium = pwModule.chromium || pwModule.default?.chromium;
 export const launchOptions = { headless: true,
-  ...(process.env.F1_BROWSER_EXECUTABLE ? { executablePath: process.env.F1_BROWSER_EXECUTABLE } : { channel: 'chrome' }) };
+  ...(process.env.F1_BROWSER_EXECUTABLE ? { executablePath: process.env.F1_BROWSER_EXECUTABLE }
+    : (process.env.F1_BROWSER_CHANNEL !== undefined ? (process.env.F1_BROWSER_CHANNEL ? { channel: process.env.F1_BROWSER_CHANNEL } : {})
+    : { channel: 'chrome' })) };
 
 export async function observe(context) {
   await context.addInitScript(() => {

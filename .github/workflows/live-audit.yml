@@ -1,0 +1,46 @@
+name: Live External Services Audit
+
+on:
+  schedule:
+    # Run once a week on Mondays at 12:00 UTC
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live-audit:
+    name: Audit External APIs, Media & Wikimedia Images
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies (clean)
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Audit Jolpica live API availability
+        run: npm run test:api:live
+
+      - name: Audit historical champion image sources on Wikimedia
+        run: npm run audit:images:live
+
+      - name: Audit real browser navigation with live network
+        run: npm run test:browser:live

@@ -1,0 +1,30 @@
+﻿On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .github/workflows/deploy.yml
+	modified:   .gitignore
+	modified:   README.md
+	modified:   package.json
+	modified:   tests/browser/live.browser.mjs
+	modified:   tests/browser/phase1.browser.mjs
+	modified:   tests/helpers/champion-browser.js
+	modified:   tests/helpers/http-server.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/workflows/live-audit.yml
+	docs/phase-3/
+	package-lock.json
+	scripts/build.mjs
+	scripts/check-budget.mjs
+	scripts/check-syntax.mjs
+	scripts/check-whitespace.mjs
+	scripts/preview.mjs
+	scripts/verify-dist.mjs
+	tests/dist-integrity.test.js
+	tests/quality-gates.test.js
+
+no changes added to commit (use "git add" and/or "git commit -a")

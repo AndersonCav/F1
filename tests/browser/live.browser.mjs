@@ -3,13 +3,17 @@ import assert from 'node:assert/strict';
 import { pathToFileURL } from 'node:url';
 import { startServer } from '../helpers/http-server.js';
 
-const { chromium } = await import(process.env.F1_PLAYWRIGHT_MODULE
+const pwModule = await import(process.env.F1_PLAYWRIGHT_MODULE
   ? pathToFileURL(process.env.F1_PLAYWRIGHT_MODULE).href : 'playwright');
+const chromium = pwModule.chromium || pwModule.default?.chromium;
+const launchOptions = { headless: true,
+  ...(process.env.F1_BROWSER_EXECUTABLE ? { executablePath: process.env.F1_BROWSER_EXECUTABLE }
+    : (process.env.F1_BROWSER_CHANNEL !== undefined ? (process.env.F1_BROWSER_CHANNEL ? { channel: process.env.F1_BROWSER_CHANNEL } : {})
+    : { channel: 'chrome' })) };
 
 test('live external services with real browser network and no resource mocks', { timeout: 120000 }, async t => {
   const server = await startServer();
-  const browser = await chromium.launch({ headless: true,
-    ...(process.env.F1_BROWSER_EXECUTABLE ? { executablePath: process.env.F1_BROWSER_EXECUTABLE } : { channel: 'chrome' }) });
+  const browser = await chromium.launch(launchOptions);
   t.after(async () => { await browser.close(); await server.close(); });
   const context = await browser.newContext();
   context.setDefaultTimeout(15000);

@@ -4,11 +4,21 @@
   "type": "module",
   "scripts": {
     "test": "node --test \"tests/**/*.test.js\"",
+    "build": "node scripts/build.mjs",
+    "check:dist": "node scripts/verify-dist.mjs",
+    "check:syntax": "node scripts/check-syntax.mjs",
+    "check:whitespace": "node scripts/check-whitespace.mjs",
+    "check:budget": "node scripts/check-budget.mjs",
     "check:csp": "node scripts/sync-csp.mjs",
     "sync:csp": "node scripts/sync-csp.mjs --write",
+    "check:all": "npm run check:syntax && npm run check:csp && npm run check:whitespace && npm run build && npm run check:dist && npm run check:budget && npm test",
+    "preview": "node scripts/preview.mjs",
     "test:browser": "node --test tests/browser/phase1.browser.mjs tests/browser/champion-images.browser.mjs tests/browser/phase2.browser.mjs",
     "test:browser:live": "node --test tests/browser/live.browser.mjs",
     "audit:images:live": "node --test tests/browser/champion-images.live.mjs",
     "test:api:live": "node --test tests/browser/live-api.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.57.0"
   }
 }

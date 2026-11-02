@@ -4,8 +4,13 @@ import { pathToFileURL } from 'node:url';
 import { startServer } from '../helpers/http-server.js';
 
 // Reuse an available Playwright installation. It is intentionally not a production dependency.
-const { chromium } = await import(process.env.F1_PLAYWRIGHT_MODULE
+const pwModule = await import(process.env.F1_PLAYWRIGHT_MODULE
   ? pathToFileURL(process.env.F1_PLAYWRIGHT_MODULE).href : 'playwright');
+const chromium = pwModule.chromium || pwModule.default?.chromium;
+const launchOptions = { headless: true,
+  ...(process.env.F1_BROWSER_EXECUTABLE ? { executablePath: process.env.F1_BROWSER_EXECUTABLE }
+    : (process.env.F1_BROWSER_CHANNEL !== undefined ? (process.env.F1_BROWSER_CHANNEL ? { channel: process.env.F1_BROWSER_CHANNEL } : {})
+    : { channel: 'chrome' })) };
 const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" fill="red"/></svg>';
 const driver = { driverId: 'max_verstappen', givenName: 'Max', familyName: 'Verstappen', nationality: 'Dutch', code: 'VER' };
 const constructor = { constructorId: 'red_bull', name: 'Red Bull' };
@@ -44,8 +49,7 @@ async function controlled(page) {
 
 test('Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibility', { timeout: 180000 }, async t => {
   const server = await startServer();
-  const browser = await chromium.launch({ headless: true,
-    ...(process.env.F1_BROWSER_EXECUTABLE ? { executablePath: process.env.F1_BROWSER_EXECUTABLE } : { channel: 'chrome' }) });
+  const browser = await chromium.launch(launchOptions);
   t.after(async () => { await browser.close(); await server.close(); });
 
   await t.test('fresh /F1/ installation, all pages, desktop/mobile links, reduced motion and inline style compatibility', async () => {

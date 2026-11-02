@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-11-02T00:19:00.000Z",
+  "phase": "PHASE_3_COMPLETE",
+  "checks": {
+    "native": {
+      "total": 219,
+      "passed": 219,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "node-tests.txt"
+    },
+    "controlledChrome": {
+      "total": 35,
+      "passed": 35,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "evidence": "controlled-chrome.txt"
+    },
+    "productionBuild": {
+      "packagedFiles": 27,
+      "totalBytes": 188723,
+      "totalKB": 184.30,
+      "passed": true,
+      "evidence": "build.txt"
+    },
+    "distVerification": {
+      "verifiedFiles": 27,
+      "precacheShellCount": 25,
+      "forbiddenFilesFound": 0,
+      "passed": true,
+      "evidence": "dist-check.txt"
+    },
+    "sizeBudgets": {
+      "passed": true,
+      "totalPackageKB": 184.30,
+      "totalPackageBudgetKB": 250.00,
+      "totalCssKB": 21.56,
+      "totalCssBudgetKB": 35.00,
+      "totalJsKB": 133.77,
+      "totalJsBudgetKB": 200.00,
+      "evidence": "budget.txt"
+    },
+    "syntax": {
+      "filesChecked": 47,
+      "passed": 47,
+      "failed": 0,
+      "evidence": "syntax.txt"
+    },
+    "csp": {
+      "passed": true,
+      "evidence": "csp.txt"
+    },
+    "gitWhitespace": {
+      "passed": true,
+      "evidence": "git-whitespace.txt"
+    }
+  },
+  "totalTestsExecuted": 254
+}

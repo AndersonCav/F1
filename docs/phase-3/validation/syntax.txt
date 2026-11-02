@@ -1,0 +1,6 @@
+﻿
+> f1-portal@1.0.0 check:syntax
+> node scripts/check-syntax.mjs
+
+[check-syntax] Checking syntax across 47 JavaScript/MJS files...
+[check-syntax] PASSED: All 47 files passed syntax validation.
