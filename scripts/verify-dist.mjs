@@ -2,6 +2,8 @@ import { createHash } from 'node:crypto';
 import { access, readFile, readdir, stat } from 'node:fs/promises';
 import { resolve, relative, normalize, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { PRODUCTION_ALLOWLIST } from './build.mjs';
+import { DEFAULT_BUDGETS } from './check-budget.mjs';
 
 const rootDir = resolve(fileURLToPath(new URL('../', import.meta.url)));
 const defaultDistDir = resolve(rootDir, 'dist');
@@ -75,7 +77,7 @@ export async function verifyDist(options = {}) {
   for (const file of files) {
     const normalized = file.relPath.replace(/\\/g, '/');
     for (const pattern of FORBIDDEN_PATTERNS) {
-      if (pattern.test(normalized) || pattern.test(file.name)) {
+      if ((pattern.test(normalized) || pattern.test(file.name)) && normalized !== 'robots.txt') {
         errors.push(`Forbidden file found in production artifact: ${normalized} (matched ${pattern})`);
       }
     }
@@ -134,8 +136,8 @@ export async function verifyDist(options = {}) {
       errors.push('sw.js does not contain ASSETS_TO_CACHE array');
     } else {
       const precachePaths = [...assetsMatch[1].matchAll(/['"](\.\/[^'"]+)['"]/g)].map(m => m[1]);
-      if (precachePaths.length !== 25) {
-        errors.push(`Expected exactly 25 precached shell resources in sw.js, found ${precachePaths.length}`);
+      if (precachePaths.length !== DEFAULT_BUDGETS.expectedPrecacheCount) {
+        errors.push(`Expected exactly ${DEFAULT_BUDGETS.expectedPrecacheCount} precached shell resources in sw.js, found ${precachePaths.length}`);
       }
 
       for (const assetPath of precachePaths) {
@@ -222,10 +224,12 @@ export async function verifyDist(options = {}) {
     }
   }
 
-  // 10. Verify exact file count (27 production files)
-  if (files.length !== 27) {
-    errors.push(`Expected exactly 27 files in production artifact, found ${files.length}`);
+  // 10. Verify the exact explicit allowlist, including optional SEO artwork.
+  if (files.length !== PRODUCTION_ALLOWLIST.length) {
+    errors.push(`Expected exactly ${PRODUCTION_ALLOWLIST.length} files in production artifact, found ${files.length}`);
   }
+  for (const required of PRODUCTION_ALLOWLIST) if (!fileSet.has(required)) errors.push(`Missing allowlisted production asset: ${required}`);
+  for (const path of fileSet) if (!PRODUCTION_ALLOWLIST.includes(path)) errors.push(`Unexpected production asset: ${path}`);
 
   if (errors.length > 0) {
     const message = `Production artifact verification failed with ${errors.length} error(s):\n  - ` + errors.join('\n  - ');

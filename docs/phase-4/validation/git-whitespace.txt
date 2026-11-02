@@ -1,0 +1,10 @@
+warning: in the working copy of 'assets/js/champions.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/drivers-v10.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/main-v10.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/static-data.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'assets/js/teams-v10.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/build.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/check-budget.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/verify-dist.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/helpers/http-server.js', LF will be replaced by CRLF the next time Git touches it

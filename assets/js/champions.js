@@ -4,6 +4,8 @@ import { renderSkeleton, renderEmptyState, announceToScreenReader } from "./ui-u
 const stateContainer = document.getElementById("champions-state");
 const titlesFilter = document.getElementById("titles-filter");
 const sortSelect = document.getElementById("sort-select");
+const searchInput = document.getElementById('search-input');
+const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
 
 function readQueryParams() {
   const params = new URL(window.location.href).searchParams;
@@ -20,6 +22,8 @@ function writeQueryParams(sort, filter) {
   const url = new URL(window.location.href);
   url.searchParams.set("sort", sort);
   url.searchParams.set("filter", filter);
+  if (searchInput.value) url.searchParams.set('q', searchInput.value);
+  else url.searchParams.delete('q');
   window.history.replaceState({}, "", url);
 }
 
@@ -84,7 +88,7 @@ function createCard(champion) {
   setImageFallback(image);
 
   const textWrap = document.createElement("div");
-  const name = document.createElement("h3");
+  const name = document.createElement("h2");
   name.className = "name";
   name.textContent = champion.name;
 
@@ -104,12 +108,19 @@ function createCard(champion) {
 
   const count = document.createElement("span");
   count.className = "title-count";
-  count.textContent = String(champion.titleYears.length);
+  count.textContent = `${champion.titleYears.length} ${champion.titleYears.length === 1 ? 'título mundial' : 'títulos mundiais'}`;
 
   header.append(image, textWrap, count);
 
-  const details = document.createElement("div");
+  const details = document.createElement("details");
   details.className = "details";
+  const summary = document.createElement('summary');
+  summary.textContent = 'História e créditos';
+  const summaryName = document.createElement('span');
+  summaryName.className = 'sr-only';
+  summaryName.textContent = ` de ${champion.name}`;
+  summary.append(summaryName);
+  details.append(summary);
 
   const dl = document.createElement("dl");
   const pairs = [
@@ -151,8 +162,11 @@ function createCard(champion) {
 }
 
 function render() {
-  const filtered = filterItems(CHAMPIONS_HISTORY, titlesFilter.value);
+  const query = normalize(searchInput.value.trim());
+  const filtered = filterItems(CHAMPIONS_HISTORY, titlesFilter.value).filter(item => normalize(item.name).includes(query));
   const sorted = sortItems(filtered, sortSelect.value);
+  document.getElementById('result-count').textContent = `${sorted.length} de 35 campeões · títulos de 1950 a 2025`;
+  announceToScreenReader(`${sorted.length} campeões exibidos.`);
 
   if (sorted.length === 0) {
     renderEmptyState(stateContainer, "Nenhum campeão encontrado para este filtro.");
@@ -164,7 +178,6 @@ function render() {
   sorted.forEach((champion) => grid.appendChild(createCard(champion)));
   stateContainer.replaceChildren(grid);
   
-  announceToScreenReader(`${sorted.length} campeões exibidos.`);
 }
 
 function init() {
@@ -174,6 +187,7 @@ function init() {
   const query = readQueryParams();
   sortSelect.value = query.sort;
   titlesFilter.value = query.filter;
+  searchInput.value = new URL(window.location.href).searchParams.get('q') || '';
 
   const onControlsChange = () => {
     writeQueryParams(sortSelect.value, titlesFilter.value);
@@ -182,9 +196,9 @@ function init() {
 
   sortSelect.addEventListener("change", onControlsChange);
   titlesFilter.addEventListener("change", onControlsChange);
+  searchInput.addEventListener('input', onControlsChange);
 
-  // Pequeno delay para simular carregamento e mostrar skeletons
-  window.setTimeout(render, 300);
+  render();
 }
 
 init();

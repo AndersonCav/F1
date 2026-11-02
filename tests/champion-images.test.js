@@ -63,11 +63,11 @@ test('Phase 2 preserves all 33 existing photographs, credits, title years and re
   }
 });
 
-test('the local fallback is a real SVG and stays in the expanded 25-resource mandatory shell', async () => {
+test('the local fallback is a real SVG and stays in the expanded 27-resource mandatory shell', async () => {
   await access(new URL(PLACEHOLDER_DRIVER_IMAGE));
   assert.match(await readFile(new URL(PLACEHOLDER_DRIVER_IMAGE), 'utf8'), /<svg\b/);
   const assets = createWorker().ASSETS_TO_CACHE;
-  assert.equal(assets.length, 25);
+  assert.equal(assets.length, 27);
   assert.ok(assets.includes('./assets/images/placeholder-driver.svg'));
   assert.ok(!assets.some(path => /wikimedia|champions\/.+\.(jpg|webp)/.test(path)));
 });

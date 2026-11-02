@@ -1,4 +1,4 @@
-import { readdir, stat } from 'node:fs/promises';
+import { readdir, stat, readFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -11,7 +11,7 @@ export const DEFAULT_BUDGETS = {
   maxTotalCssBytes: 35 * 1024,            // 35 KB max for all CSS (baseline: 22.1 KB)
   maxTotalJsBytes: 200 * 1024,            // 200 KB max for all JS modules (baseline: ~150 KB)
   maxTotalDistBytes: 250 * 1024,          // 250 KB max for entire production bundle (baseline: ~184 KB)
-  expectedPrecacheCount: 25               // Exactly 25 precached shell resources in sw.js
+  expectedPrecacheCount: 27               // 25 existing resources + 2 compact offline app icons
 };
 
 export async function checkBudget(options = {}) {
@@ -37,6 +37,10 @@ export async function checkBudget(options = {}) {
   }
 
   const allFiles = await walk(distDir);
+  const sw = await readFile(join(distDir, 'sw.js'), 'utf8');
+  const precache = sw.match(/const\s+ASSETS_TO_CACHE\s*=\s*\[([\s\S]*?)\];/);
+  const precacheCount = [...(precache?.[1] || '').matchAll(/['"]\.\/[^'"]+['"]/g)].length;
+  if (precacheCount !== budgets.expectedPrecacheCount) errors.push(`Expected ${budgets.expectedPrecacheCount} mandatory precache resources; found ${precacheCount}`);
   let totalBytes = 0;
   let totalCssBytes = 0;
   let totalJsBytes = 0;

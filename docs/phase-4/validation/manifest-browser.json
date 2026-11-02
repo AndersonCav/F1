@@ -1,0 +1,39 @@
+{
+  "context": "Isolated persistent test profile; no user browser profile; no OS app installation",
+  "manifest": {
+    "url": "http://127.0.0.1:55094/F1/manifest.json",
+    "errors": [],
+    "data": "{\r\n  \"name\": \"F1 Portal\",\r\n  \"short_name\": \"F1 Portal\",\r\n  \"description\": \"Portal independente de Fórmula 1: calendário, classificação e história com dados publicados.\",\r\n  \"id\": \"./index.html\",\r\n  \"lang\": \"pt-BR\",\r\n  \"scope\": \"./\",\r\n  \"start_url\": \"./index.html\",\r\n  \"display\": \"standalone\",\r\n  \"background_color\": \"#0c0c0f\",\r\n  \"theme_color\": \"#e10600\",\r\n  \"icons\": [\r\n    {\r\n      \"src\": \"assets/images/icon-192.png\",\r\n      \"sizes\": \"192x192\",\r\n      \"type\": \"image/png\",\r\n      \"purpose\": \"any maskable\"\r\n    },\r\n    {\r\n      \"src\": \"assets/images/icon-512.png\",\r\n      \"sizes\": \"512x512\",\r\n      \"type\": \"image/png\",\r\n      \"purpose\": \"any maskable\"\r\n    }\r\n  ]\r\n}\r\n",
+    "parsed": {
+      "scope": "http://127.0.0.1:55094/F1/"
+    },
+    "manifest": {
+      "backgroundColor": "rgba(12,12,15,1)",
+      "description": "Portal independente de Fórmula 1: calendário, classificação e história com dados publicados.",
+      "display": "kStandalone",
+      "icons": [
+        {
+          "url": "http://127.0.0.1:55094/F1/assets/images/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:55094/F1/assets/images/icon-512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+      "id": "http://127.0.0.1:55094/index.html",
+      "name": "F1 Portal",
+      "orientation": "DEFAULT",
+      "preferRelatedApplications": false,
+      "scope": "http://127.0.0.1:55094/F1/",
+      "startUrl": "http://127.0.0.1:55094/F1/index.html",
+      "themeColor": "rgba(225,6,0,1)"
+    }
+  },
+  "installability": {
+    "installabilityErrors": []
+  },
+  "scope": "http://127.0.0.1:55094/F1/"
+}

@@ -1,7 +1,7 @@
 import { sortDrivers as applySort, filterDrivers, mapDriver, displayValue } from './data-model.js';
 import { fetchCurrentDriverStandings, fetchDrivers } from "./api.js";
 import { DRIVER_STATIC, PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, setImageFallback, setupNavActiveState, toFlagUrl } from "./static-data.js";
-import { renderSkeleton, renderError, renderEmptyState, showCacheFeedback, announceToScreenReader } from "./ui-utils.js";
+import { renderSkeleton, renderError, renderEmptyState, showCacheFeedback, announceToScreenReader, bindDisclosure, showSeason } from "./ui-utils.js";
 
 const stateContainer = document.getElementById("drivers-state");
 const searchInput = document.getElementById("search-input");
@@ -19,7 +19,7 @@ function updateSortInUrl(value) {
 
 function getSortFromUrl() {
   const value = new URL(window.location.href).searchParams.get("sort");
-  const allowed = ["standing", "name", "team", "points", "wins", "poles"];
+  const allowed = ["standing", "name", "team", "points", "wins"];
   return allowed.includes(value) ? value : "standing";
 }
 
@@ -91,10 +91,13 @@ function buildDriverCard(driver) {
   image.src = driver.photo;
   image.alt = `Foto do piloto ${driver.fullName}`;
   image.loading = "lazy";
+  image.width = 100;
+  image.height = 100;
+  image.decoding = 'async';
   setImageFallback(image);
 
   const textWrap = document.createElement("div");
-  const name = document.createElement("h3");
+  const name = document.createElement("h2");
   name.className = "name";
   name.textContent = driver.fullName;
 
@@ -126,6 +129,7 @@ function buildDriverCard(driver) {
   const badges = document.createElement("div");
   badges.className = "kpis";
   badges.append(
+    createBadge("POS", driver.position),
     createBadge("PTS", driver.points),
     createBadge("VITÓRIAS GP", driver.wins),
     createBadge("POLES GP", driver.poles)
@@ -135,9 +139,13 @@ function buildDriverCard(driver) {
 
   const number = document.createElement("span");
   number.className = "driver-number";
-  number.style.color = driver.teamColor;
+  article.style.borderLeftColor = driver.teamColor;
   number.textContent = driver.number || "—";
   number.title = "Número permanente informado pela API";
+  const numberLabel = document.createElement('span');
+  numberLabel.className = 'sr-only';
+  numberLabel.textContent = 'Número permanente ';
+  number.prepend(numberLabel);
 
   header.append(image, textWrap, number);
 
@@ -146,14 +154,10 @@ function buildDriverCard(driver) {
   button.className = "expand-btn";
   button.setAttribute("aria-expanded", String(expandedCardId === driver.id));
   button.textContent = expandedCardId === driver.id ? "Ocultar detalhes" : "Ver detalhes";
-  button.addEventListener("click", () => {
-    expandedCardId = expandedCardId === driver.id ? null : driver.id;
-    renderDrivers();
-  });
 
   article.append(header, button);
 
-  if (expandedCardId === driver.id) {
+  {
     const details = document.createElement("div");
     details.className = "details";
 
@@ -178,6 +182,8 @@ function buildDriverCard(driver) {
     }
 
     details.appendChild(detailsGrid);
+    bindDisclosure(button, details, { id: `driver-details-${driver.id}`, name: driver.fullName,
+      expanded: expandedCardId === driver.id, onToggle: open => { expandedCardId = open ? driver.id : null; } });
     article.appendChild(details);
   }
 
@@ -190,6 +196,8 @@ function renderDrivers() {
 
   const filtered = filterDrivers(driversData, query);
   const sorted = applySort(filtered, sortBy);
+  const count = document.getElementById('result-count');
+  if (count) count.textContent = `${sorted.length} de ${driversData.length} pilotos`;
 
   if (sorted.length === 0) {
     renderEmptyState(stateContainer, driversData.length ? "Nenhum piloto encontrado com os filtros atuais." : `Classificação de pilotos ainda não publicada para a temporada ${loadedSeason || 'não informada'}.`);
@@ -205,9 +213,7 @@ function renderDrivers() {
 
   stateContainer.replaceChildren(grid);
   
-  if (query) {
-    announceToScreenReader(`${sorted.length} pilotos encontrados para "${query}"`);
-  }
+  announceToScreenReader(`${sorted.length} pilotos exibidos${query ? ` para "${query}"` : ''}.`);
 }
 
 async function loadDrivers() {
@@ -217,6 +223,7 @@ async function loadDrivers() {
     const driverStandingsResult = await fetchCurrentDriverStandings();
     const season = driverStandingsResult.season;
     loadedSeason = season;
+    showSeason(season);
     const allDriversResult = season ? await fetchDrivers(season).catch(() => null) : null;
     showCacheFeedback(driverStandingsResult, ...[allDriversResult].filter(Boolean));
     const profiles = new Map((allDriversResult?.items || []).map(d => [d.driverId, d]));
@@ -227,6 +234,8 @@ async function loadDrivers() {
     });
     renderDrivers();
   } catch {
+    const label = document.getElementById('season-label');
+    if (label) label.textContent = 'Temporada indisponível nesta consulta.';
     renderError(stateContainer, "Não foi possível carregar os pilotos agora.", loadDrivers);
   }
 }
@@ -236,6 +245,7 @@ function init() {
 
   const sortFromUrl = getSortFromUrl();
   sortSelect.value = sortFromUrl;
+  if (new URL(window.location.href).searchParams.get('sort') === 'poles') updateSortInUrl(sortFromUrl);
   searchInput.value = new URL(window.location.href).searchParams.get('q') || '';
 
   sortSelect.addEventListener("change", () => {

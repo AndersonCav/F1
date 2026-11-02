@@ -1,0 +1,6 @@
+
+> f1-portal@1.0.0 check:dist
+> node scripts/verify-dist.mjs
+
+[verify-dist] Verifying production artifact in: C:\xampp\htdocs\F1\dist
+[verify-dist] PASSED: All 32 production files verified successfully.

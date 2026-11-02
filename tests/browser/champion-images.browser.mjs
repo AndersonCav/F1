@@ -85,16 +85,16 @@ test('controlled champion image reliability (fixture images are not photograph e
     const images = await loadAll(page);
     assert.equal(images.filter(image => image.fallback && image.width > 0).length, 35);
     const entries = await page.evaluate(async () => {
-      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v5')));
+      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v6')));
       return (await cache.keys()).map(request => request.url);
     });
-    assert.equal(entries.length, 25);
+    assert.equal(entries.length, 27);
     assert.ok(entries.every(url => url.startsWith(`${server.origin}/F1/`)));
     await assertClean(page, errors);
     await context.close();
   });
 
-  await t.test('Phase 1 v3 upgrades to v5 after old clients close, preserving unrelated caches', async () => {
+  await t.test('Phase 1 v3 upgrades to v6 after old clients close, preserving unrelated caches', async () => {
     const context = await browser.newContext();
     await fixtures(context);
     const errors = [];
@@ -113,7 +113,7 @@ test('controlled champion image reliability (fixture images are not photograph e
     assert.ok((await page.locator('.portrait').first().getAttribute('src')).includes('/512px-'));
     let nextWorker;
     for (const worker of context.serviceWorkers()) {
-      if (await worker.evaluate(() => CACHE_VERSION) === 'v5') nextWorker = worker;
+      if (await worker.evaluate(() => CACHE_VERSION) === 'v6') nextWorker = worker;
     }
     assert.ok(nextWorker);
     await page.close();
@@ -121,13 +121,13 @@ test('controlled champion image reliability (fixture images are not photograph e
     await nextWorker.evaluate(async () => {
       const deadline = Date.now() + 30000;
       while (self.registration.waiting || self.registration.installing || self.registration.active?.state !== 'activated') {
-        if (Date.now() > deadline) throw new Error('v5 did not activate after old clients closed');
+        if (Date.now() > deadline) throw new Error('v6 did not activate after old clients closed');
         await new Promise(resolve => setTimeout(resolve, 10));
       }
     });
     page = await context.newPage();
     await page.goto(`${server.origin}/F1/champions.html`);
-    await page.waitForFunction(async () => (await caches.keys()).includes('f1-portal:/F1/:static-v5'));
+    await page.waitForFunction(async () => (await caches.keys()).includes('f1-portal:/F1/:static-v6'));
     await page.waitForFunction(async () => !(await caches.keys()).includes('f1-portal:/F1/:static-v3'));
     const images = await loadAll(page);
     assert.deepEqual(images.filter(image => image.url !== CHAMPIONS_HISTORY.find(champion => champion.name === image.name).photo), []);

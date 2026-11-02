@@ -1,5 +1,5 @@
 // Bump this version whenever an application-shell resource changes.
-const CACHE_VERSION = 'v5';
+const CACHE_VERSION = 'v6';
 const APP_BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `f1-portal:${APP_BASE.pathname}:`;
 const STATIC_CACHE = `${CACHE_PREFIX}static-${CACHE_VERSION}`;
@@ -15,7 +15,8 @@ const ASSETS_TO_CACHE = [
   './assets/js/driver-metadata.js', './assets/js/constructor-metadata.js',
   './assets/js/circuit-metadata.js', './assets/js/champion-history.js',
   './assets/js/historical-snapshots.js',
-  './assets/images/placeholder-driver.svg', './manifest.json'
+  './assets/images/placeholder-driver.svg', './manifest.json',
+  './assets/images/icon-192.png', './assets/images/icon-512.png'
 ];
 const SHELL_URLS = new Set(ASSETS_TO_CACHE.map(path => new URL(path, APP_BASE).href));
 
@@ -26,7 +27,7 @@ function isValidAsset(response, url) {
   const types = {
     html: ['text/html'], css: ['text/css'],
     js: ['text/javascript', 'application/javascript'],
-    json: ['application/json', 'application/manifest+json'], svg: ['image/svg+xml']
+    json: ['application/json', 'application/manifest+json'], svg: ['image/svg+xml'], png: ['image/png']
   };
   return types[extension]?.includes(type) === true;
 }

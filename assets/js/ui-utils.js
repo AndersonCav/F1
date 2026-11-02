@@ -48,7 +48,17 @@ export function renderError(container, message, onRetry) {
     </svg>
     Tentar novamente
   `;
-  button.addEventListener("click", onRetry);
+  button.addEventListener("click", async () => {
+    const restoreFocus = document.activeElement === button;
+    button.disabled = true;
+    button.setAttribute("aria-busy", "true");
+    await onRetry();
+    if (restoreFocus) {
+      const target = container.querySelector('.state-card.error button') || container;
+      if (target === container) container.tabIndex = -1;
+      target.focus();
+    }
+  }, { once: true });
 
   card.append(text, button);
   container.replaceChildren(card);
@@ -92,12 +102,17 @@ export function showCacheFeedback(...results) {
   info.setAttribute("role", "status");
   info.innerHTML = `
     <span>${stale ? "DADOS SALVOS · SEM ATUALIZAÇÃO" : "DADOS DA API"} (${timeStr})</span>
-    <button id="clear-cache-btn" type="button" title="Forçar atualização" aria-label="Buscar dados atualizados da API">RELOAD</button>
+    <button id="clear-cache-btn" type="button" title="Buscar dados publicados novamente" aria-label="Buscar dados atualizados da API">Atualizar</button>
   `;
 
-  document.body.appendChild(info);
+  const main = document.querySelector?.('main');
+  if (main) main.appendChild(info);
+  else document.body.appendChild(info);
 
   document.getElementById("clear-cache-btn")?.addEventListener("click", () => {
+    const button = document.getElementById('clear-cache-btn');
+    button.disabled = true;
+    button.textContent = 'Atualizando…';
     // Bypass freshness on the next navigation, keeping offline data until success.
     const url = new URL(window.location.href);
     url.searchParams.set("f1-refresh", "1");
@@ -108,6 +123,7 @@ export function showCacheFeedback(...results) {
 /**
  * Anúncio para leitores de tela
  */
+let announcementTimer;
 export function announceToScreenReader(message) {
   let announcer = document.getElementById("sr-announcer");
   if (!announcer) {
@@ -117,7 +133,35 @@ export function announceToScreenReader(message) {
     announcer.className = "sr-only";
     document.body.appendChild(announcer);
   }
-  announcer.textContent = message;
+  window.clearTimeout(announcementTimer);
+  announcementTimer = window.setTimeout(() => { announcer.textContent = message; }, 180);
+}
+
+// Keep the activating button mounted, including when another card is closed.
+export function bindDisclosure(button, details, { id, name, expanded, onToggle }) {
+  details.id = id;
+  button.setAttribute('aria-controls', id);
+  const update = (control, panel, open) => {
+    control.setAttribute('aria-expanded', String(open));
+    control.textContent = open ? 'Ocultar detalhes' : 'Ver detalhes';
+    control.setAttribute('aria-label', `${control.textContent} de ${control.dataset.name}`);
+    panel.hidden = !open;
+  };
+  button.dataset.name = name;
+  update(button, details, expanded);
+  button.addEventListener('click', () => {
+    const open = button.getAttribute('aria-expanded') !== 'true';
+    button.closest('main').querySelectorAll('.expand-btn[aria-expanded="true"]').forEach(other => {
+      update(other, document.getElementById(other.getAttribute('aria-controls')), false);
+    });
+    update(button, details, open);
+    onToggle(open);
+  });
+}
+
+export function showSeason(season) {
+  const label = document.getElementById('season-label');
+  if (label) label.textContent = `Temporada ${season || 'não informada'} · dados publicados pela Jolpica`;
 }
 
 export function registerServiceWorker() {

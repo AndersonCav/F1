@@ -1,0 +1,16 @@
+
+> f1-portal@1.0.0 check:budget
+> node scripts/check-budget.mjs
+
+[check-budget] Checking performance and size budgets for: C:\xampp\htdocs\F1\dist
+[check-budget] Summary:
+  - Total Package:   234.05 KB / 250.00 KB budget
+  - Total CSS:       16.67 KB / 35.00 KB budget
+  - Total JS:        139.76 KB / 200.00 KB budget
+  - 404.html        : 2.30 KB / 12.00 KB budget
+  - calendar.html   : 6.24 KB / 12.00 KB budget
+  - champions.html  : 7.14 KB / 12.00 KB budget
+  - drivers.html    : 7.27 KB / 12.00 KB budget
+  - index.html      : 7.17 KB / 12.00 KB budget
+  - teams.html      : 6.82 KB / 12.00 KB budget
+[check-budget] PASSED: All sizes are within defined budgets.

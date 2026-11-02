@@ -1,0 +1,1436 @@
+{
+  "browser": "156.0.8078.80",
+  "generatedAt": "2026-11-02T14:41:01.967Z",
+  "axe": [
+    {
+      "file": "index.html",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "#current-year"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "p[itemprop=\"description\"]"
+            ],
+            [
+              "#next-race-title"
+            ],
+            [
+              "#last-race-title"
+            ],
+            [
+              "#quick-table-title"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 43
+    },
+    {
+      "file": "drivers.html",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "header > p:nth-child(3)"
+            ],
+            [
+              "#season-label"
+            ],
+            [
+              ".data-note:nth-child(3)"
+            ],
+            [
+              "#result-count"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 41
+    },
+    {
+      "file": "teams.html",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "header > p:nth-child(3)"
+            ],
+            [
+              "#season-label"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 40
+    },
+    {
+      "file": "champions.html",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              "h1"
+            ],
+            [
+              "header > p"
+            ],
+            [
+              "#result-count"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 37
+    },
+    {
+      "file": "calendar.html",
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "header > p:nth-child(3)"
+            ],
+            [
+              ".muted"
+            ],
+            [
+              ".text-link"
+            ],
+            [
+              "#race-2026-21 > .round"
+            ],
+            [
+              "#race-2026-21 > div:nth-child(2) > h2"
+            ],
+            [
+              "time[datetime=\"2026-11-08T17:00:00Z\"]"
+            ],
+            [
+              "#race-2026-21 > div:nth-child(2) > .card-subtitle"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 33
+    },
+    {
+      "file": "404.html",
+      "width": 390,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 22
+    },
+    {
+      "file": "index.html",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "#current-year"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "p[itemprop=\"description\"]"
+            ],
+            [
+              "#next-race-title"
+            ],
+            [
+              "#last-race-title"
+            ],
+            [
+              "#quick-table-title"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 44
+    },
+    {
+      "file": "drivers.html",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "header > p:nth-child(3)"
+            ],
+            [
+              "#season-label"
+            ],
+            [
+              ".data-note:nth-child(3)"
+            ],
+            [
+              "#result-count"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 42
+    },
+    {
+      "file": "teams.html",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "header > p:nth-child(3)"
+            ],
+            [
+              "#season-label"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 41
+    },
+    {
+      "file": "champions.html",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              "h1"
+            ],
+            [
+              "header > p"
+            ],
+            [
+              "#result-count"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 38
+    },
+    {
+      "file": "calendar.html",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            [
+              ".eyebrow"
+            ],
+            [
+              "h1"
+            ],
+            [
+              "header > p:nth-child(3)"
+            ],
+            [
+              ".muted"
+            ],
+            [
+              ".text-link"
+            ],
+            [
+              "#race-2026-21 > .round"
+            ],
+            [
+              "#race-2026-21 > div:nth-child(2) > h2"
+            ],
+            [
+              "time[datetime=\"2026-11-08T17:00:00Z\"]"
+            ],
+            [
+              "#race-2026-21 > div:nth-child(2) > .card-subtitle"
+            ],
+            [
+              "#cache-info > span"
+            ],
+            [
+              "#clear-cache-btn"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 34
+    },
+    {
+      "file": "404.html",
+      "width": 1440,
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 22
+    }
+  ],
+  "scenarios": [
+    "axe index.html 390",
+    "axe drivers.html 390",
+    "axe teams.html 390",
+    "axe champions.html 390",
+    "axe calendar.html 390",
+    "axe 404.html 390",
+    "axe index.html 1440",
+    "axe drivers.html 1440",
+    "axe teams.html 1440",
+    "axe champions.html 1440",
+    "axe calendar.html 1440",
+    "axe 404.html 1440",
+    "computed contrasts",
+    "navigation and touch targets",
+    "keyboard drivers.html",
+    "keyboard teams.html",
+    "driver URL state",
+    "champion combined controls",
+    "empty and retry",
+    "calendar and local time",
+    "reflow, skip link, focus visibility, reduced motion",
+    "stress names and numbers",
+    "no JavaScript and dist assets",
+    "real v5 upgrade, atomic failure, offline icons, cache isolation"
+  ],
+  "contrast": [
+    {
+      "file": "index.html",
+      "samples": [
+        {
+          "selector": "p.eyebrow",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            28,
+            21,
+            28,
+            1
+          ],
+          "ratio": 6.931690356328925,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h1.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            28,
+            21,
+            28,
+            1
+          ],
+          "ratio": 17.896565477164305,
+          "minimum": 3
+        },
+        {
+          "selector": "p.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            28,
+            21,
+            28,
+            1
+          ],
+          "ratio": 8.322063998959512,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h2.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 8.427146800959068,
+          "minimum": 4.5
+        },
+        {
+          "selector": "p.data-note",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 8.43353733678959,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h3.card-title.official",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 18.13628844609166,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.label",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 8.740745405607008,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.timer",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 18.796938174259036,
+          "minimum": 3
+        },
+        {
+          "selector": "a.text-link",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 7.024539757741982,
+          "minimum": 4.5
+        },
+        {
+          "selector": "div.podium-rank",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 7.28042233786566,
+          "minimum": 3
+        },
+        {
+          "selector": "div.podium-code",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 18.796938174259036,
+          "minimum": 4.5
+        },
+        {
+          "selector": "td.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            23.34,
+            23.34,
+            32.25,
+            1
+          ],
+          "ratio": 17.741782891783956,
+          "minimum": 4.5
+        },
+        {
+          "selector": "button.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 16.720061956644752,
+          "minimum": 4.5
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 4.099886554749904,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "nav-item is-active",
+          "foreground": [
+            225,
+            6,
+            0,
+            1
+          ],
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 3.3659556458353532,
+          "minimum": 3,
+          "kind": "required control indicator"
+        }
+      ]
+    },
+    {
+      "file": "drivers.html",
+      "samples": [
+        {
+          "selector": "p.eyebrow",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 7.019216893655172,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h1.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 3
+        },
+        {
+          "selector": "p.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 8.427146800959068,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 8.43353733678959,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h2.name",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 18.796938174259036,
+          "minimum": 3
+        },
+        {
+          "selector": "span.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 8.740745405607008,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.badge",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 16.720061956644752,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.driver-number",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 8.740745405607008,
+          "minimum": 3
+        },
+        {
+          "selector": "div.detail-value",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 18.13628844609166,
+          "minimum": 4.5
+        },
+        {
+          "selector": "a.",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 7.024539757741982,
+          "minimum": 4.5
+        },
+        {
+          "selector": "button.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 4.5
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            12,
+            12,
+            15,
+            1
+          ],
+          "ratio": 4.418911652081938,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            12,
+            12,
+            15,
+            1
+          ],
+          "ratio": 4.418911652081938,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 4.099886554749904,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "nav-item is-active",
+          "foreground": [
+            225,
+            6,
+            0,
+            1
+          ],
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 3.3659556458353532,
+          "minimum": 3,
+          "kind": "required control indicator"
+        }
+      ]
+    },
+    {
+      "file": "teams.html",
+      "samples": [
+        {
+          "selector": "p.eyebrow",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 7.019216893655172,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h1.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 3
+        },
+        {
+          "selector": "p.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 8.427146800959068,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 8.43353733678959,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h2.name-brand",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 18.796938174259036,
+          "minimum": 3
+        },
+        {
+          "selector": "p.name-official",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 8.740745405607008,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.badge.badge-accent",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            225,
+            6,
+            0,
+            1
+          ],
+          "ratio": 4.967404124095407,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.badge",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 16.720061956644752,
+          "minimum": 4.5
+        },
+        {
+          "selector": "div.detail-value",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 18.13628844609166,
+          "minimum": 4.5
+        },
+        {
+          "selector": "button.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 4.5
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            12,
+            12,
+            15,
+            1
+          ],
+          "ratio": 4.418911652081938,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 4.099886554749904,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "nav-item is-active",
+          "foreground": [
+            225,
+            6,
+            0,
+            1
+          ],
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 3.3659556458353532,
+          "minimum": 3,
+          "kind": "required control indicator"
+        }
+      ]
+    },
+    {
+      "file": "champions.html",
+      "samples": [
+        {
+          "selector": "h1.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 3
+        },
+        {
+          "selector": "p.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 8.427146800959068,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 8.43353733678959,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h2.name",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 18.796938174259036,
+          "minimum": 3
+        },
+        {
+          "selector": "p.meta",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 8.740745405607008,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.title-count",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            17,
+            17,
+            24,
+            1
+          ],
+          "ratio": 7.28042233786566,
+          "minimum": 3
+        },
+        {
+          "selector": "summary.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 18.13628844609166,
+          "minimum": 4.5
+        },
+        {
+          "selector": "a.",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 7.024539757741982,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 16.720061956644752,
+          "minimum": 4.5
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            12,
+            12,
+            15,
+            1
+          ],
+          "ratio": 4.418911652081938,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            12,
+            12,
+            15,
+            1
+          ],
+          "ratio": 4.418911652081938,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            12,
+            12,
+            15,
+            1
+          ],
+          "ratio": 4.418911652081938,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "nav-item is-active",
+          "foreground": [
+            225,
+            6,
+            0,
+            1
+          ],
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 3.3659556458353532,
+          "minimum": 3,
+          "kind": "required control indicator"
+        }
+      ]
+    },
+    {
+      "file": "calendar.html",
+      "samples": [
+        {
+          "selector": "p.eyebrow",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 7.019216893655172,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h1.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 3
+        },
+        {
+          "selector": "p.",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 8.427146800959068,
+          "minimum": 4.5
+        },
+        {
+          "selector": "div.round",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 8.43353733678959,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h2.card-title",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 18.13628844609166,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.badge",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 16.720061956644752,
+          "minimum": 4.5
+        },
+        {
+          "selector": "div.round",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            45.480000000000004,
+            19.2,
+            26.4,
+            1
+          ],
+          "ratio": 6.647617442885717,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h2.card-title",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            45.480000000000004,
+            19.2,
+            26.4,
+            1
+          ],
+          "ratio": 17.16313261528187,
+          "minimum": 4.5
+        },
+        {
+          "selector": "p.card-subtitle",
+          "foreground": "rgb(176, 176, 186)",
+          "background": [
+            45.480000000000004,
+            19.2,
+            26.4,
+            1
+          ],
+          "ratio": 7.981011117985571,
+          "minimum": 4.5
+        },
+        {
+          "selector": "span.badge.badge-accent",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            225,
+            6,
+            0,
+            1
+          ],
+          "ratio": 4.967404124095407,
+          "minimum": 4.5
+        },
+        {
+          "selector": "button.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 18.122545624246097,
+          "minimum": 4.5
+        },
+        {
+          "selector": "",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            21.6228,
+            21.6228,
+            24.504,
+            1
+          ],
+          "ratio": 4.099886554749904,
+          "minimum": 3,
+          "kind": "required control indicator"
+        },
+        {
+          "selector": "nav-item is-active",
+          "foreground": [
+            225,
+            6,
+            0,
+            1
+          ],
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 3.3659556458353532,
+          "minimum": 3,
+          "kind": "required control indicator"
+        }
+      ]
+    },
+    {
+      "file": "404.html",
+      "samples": [
+        {
+          "selector": "p.eyebrow",
+          "foreground": "rgb(255, 119, 114)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 7.024539757741982,
+          "minimum": 4.5
+        },
+        {
+          "selector": "h1.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 18.13628844609166,
+          "minimum": 3
+        },
+        {
+          "selector": "p.",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            21,
+            21,
+            30,
+            1
+          ],
+          "ratio": 18.13628844609166,
+          "minimum": 4.5
+        },
+        {
+          "selector": "a.button",
+          "foreground": "rgb(255, 255, 255)",
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 16.720061956644752,
+          "minimum": 4.5
+        },
+        {
+          "selector": "button",
+          "foreground": [
+            119,
+            119,
+            131,
+            1
+          ],
+          "background": [
+            29,
+            29,
+            38,
+            1
+          ],
+          "ratio": 3.7826008901817794,
+          "minimum": 3,
+          "kind": "required control indicator"
+        }
+      ]
+    }
+  ]
+}

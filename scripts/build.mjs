@@ -18,6 +18,8 @@ export const PRODUCTION_ALLOWLIST = [
   'manifest.json',
   'sw.js',
   '.nojekyll',
+  'robots.txt',
+  'sitemap.xml',
 
   // Stylesheets
   'assets/css/styles-v7.css',
@@ -25,6 +27,9 @@ export const PRODUCTION_ALLOWLIST = [
 
   // Static Local Images
   'assets/images/placeholder-driver.svg',
+  'assets/images/icon-192.png',
+  'assets/images/icon-512.png',
+  'assets/images/social-preview.png',
 
   // Application ES Modules
   'assets/js/api.js',

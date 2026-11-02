@@ -19,7 +19,7 @@ export function createWorker({ base = 'https://example.test/F1/', network } = {}
     requests.push(request);
     if (network) return network(request);
     const extension = new URL(key(request)).pathname.split('.').pop();
-    const type = { html: 'text/html', js: 'text/javascript', css: 'text/css', json: 'application/json', svg: 'image/svg+xml' }[extension];
+    const type = { html: 'text/html', js: 'text/javascript', css: 'text/css', json: 'application/json', png: 'image/png', svg: 'image/svg+xml' }[extension];
     return new Response('shell', { headers: { 'Content-Type': type } });
   };
   const caches = {

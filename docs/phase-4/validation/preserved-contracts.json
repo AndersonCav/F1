@@ -1,0 +1,57 @@
+[
+  {
+    "path": "assets/js/champion-history.js",
+    "unchanged": true,
+    "normalizedSha256": "cef285b9ce3403873ec883dac7840ca2906f65b65762da8f855407f28af9599c"
+  },
+  {
+    "path": "assets/js/driver-metadata.js",
+    "unchanged": true,
+    "normalizedSha256": "7e204ab1038ae0336843a4adb7b6c0ea5553573f6b6b95827298f33e0aa170f5"
+  },
+  {
+    "path": "assets/js/constructor-metadata.js",
+    "unchanged": true,
+    "normalizedSha256": "791540590d48d70d4d01b97affdb4a2dd3a02d81f37058aa99275dd9eea8dbce"
+  },
+  {
+    "path": "assets/js/circuit-metadata.js",
+    "unchanged": true,
+    "normalizedSha256": "443555f4b700c950e745a06e221da0bcd7183cd146058f43b7aaf3d9c901c9dd"
+  },
+  {
+    "path": "assets/js/historical-snapshots.js",
+    "unchanged": true,
+    "normalizedSha256": "9834afc2d1e6cb3df89cfe95304c35568beaae128002f9064b111f59f59d8653"
+  },
+  {
+    "path": "assets/js/api.js",
+    "unchanged": true,
+    "normalizedSha256": "cf68e8f824c87efa808b83321b9c37a3050c3e106f6a82314d13250cfff360de"
+  },
+  {
+    "path": "assets/js/data-model.js",
+    "unchanged": true,
+    "normalizedSha256": "49a5f7d1e3b8c0d672290be488cebbba140bad955cd6c618c22c890d536ba1a1"
+  },
+  {
+    "path": "assets/js/season.js",
+    "unchanged": true,
+    "normalizedSha256": "e2be3c91bcf49a137477ba7abec591af667d7c9f7f3789859d115a53da6ea66e"
+  },
+  {
+    "path": ".github/workflows/deploy.yml",
+    "unchanged": true,
+    "normalizedSha256": "e6e40ac750488e0df032b20d9faf698f9440c6d8729007e3338be46b9d4ecc48"
+  },
+  {
+    "path": ".github/workflows/live-audit.yml",
+    "unchanged": true,
+    "normalizedSha256": "28e65c695aab0c47b10c9cff5b5a5a6faa2180223e73e73cfa28a0144bbb7db0"
+  },
+  {
+    "path": "scripts/verify-deployment-freshness.mjs",
+    "unchanged": true,
+    "normalizedSha256": "df1a1feb844eac547a512d73756bcc01d713226cb17bebcde2ef902cee2179a6"
+  }
+]

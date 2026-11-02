@@ -1,0 +1,108 @@
+{
+  "browser": "156.0.8078.80",
+  "generatedAt": "2026-11-02T14:41:01.691Z",
+  "scenarios": [
+    {
+      "name": "driver controls",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "optional profiles unavailable",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "constructor association and precedence",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "calendar America/Sao_Paulo",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "calendar Pacific/Honolulu",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "calendar Asia/Tokyo",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "countdown crossing",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "unknown start",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "pending final race",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "published podium positions",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "offseason false",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "offseason true",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "published rollover",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "empty upcoming season",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "non-destructive malformed refresh",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "mobile all pages",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    },
+    {
+      "name": "v4 to v6 upgrade",
+      "passed": true,
+      "exceptions": [],
+      "cspViolations": []
+    }
+  ]
+}

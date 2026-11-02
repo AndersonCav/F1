@@ -2,7 +2,7 @@ import { mapConstructor, compareNumber, displayValue } from './data-model.js';
 import { CONSTRUCTOR_SNAPSHOTS } from './historical-snapshots.js';
 import { fetchCurrentConstructorStandings, fetchCurrentDriverStandings } from "./api.js";
 import { PLACEHOLDER_DRIVER_IMAGE, TEAM_STATIC, setImageFallback, setupNavActiveState } from "./static-data.js";
-import { renderSkeleton, renderError, showCacheFeedback } from "./ui-utils.js";
+import { renderSkeleton, renderError, showCacheFeedback, bindDisclosure, showSeason } from "./ui-utils.js";
 
 const stateContainer = document.getElementById("teams-state");
 const sortSelect = document.getElementById("sort-select");
@@ -56,16 +56,14 @@ function createTeamCard(team) {
   logo.src = team.logo || PLACEHOLDER_DRIVER_IMAGE;
   logo.alt = `Logo da equipe ${team.name}`;
   logo.loading = "lazy";
-  // Force styles inline to bypass zombie CSS caches
-  logo.style.background = "rgba(255, 255, 255, 0.05)";
-  logo.style.padding = "8px";
-  logo.style.objectFit = "contain";
+  logo.width = 72;
+  logo.height = 72;
   setImageFallback(logo);
 
   const textWrap = document.createElement("div");
   textWrap.className = "team-text-wrap";
 
-  const nameBrand = document.createElement("h3");
+  const nameBrand = document.createElement("h2");
   nameBrand.className = "name-brand";
   nameBrand.textContent = team.shortName;
 
@@ -91,27 +89,18 @@ function createTeamCard(team) {
   badges.append(positionBadge, pointsBadge);
   textWrap.append(nameBrand, nameOfficial, meta, badges);
 
-  const metrics = document.createElement("span");
-  metrics.className = "driver-number";
-  metrics.textContent = displayValue(team.historicWins);
-  metrics.title = "Vitórias de GP até 2025; mesma identidade de construtor";
-  metrics.style.fontSize = "1.55rem";
-
-  header.append(logo, textWrap, metrics);
+  // Historical totals belong with the explicitly dated details, not current points.
+  header.append(logo, textWrap);
 
   const button = document.createElement("button");
   button.type = "button";
   button.className = "expand-btn";
   button.textContent = expandedTeamId === team.id ? "Ocultar detalhes" : "Ver detalhes";
   button.setAttribute("aria-expanded", String(expandedTeamId === team.id));
-  button.addEventListener("click", () => {
-    expandedTeamId = expandedTeamId === team.id ? null : team.id;
-    renderTeams();
-  });
 
   article.append(header, button);
 
-  if (expandedTeamId === team.id) {
+  {
     const details = document.createElement("div");
     details.className = "details";
 
@@ -161,6 +150,8 @@ function createTeamCard(team) {
     });
 
     details.appendChild(detailsGrid);
+    bindDisclosure(button, details, { id: `team-details-${team.id}`, name: team.shortName,
+      expanded: expandedTeamId === team.id, onToggle: open => { expandedTeamId = open ? team.id : null; } });
     article.appendChild(details);
   }
 
@@ -191,6 +182,7 @@ async function loadTeams() {
   try {
     const constructorStandingsResult = await fetchCurrentConstructorStandings();
     const season = constructorStandingsResult.season;
+    showSeason(season);
     const driverStandingsResult = season ? await fetchCurrentDriverStandings(season).catch(() => null) : null;
     showCacheFeedback(constructorStandingsResult, ...[driverStandingsResult].filter(Boolean));
     teamsData = constructorStandingsResult.items.map(entry => mapConstructor(entry,
@@ -198,6 +190,8 @@ async function loadTeams() {
       CONSTRUCTOR_SNAPSHOTS[entry.Constructor.constructorId], season));
     renderTeams();
   } catch {
+    const label = document.getElementById('season-label');
+    if (label) label.textContent = 'Temporada indisponível nesta consulta.';
     renderError(stateContainer, "Não foi possível carregar as equipes agora.", loadTeams);
   }
 }

@@ -13,7 +13,8 @@ const types = {
   png: 'image/png',
   webp: 'image/webp',
   ico: 'image/x-icon',
-  txt: 'text/plain'
+  txt: 'text/plain',
+  xml: 'application/xml'
 };
 
 export async function startServer(options = {}) {
@@ -35,7 +36,8 @@ export async function startServer(options = {}) {
     try {
       if (state.workerSource && path === 'sw.js') return send(200, state.workerSource, 'js');
       if (state.missingAsset && url.pathname.endsWith(state.missingAsset)) throw new Error('test missing asset');
-      const revision = (!options.rootDir && state.release === 'previous') ? 'eaa7335'
+      const revision = state.release === 'phase3' ? 'f2b3bb18ff50d648091f1a92b17df198172c2823'
+        : (!options.rootDir && state.release === 'previous') ? 'eaa7335'
         : (!options.rootDir && state.release === 'phase1') ? '1e54313a866b1c5227067bb0deceee8916806e86'
         : (!options.rootDir && state.release === 'phase1_1') ? '5269a9e694ba2ac2cd6ddc686c0d6dda7c33ea24'
         : null;

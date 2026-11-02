@@ -96,8 +96,6 @@ function buildPodiumComponent(results, season) {
   const container = document.createElement("div");
   container.className = "podium-grid";
 
-  const rankSuffixes = ["ST", "ND", "RD"];
-
   results.forEach((result) => {
     const card = document.createElement("div");
     card.className = "podium-card";
@@ -105,7 +103,7 @@ function buildPodiumComponent(results, season) {
     const rankEl = document.createElement("div");
     rankEl.className = "podium-rank";
     const position = Number(result.position);
-    rankEl.innerHTML = `${position}<span>${rankSuffixes[position - 1] || ''}</span>`;
+    rankEl.textContent = `${position}º`;
     
     const staticInfo = resolveDriverStaticInfo(result.Driver, season);
     
@@ -114,6 +112,9 @@ function buildPodiumComponent(results, season) {
     avatar.src = staticInfo.photo || PLACEHOLDER_DRIVER_IMAGE;
     setImageFallback(avatar);
     avatar.alt = result.Driver.familyName;
+    avatar.width = 44;
+    avatar.height = 44;
+    avatar.loading = 'lazy';
     if (staticInfo.teamColor) {
       avatar.style.borderColor = staticInfo.teamColor;
       card.style.borderLeftColor = staticInfo.teamColor;
@@ -124,7 +125,7 @@ function buildPodiumComponent(results, season) {
 
     const code = document.createElement("div");
     code.className = "podium-code";
-    code.textContent = result.Driver.code || result.Driver.familyName.substring(0, 3).toUpperCase();
+    code.textContent = `${result.Driver.givenName} ${result.Driver.familyName}`;
 
     const time = document.createElement("div");
     time.className = "podium-time";
@@ -133,7 +134,7 @@ function buildPodiumComponent(results, season) {
       time.textContent = result.Time ? result.Time.time : "Vencedor";
     } else {
       time.classList.add("gap");
-      time.textContent = result.Time ? result.Time.time.startsWith("+") ? result.Time.time : `+${result.Time.time}` : "Interv.";
+      time.textContent = result.Time ? result.Time.time.startsWith("+") ? result.Time.time : `+${result.Time.time}` : "Intervalo não publicado";
     }
 
     info.append(code, time);
@@ -153,18 +154,10 @@ function buildRaceDetailsGrid(race) {
   const staticInfo = reference?.season === Number(race.season) ? reference : {};
 
   grid.append(
+    buildDetailItem("Largada programada · seu fuso", formatRaceDate(race.date, race.time)),
     buildDetailItem("CIRCUITO", race.Circuit.circuitName),
-    buildDetailItem("EXTENSÃO", displayValue(staticInfo.length)),
-    buildDetailItem("DISTÂNCIA", displayValue(staticInfo.distance)),
-    buildDetailItem("VOLTAS", displayValue(staticInfo.laps)),
-    buildDetailItem("ESTREIA", displayValue(staticInfo.firstGP)),
-    buildDetailItem("DATA LOCAL", formatRaceDate(race.date, race.time))
+    buildDetailItem("Local", `${race.Circuit.Location.locality}, ${translateCountry(race.Circuit.Location.country)}`)
   );
-
-  if (staticInfo.fastestLap) {
-    const fl = staticInfo.fastestLap;
-    grid.append(buildDetailItem("RECORDE", `${fl.time} (${fl.driver}, ${fl.year})`));
-  }
 
   return grid;
 }
@@ -175,7 +168,7 @@ function buildCountdownHud(eventTime) {
   
   const label = document.createElement("span");
   label.className = "label";
-  label.textContent = "LARGADA DA CORRIDA EM";
+  label.textContent = "Até a largada programada · sem acompanhamento ao vivo";
   
   const timer = document.createElement("span");
   timer.className = "timer";
@@ -219,6 +212,9 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
   setImageFallback(flag);
   flag.alt = nextRace.Circuit.Location.country;
   flag.loading = "lazy";
+  flag.width = 40;
+  flag.height = 28;
+  flag.alt = '';
 
   headerTop.append(title, flag);
 
@@ -235,6 +231,9 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
   footer.textContent = isSeasonClosed
     ? `PROXIMA TEMPORADA ${formatRaceDate(nextRace.date, nextRace.time)}`
     : ``;
+  const season = document.createElement('p');
+  season.className = 'data-note';
+  season.textContent = `Temporada ${nextRace.season} · etapa ${nextRace.round}`;
 
   const wrapper = document.createElement("div");
   wrapper.className = "card-content-wrapper";
@@ -242,7 +241,7 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
   const mainInfo = document.createElement("div");
   mainInfo.style.flex = "1.5";
 
-  mainInfo.append(headerTop, subtitle, hud, grid, footer);
+  mainInfo.append(season, headerTop, subtitle, grid, hud, footer);
 
   const circuitKey = nextRace.Circuit.circuitId.replace(/-/g, "_");
   const reference = CIRCUIT_STATIC[circuitKey];
@@ -258,6 +257,8 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
     setImageFallback(trackMap);
     trackMap.alt = `Mapa do circuito ${nextRace.Circuit.circuitName}`;
     trackMap.loading = "lazy";
+    trackMap.width = 280;
+    trackMap.height = 200;
     
     circuitContainer.appendChild(trackMap);
     wrapper.append(mainInfo, circuitContainer);
@@ -265,7 +266,7 @@ function buildNextRaceCard(nextRace, isSeasonClosed = false) {
     wrapper.appendChild(mainInfo);
   }
 
-  card.append(wrapper);
+  card.append(wrapper, detailLink('Ver calendário da temporada', 'calendar.html'));
   return card;
 }
 
@@ -286,12 +287,15 @@ function buildLastRaceCard(lastRace) {
   setImageFallback(flag);
   flag.alt = lastRace.Circuit.Location.country;
   flag.loading = "lazy";
+  flag.width = 40;
+  flag.height = 28;
+  flag.alt = '';
 
   headerTop.append(title, flag);
 
   const subtitle = document.createElement("p");
   subtitle.className = "card-subtitle";
-  subtitle.textContent = `Etapa ${lastRace.round} - ${translateCountry(lastRace.Circuit.Location.country)}`;
+  subtitle.textContent = `Resultado publicado · temporada ${lastRace.season} · etapa ${lastRace.round}`;
 
   const results = (lastRace.Results || []).filter(result => Number(result.position) <= 3).slice(0, 3);
   const podiumWrapper = buildPodiumComponent(results, lastRace.season);
@@ -328,6 +332,8 @@ function buildLastRaceCard(lastRace) {
     setImageFallback(trackMap);
     trackMap.alt = `Mapa do circuito ${lastRace.Circuit.circuitName}`;
     trackMap.loading = "lazy";
+    trackMap.width = 280;
+    trackMap.height = 200;
     
     circuitContainer.appendChild(trackMap);
     wrapper.append(mainInfo, circuitContainer);
@@ -335,15 +341,23 @@ function buildLastRaceCard(lastRace) {
     wrapper.appendChild(mainInfo);
   }
 
-  card.append(wrapper);
+  card.append(wrapper, detailLink('Consultar etapas e resultados disponíveis', 'calendar.html'));
   return card;
+}
+
+function detailLink(text, href) {
+  const link = document.createElement('a');
+  link.href = href;
+  link.className = 'text-link';
+  link.textContent = text;
+  return link;
 }
 
 function createTable(titleText, rows, isConstructorTable = false, season = null) {
   const card = document.createElement("article");
   card.className = "card reveal-up";
 
-  const title = document.createElement("h3");
+  const title = document.createElement("caption");
   title.className = "card-title";
   title.textContent = titleText;
 
@@ -352,9 +366,10 @@ function createTable(titleText, rows, isConstructorTable = false, season = null)
 
   const head = document.createElement("thead");
   const headRow = document.createElement("tr");
-  ["Pos", isConstructorTable ? "Equipe" : "Piloto", isConstructorTable ? "-" : "Equipe", "Pts"].forEach((label) => {
+  ["Pos.", isConstructorTable ? "Equipe" : "Piloto", "Equipe", "Pts"].forEach((label) => {
     const th = document.createElement("th");
     th.textContent = label;
+    th.scope = 'col';
     headRow.appendChild(th);
   });
   head.appendChild(headRow);
@@ -369,6 +384,7 @@ function createTable(titleText, rows, isConstructorTable = false, season = null)
 
     pos.textContent = displayValue(entry.position);
     points.textContent = displayValue(entry.points);
+    secondary.className = 'standing-team';
 
     if (isConstructorTable) {
       main.textContent = getOfficialTeamName(entry.Constructor.name);
@@ -407,12 +423,19 @@ function createTable(titleText, rows, isConstructorTable = false, season = null)
       }
     }
 
-    row.append(pos, main, secondary, points);
+    if (isConstructorTable) {
+      main.colSpan = 2;
+      row.append(pos, main, points);
+    } else row.append(pos, main, secondary, points);
     body.appendChild(row);
   });
 
-  table.append(head, body);
-  card.append(title, table);
+  table.append(title, head, body);
+  if (isConstructorTable) {
+    headRow.children[1].colSpan = 2;
+    headRow.children[2].remove();
+  }
+  card.append(table, detailLink(isConstructorTable ? 'Ver todas as equipes' : 'Ver todos os pilotos', isConstructorTable ? 'teams.html' : 'drivers.html'));
   return card;
 }
 
@@ -506,6 +529,12 @@ async function loadHomeData() {
 
   if (constructorStandings.length > 0) {
     tablesWrap.append(createTable(`Top 5 construtores · ${schedule.season}`, constructorStandings.slice(0, 5), true, schedule.season));
+  }
+  if (driversState.status !== 'fulfilled' || constructorsState.status !== 'fulfilled') {
+    const note = document.createElement('p');
+    note.className = 'data-note';
+    note.textContent = 'Uma das classificações não pôde ser consultada. Use Atualizar para tentar novamente.';
+    tablesWrap.append(note);
   }
 
   quickStandingsState.replaceChildren(tablesWrap);

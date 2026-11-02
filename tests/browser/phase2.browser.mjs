@@ -71,15 +71,16 @@ test('Phase 2 deterministic Chrome sporting-data scenarios', { timeout: 180000 }
     await page.goto(`${server.origin}/F1/drivers.html?sort=team&keep=yes`);
     await page.locator('.driver-card').first().waitFor();
     assert.deepEqual(await names(page), ['Bruno Bahia', 'Caio Costa', 'Álvaro Ávila']);
-    for (const mode of ['standing', 'name', 'team', 'points', 'wins', 'poles']) {
+    for (const mode of ['standing', 'name', 'team', 'points', 'wins']) {
       await page.selectOption('#sort-select', mode);
       assert.equal(new URL(page.url()).searchParams.get('sort'), mode);
       assert.equal(new URL(page.url()).searchParams.get('keep'), 'yes');
       const current = await names(page); assert.equal(current.length, 3);
-      if (mode === 'name' || mode === 'poles') assert.equal(current[0], 'Álvaro Ávila');
+      if (mode === 'name') assert.equal(current[0], 'Álvaro Ávila');
       if (['standing', 'points', 'wins'].includes(mode)) assert.equal(current[0], 'Bruno Bahia');
     }
-    await page.locator('.expand-btn').first().click();
+    assert.equal(await page.locator('option[value="poles"]').evaluate(e => e.disabled), true);
+    await page.locator('.driver-card').filter({ hasText: 'Álvaro Ávila' }).locator('.expand-btn').click();
     await page.fill('#search-input', ' alvaro avila ');
     assert.deepEqual(await names(page), ['Álvaro Ávila']);
     assert.equal(await page.locator('.expand-btn').getAttribute('aria-expanded'), 'true');
@@ -162,7 +163,7 @@ test('Phase 2 deterministic Chrome sporting-data scenarios', { timeout: 180000 }
     const s = await setup({ winners: [result()], results: [published] }, start + 3600000);
     await s.page.goto(`${server.origin}/F1/`);
     await s.page.locator('.podium-card').first().waitFor();
-    assert.deepEqual(await s.page.locator('.podium-rank').allTextContents(), ['1ST', '2ND', '3RD']);
+    assert.deepEqual(await s.page.locator('.podium-rank').allTextContents(), ['1º', '2º', '3º']);
     assert.deepEqual(await s.page.locator('.podium-time').allTextContents(), ['1:30:00', '+2.000', '+3.000']);
     await finish('published podium positions', s);
   });
@@ -229,7 +230,7 @@ test('Phase 2 deterministic Chrome sporting-data scenarios', { timeout: 180000 }
     }
     await finish('mobile all pages', s);
   });
-  await t.test('actual Phase 1.1 v4 shell upgrades to v5 after all old clients close', async () => {
+  await t.test('actual Phase 1.1 v4 shell upgrades to v6 after all old clients close', async () => {
     server.state.release = 'phase1_1';
     const s = await setup({}, start - 3600000, 'America/Sao_Paulo', true);
     await s.page.goto(`${server.origin}/F1/champions.html`);
@@ -242,14 +243,14 @@ test('Phase 2 deterministic Chrome sporting-data scenarios', { timeout: 180000 }
     await s.page.waitForFunction(async () => (await navigator.serviceWorker.getRegistration()).waiting);
     assert.equal(await s.page.locator('.champion-card').count(), 33);
     let worker;
-    for (const candidate of s.context.serviceWorkers()) if (await candidate.evaluate(() => CACHE_VERSION) === 'v5') worker = candidate;
+    for (const candidate of s.context.serviceWorkers()) if (await candidate.evaluate(() => CACHE_VERSION) === 'v6') worker = candidate;
     assert.ok(worker);
     await assertClean(s.page, s.errors);
     await s.page.close();
     await worker.evaluate(async () => {
       const deadline = Date.now() + 30000;
       while ((await caches.keys()).includes('f1-portal:/F1/:static-v4') || self.registration.active?.state !== 'activated' || self.registration.waiting) {
-        if (Date.now() > deadline) throw new Error('v5 activation timeout');
+        if (Date.now() > deadline) throw new Error('v6 activation timeout');
         await new Promise(resolve => setTimeout(resolve, 10));
       }
     });
@@ -258,8 +259,8 @@ test('Phase 2 deterministic Chrome sporting-data scenarios', { timeout: 180000 }
     await s.page.locator('.champion-card').first().waitFor();
     assert.equal(await s.page.locator('.champion-card').count(), 35);
     const cacheNames = await s.page.evaluate(() => caches.keys());
-    assert.ok(cacheNames.includes('f1-portal:/F1/:static-v5'));
+    assert.ok(cacheNames.includes('f1-portal:/F1/:static-v6'));
     assert.ok(!cacheNames.includes('f1-portal:/F1/:static-v4'));
-    await finish('v4 to v5 upgrade', s);
+    await finish('v4 to v6 upgrade', s);
   });
 });

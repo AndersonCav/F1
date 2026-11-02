@@ -1,0 +1,8 @@
+
+> f1-portal@1.0.0 build
+> node scripts/build.mjs
+
+[build] Starting production build...
+[build] Source: C:\xampp\htdocs\F1
+[build] Target: C:\xampp\htdocs\F1\dist
+[build] Successfully packaged 32 files (234.05 KB).

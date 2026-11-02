@@ -138,7 +138,7 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
     await context.close();
   });
 
-  await t.test('offline navigation retains all 35 records, decoded local fallbacks and the 25-resource shell', async () => {
+  await t.test('offline navigation retains all 35 records, decoded local fallbacks and the 27-resource shell', async () => {
     const { context, page, errors } = await setup('offline');
     await page.goto(`${server.origin}/F1/champions.html`);
     await page.waitForFunction(() => navigator.serviceWorker.controller);
@@ -148,10 +148,10 @@ test('live champion photograph audit: real HTTP, reviewed bytes and Chrome decod
     const images = await loadAll(page);
     assert.equal(images.filter(image => image.fallback && image.width > 0).length, 35);
     const cached = await page.evaluate(async () => {
-      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v5')));
+      const cache = await caches.open((await caches.keys()).find(name => name.endsWith('static-v6')));
       return (await cache.keys()).map(request => request.url);
     });
-    assert.equal(cached.length, 25);
+    assert.equal(cached.length, 27);
     assert.ok(cached.every(url => url.startsWith(`${server.origin}/F1/`)));
     assert.equal((await page.goto(`${server.origin}/F1/404.html`)).status(), 200);
     await clean(page, errors, 'offline');

@@ -487,9 +487,9 @@ test('Deployment Concurrency Hardening & Revision Freshness Gates (Phase 3.1)', 
     });
 
     assert.equal(metadata.commitSha, testSha);
-    assert.equal(metadata.fileCount, 27);
+    assert.equal(metadata.fileCount, 32);
     assert.ok(metadata.artifactSha256);
-    assert.equal(metadata.files.length, 27);
+    assert.equal(metadata.files.length, 32);
 
     // Verify freshness check with matching recorded metadata
     const freshResult = await verifyDeploymentFreshness({

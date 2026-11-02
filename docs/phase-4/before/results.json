@@ -1,0 +1,1179 @@
+{
+  "generatedAt": "2026-11-02T14:12:18.014Z",
+  "browser": "156.0.8078.80",
+  "artifactBytes": 188726,
+  "budget": {
+    "verified": true,
+    "totalBytes": 188726,
+    "totalCssBytes": 22081,
+    "totalJsBytes": 136981,
+    "htmlSizes": {
+      "404.html": 1974,
+      "calendar.html": 4797,
+      "champions.html": 5526,
+      "drivers.html": 5497,
+      "index.html": 5608,
+      "teams.html": 5190
+    }
+  },
+  "conditions": "Chrome headless; America/Sao_Paulo; cold contexts; controlled API and image fallbacks + empty remote font CSS locally; real external providers in production; no field INP; no Lighthouse score",
+  "pages": [
+    {
+      "name": "local-index-320",
+      "url": "http://127.0.0.1:49716/F1/index.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nSão Paulo Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 04h 59m 59s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 20 - Austrália\n\n1ST\nNOR\n1:35:22.500\n2ND\nPIA\n+3.120\n3RD\nVER\n+6.120\nCIRCUITO\nAlbert Park\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tLando Norris\t\n\t350\n2\tOscar Piastri\t\n\t313\n3\tMax Verstappen\t\n\t276\n4\tCharles Leclerc\t\n\t239\n5\tLewis Hamilton\t\n\t202\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMcLaren\t\n\t630\n2\tFerrari\t\n\t520\n3\tRed Bull\t\n\t410\n4\tMercedes\t\n\t300",
+      "fonts": []
+    },
+    {
+      "name": "local-drivers-320",
+      "url": "http://127.0.0.1:49716/F1/drivers.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nLando Norris\nMcLaren\nPTS 350\nVITÓRIAS GP 6\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 313\nVITÓRIAS GP 5\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 276\nVITÓRIAS GP 4\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 239\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 202\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 165\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-teams-320",
+      "url": "http://127.0.0.1:49716/F1/teams.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 1\n630 PTS\n203\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Charles Leclerc / Lewis Hamilton\n\nPOS 2\n520 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen\n\nPOS 3\n410 PTS\n130\nVER DETALHES\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA George Russell\n\nPOS 4\n300 PTS\n131\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-champions-320",
+      "url": "http://127.0.0.1:49716/F1/champions.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": []
+    },
+    {
+      "name": "local-calendar-320",
+      "url": "http://127.0.0.1:49716/F1/calendar.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR20\n🇦🇺 Mexico City Grand Prix\n\nAlbert Park — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR21\n🇧🇷 São Paulo Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR22\n🇦🇺 Test Grand Prix\n\nAlbert Park — sáb., 21 de novembro de 2026 · horário não informado\n\nAGENDADA",
+      "fonts": []
+    },
+    {
+      "name": "local-404-320",
+      "url": "http://127.0.0.1:49716/F1/404.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": []
+    },
+    {
+      "name": "local-index-390",
+      "url": "http://127.0.0.1:49716/F1/index.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nSão Paulo Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 04h 59m 59s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 20 - Austrália\n\n1ST\nNOR\n1:35:22.500\n2ND\nPIA\n+3.120\n3RD\nVER\n+6.120\nCIRCUITO\nAlbert Park\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tLando Norris\t\n\t350\n2\tOscar Piastri\t\n\t313\n3\tMax Verstappen\t\n\t276\n4\tCharles Leclerc\t\n\t239\n5\tLewis Hamilton\t\n\t202\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMcLaren\t\n\t630\n2\tFerrari\t\n\t520\n3\tRed Bull\t\n\t410\n4\tMercedes\t\n\t300",
+      "fonts": []
+    },
+    {
+      "name": "local-drivers-390",
+      "url": "http://127.0.0.1:49716/F1/drivers.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nLando Norris\nMcLaren\nPTS 350\nVITÓRIAS GP 6\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 313\nVITÓRIAS GP 5\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 276\nVITÓRIAS GP 4\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 239\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 202\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 165\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-teams-390",
+      "url": "http://127.0.0.1:49716/F1/teams.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 1\n630 PTS\n203\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Charles Leclerc / Lewis Hamilton\n\nPOS 2\n520 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen\n\nPOS 3\n410 PTS\n130\nVER DETALHES\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA George Russell\n\nPOS 4\n300 PTS\n131\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-champions-390",
+      "url": "http://127.0.0.1:49716/F1/champions.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": []
+    },
+    {
+      "name": "local-calendar-390",
+      "url": "http://127.0.0.1:49716/F1/calendar.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR20\n🇦🇺 Mexico City Grand Prix\n\nAlbert Park — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR21\n🇧🇷 São Paulo Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR22\n🇦🇺 Test Grand Prix\n\nAlbert Park — sáb., 21 de novembro de 2026 · horário não informado\n\nAGENDADA",
+      "fonts": []
+    },
+    {
+      "name": "local-404-390",
+      "url": "http://127.0.0.1:49716/F1/404.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": []
+    },
+    {
+      "name": "local-index-768",
+      "url": "http://127.0.0.1:49716/F1/index.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nSão Paulo Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 04h 59m 59s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 20 - Austrália\n\n1ST\nNOR\n1:35:22.500\n2ND\nPIA\n+3.120\n3RD\nVER\n+6.120\nCIRCUITO\nAlbert Park\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tLando Norris\t\n\t350\n2\tOscar Piastri\t\n\t313\n3\tMax Verstappen\t\n\t276\n4\tCharles Leclerc\t\n\t239\n5\tLewis Hamilton\t\n\t202\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMcLaren\t\n\t630\n2\tFerrari\t\n\t520\n3\tRed Bull\t\n\t410\n4\tMercedes\t\n\t300",
+      "fonts": []
+    },
+    {
+      "name": "local-drivers-768",
+      "url": "http://127.0.0.1:49716/F1/drivers.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nLando Norris\nMcLaren\nPTS 350\nVITÓRIAS GP 6\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 313\nVITÓRIAS GP 5\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 276\nVITÓRIAS GP 4\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 239\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 202\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 165\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-teams-768",
+      "url": "http://127.0.0.1:49716/F1/teams.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 1\n630 PTS\n203\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Charles Leclerc / Lewis Hamilton\n\nPOS 2\n520 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen\n\nPOS 3\n410 PTS\n130\nVER DETALHES\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA George Russell\n\nPOS 4\n300 PTS\n131\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-champions-768",
+      "url": "http://127.0.0.1:49716/F1/champions.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": []
+    },
+    {
+      "name": "local-calendar-768",
+      "url": "http://127.0.0.1:49716/F1/calendar.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR20\n🇦🇺 Mexico City Grand Prix\n\nAlbert Park — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR21\n🇧🇷 São Paulo Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR22\n🇦🇺 Test Grand Prix\n\nAlbert Park — sáb., 21 de novembro de 2026 · horário não informado\n\nAGENDADA",
+      "fonts": []
+    },
+    {
+      "name": "local-404-768",
+      "url": "http://127.0.0.1:49716/F1/404.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": []
+    },
+    {
+      "name": "local-index-1024",
+      "url": "http://127.0.0.1:49716/F1/index.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nSão Paulo Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 04h 59m 59s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 20 - Austrália\n\n1ST\nNOR\n1:35:22.500\n2ND\nPIA\n+3.120\n3RD\nVER\n+6.120\nCIRCUITO\nAlbert Park\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tLando Norris\t\n\t350\n2\tOscar Piastri\t\n\t313\n3\tMax Verstappen\t\n\t276\n4\tCharles Leclerc\t\n\t239\n5\tLewis Hamilton\t\n\t202\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMcLaren\t\n\t630\n2\tFerrari\t\n\t520\n3\tRed Bull\t\n\t410\n4\tMercedes\t\n\t300",
+      "fonts": []
+    },
+    {
+      "name": "local-drivers-1024",
+      "url": "http://127.0.0.1:49716/F1/drivers.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nLando Norris\nMcLaren\nPTS 350\nVITÓRIAS GP 6\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 313\nVITÓRIAS GP 5\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 276\nVITÓRIAS GP 4\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 239\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 202\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 165\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-teams-1024",
+      "url": "http://127.0.0.1:49716/F1/teams.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 1\n630 PTS\n203\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Charles Leclerc / Lewis Hamilton\n\nPOS 2\n520 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen\n\nPOS 3\n410 PTS\n130\nVER DETALHES\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA George Russell\n\nPOS 4\n300 PTS\n131\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-champions-1024",
+      "url": "http://127.0.0.1:49716/F1/champions.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": []
+    },
+    {
+      "name": "local-calendar-1024",
+      "url": "http://127.0.0.1:49716/F1/calendar.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR20\n🇦🇺 Mexico City Grand Prix\n\nAlbert Park — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR21\n🇧🇷 São Paulo Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR22\n🇦🇺 Test Grand Prix\n\nAlbert Park — sáb., 21 de novembro de 2026 · horário não informado\n\nAGENDADA",
+      "fonts": []
+    },
+    {
+      "name": "local-404-1024",
+      "url": "http://127.0.0.1:49716/F1/404.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": []
+    },
+    {
+      "name": "local-index-1440",
+      "url": "http://127.0.0.1:49716/F1/index.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nSão Paulo Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 04h 59m 59s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 20 - Austrália\n\n1ST\nNOR\n1:35:22.500\n2ND\nPIA\n+3.120\n3RD\nVER\n+6.120\nCIRCUITO\nAlbert Park\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tLando Norris\t\n\t350\n2\tOscar Piastri\t\n\t313\n3\tMax Verstappen\t\n\t276\n4\tCharles Leclerc\t\n\t239\n5\tLewis Hamilton\t\n\t202\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMcLaren\t\n\t630\n2\tFerrari\t\n\t520\n3\tRed Bull\t\n\t410\n4\tMercedes\t\n\t300",
+      "fonts": []
+    },
+    {
+      "name": "local-drivers-1440",
+      "url": "http://127.0.0.1:49716/F1/drivers.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nLando Norris\nMcLaren\nPTS 350\nVITÓRIAS GP 6\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 313\nVITÓRIAS GP 5\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 276\nVITÓRIAS GP 4\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 239\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 202\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 165\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n4\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-teams-1440",
+      "url": "http://127.0.0.1:49716/F1/teams.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 1\n630 PTS\n203\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Charles Leclerc / Lewis Hamilton\n\nPOS 2\n520 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen\n\nPOS 3\n410 PTS\n130\nVER DETALHES\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA George Russell\n\nPOS 4\n300 PTS\n131\nVER DETALHES",
+      "fonts": []
+    },
+    {
+      "name": "local-champions-1440",
+      "url": "http://127.0.0.1:49716/F1/champions.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": []
+    },
+    {
+      "name": "local-calendar-1440",
+      "url": "http://127.0.0.1:49716/F1/calendar.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR20\n🇦🇺 Mexico City Grand Prix\n\nAlbert Park — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR21\n🇧🇷 São Paulo Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR22\n🇦🇺 Test Grand Prix\n\nAlbert Park — sáb., 21 de novembro de 2026 · horário não informado\n\nAGENDADA",
+      "fonts": []
+    },
+    {
+      "name": "local-404-1440",
+      "url": "http://127.0.0.1:49716/F1/404.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": []
+    },
+    {
+      "name": "production-index-320",
+      "url": "https://andersoncav.github.io/F1/index.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nBrazilian Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 02h 47m 18s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 19 - México\n\n1ST\nVER\n2:20:28.772\n2ND\nHAM\n+0.799\n3RD\nANT\n+4.006\nCIRCUITO\nAutódromo Hermanos Rodríguez\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tAndrea Kimi Antonelli\t\n\t380\n2\tMax Verstappen\t\n\t261\n3\tLewis Hamilton\t\n\t259\n4\tGeorge Russell\t\n\t250\n5\tCharles Leclerc\t\n\t245\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMercedes\t\n\t630\n2\tFerrari\t\n\t504\n3\tRed Bull\t\n\t380\n4\tMcLaren\t\n\t371\n5\tRB F1 Team\t\n\t104",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-drivers-320",
+      "url": "https://andersoncav.github.io/F1/drivers.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nAndrea Kimi Antonelli\nMercedes\nPTS 380\nVITÓRIAS GP 9\nPOLES GP NÃO DISPONÍVEL\n12\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 261\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n3\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 259\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n44\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 250\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n63\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 245\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n16\nVER DETALHES\nLando Norris\nMcLaren\nPTS 221\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n1\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 150\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n81\nVER DETALHES\nIsack Hadjar\nRed Bull\nPTS 105\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n6\nVER DETALHES\nLiam Lawson\nRB F1 Team / Red Bull\nPTS 79\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n30\nVER DETALHES\nPierre Gasly\nAlpine F1 Team\nPTS 43\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n10\nVER DETALHES\nArvid Lindblad\nRB F1 Team\nPTS 38\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n41\nVER DETALHES\nFranco Colapinto\nAlpine F1 Team\nPTS 31\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n43\nVER DETALHES\nOliver Bearman\nHaas F1 Team\nPTS 23\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n87\nVER DETALHES\nNico Hülkenberg\nAudi\nPTS 13\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n27\nVER DETALHES\nGabriel Bortoleto\nAudi\nPTS 10\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n5\nVER DETALHES\nEsteban Ocon\nHaas F1 Team\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n31\nVER DETALHES\nFernando Alonso\nAston Martin\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n14\nVER DETALHES\nCarlos Sainz\nWilliams\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n55\nVER DETALHES\nAlexander Albon\nWilliams\nPTS 5\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n23\nVER DETALHES\nYuki Tsunoda\nRB F1 Team\nPTS 1\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n22\nVER DETALHES\nLance Stroll\nAston Martin\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n18\nVER DETALHES\nValtteri Bottas\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n77\nVER DETALHES\nRyo Hirakawa\nHaas F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n50\nVER DETALHES\nSergio Pérez\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n11\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-teams-320",
+      "url": "https://andersoncav.github.io/F1/teams.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Andrea Kimi Antonelli / George Russell\n\nPOS 1\n630 PTS\n131\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Lewis Hamilton / Charles Leclerc\n\nPOS 2\n504 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen / Isack Hadjar / Liam Lawson\n\nPOS 3\n380 PTS\n130\nVER DETALHES\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 4\n371 PTS\n203\nVER DETALHES\nRB F1 TEAM\n\nVISA CASH APP RACING BULLS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Liam Lawson / Arvid Lindblad / Yuki Tsunoda\n\nPOS 5\n104 PTS\n0\nVER DETALHES\nALPINE F1 TEAM\n\nBWT ALPINE FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Pierre Gasly / Franco Colapinto\n\nPOS 6\n74 PTS\n1\nVER DETALHES\nHAAS F1 TEAM\n\nTGR HAAS F1 TEAM\n\nPILOTOS NA TEMPORADA Oliver Bearman / Esteban Ocon / Ryo Hirakawa\n\nPOS 7\n30 PTS\n0\nVER DETALHES\nAUDI\n\nAUDI REVOLUT F1 TEAM\n\nPILOTOS NA TEMPORADA Nico Hülkenberg / Gabriel Bortoleto\n\nPOS 8\n23 PTS\nNão disponível\nVER DETALHES\nWILLIAMS\n\nATLASSIAN WILLIAMS F1 TEAM\n\nPILOTOS NA TEMPORADA Carlos Sainz / Alexander Albon\n\nPOS 9\n12 PTS\n114\nVER DETALHES\nASTON MARTIN\n\nASTON MARTIN ARAMCO FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Fernando Alonso / Lance Stroll\n\nPOS 10\n7 PTS\n0\nVER DETALHES\nCADILLAC F1 TEAM\n\nCADILLAC FORMULA 1 TEAM\n\nPILOTOS NA TEMPORADA Valtteri Bottas / Sergio Pérez\n\nPOS 11\n0 PTS\nNão disponível\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-champions-320",
+      "url": "https://andersoncav.github.io/F1/champions.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-calendar-320",
+      "url": "https://andersoncav.github.io/F1/calendar.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR1\n🇦🇺 Australian Grand Prix\n\nAlbert Park Grand Prix Circuit — dom., 8 de março de 2026 às 01:00 BRT\n\nCONCLUÍDA\nR2\n🇨🇳 Chinese Grand Prix\n\nShanghai International Circuit — dom., 15 de março de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR3\n🇯🇵 Japanese Grand Prix\n\nSuzuka Circuit — dom., 29 de março de 2026 às 02:00 BRT\n\nCONCLUÍDA\nR4\n🇺🇸 Miami Grand Prix\n\nMiami International Autodrome — dom., 3 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR5\n🇨🇦 Canadian Grand Prix\n\nCircuit Gilles Villeneuve — dom., 24 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR6\n🇲🇨 Monaco Grand Prix\n\nCircuit de Monaco — dom., 7 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR7\n🇪🇸 Barcelona Grand Prix\n\nCircuit de Barcelona-Catalunya — dom., 14 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR8\n🇦🇹 Austrian Grand Prix\n\nRed Bull Ring — dom., 28 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR9\n🇬🇧 British Grand Prix\n\nSilverstone Circuit — dom., 5 de julho de 2026 às 11:00 BRT\n\nCONCLUÍDA\nR10\n🇧🇪 Belgian Grand Prix\n\nCircuit de Spa-Francorchamps — dom., 19 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR11\n🇭🇺 Hungarian Grand Prix\n\nHungaroring — dom., 26 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR12\n🇳🇱 Dutch Grand Prix\n\nCircuit Park Zandvoort — dom., 23 de agosto de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR13\n🇮🇹 Italian Grand Prix\n\nAutodromo Nazionale di Monza — dom., 6 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR14\n🇪🇸 Spanish Grand Prix\n\nMadring — dom., 13 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR15\n🇦🇿 Azerbaijan Grand Prix\n\nBaku City Circuit — sáb., 26 de setembro de 2026 às 08:00 BRT\n\nCONCLUÍDA\nR16\n🏁 Bahrain Grand Prix in Malaysia\n\nSepang International Circuit — dom., 4 de outubro de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR17\n🇸🇬 Singapore Grand Prix\n\nMarina Bay Street Circuit — dom., 11 de outubro de 2026 às 09:00 BRT\n\nCONCLUÍDA\nR18\n🇺🇸 United States Grand Prix\n\nCircuit of the Americas — dom., 25 de outubro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR19\n🇲🇽 Mexico City Grand Prix\n\nAutódromo Hermanos Rodríguez — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR20\n🇧🇷 Brazilian Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR21\n🇺🇸 Las Vegas Grand Prix\n\nLas Vegas Strip Street Circuit — dom., 22 de novembro d",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-404-320",
+      "url": "https://andersoncav.github.io/F1/404.html",
+      "width": 320,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-index-390",
+      "url": "https://andersoncav.github.io/F1/index.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nBrazilian Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 02h 47m 03s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 19 - México\n\n1ST\nVER\n2:20:28.772\n2ND\nHAM\n+0.799\n3RD\nANT\n+4.006\nCIRCUITO\nAutódromo Hermanos Rodríguez\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tAndrea Kimi Antonelli\t\n\t380\n2\tMax Verstappen\t\n\t261\n3\tLewis Hamilton\t\n\t259\n4\tGeorge Russell\t\n\t250\n5\tCharles Leclerc\t\n\t245\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMercedes\t\n\t630\n2\tFerrari\t\n\t504\n3\tRed Bull\t\n\t380\n4\tMcLaren\t\n\t371\n5\tRB F1 Team\t\n\t104",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-drivers-390",
+      "url": "https://andersoncav.github.io/F1/drivers.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nAndrea Kimi Antonelli\nMercedes\nPTS 380\nVITÓRIAS GP 9\nPOLES GP NÃO DISPONÍVEL\n12\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 261\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n3\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 259\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n44\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 250\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n63\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 245\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n16\nVER DETALHES\nLando Norris\nMcLaren\nPTS 221\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n1\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 150\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n81\nVER DETALHES\nIsack Hadjar\nRed Bull\nPTS 105\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n6\nVER DETALHES\nLiam Lawson\nRB F1 Team / Red Bull\nPTS 79\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n30\nVER DETALHES\nPierre Gasly\nAlpine F1 Team\nPTS 43\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n10\nVER DETALHES\nArvid Lindblad\nRB F1 Team\nPTS 38\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n41\nVER DETALHES\nFranco Colapinto\nAlpine F1 Team\nPTS 31\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n43\nVER DETALHES\nOliver Bearman\nHaas F1 Team\nPTS 23\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n87\nVER DETALHES\nNico Hülkenberg\nAudi\nPTS 13\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n27\nVER DETALHES\nGabriel Bortoleto\nAudi\nPTS 10\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n5\nVER DETALHES\nEsteban Ocon\nHaas F1 Team\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n31\nVER DETALHES\nFernando Alonso\nAston Martin\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n14\nVER DETALHES\nCarlos Sainz\nWilliams\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n55\nVER DETALHES\nAlexander Albon\nWilliams\nPTS 5\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n23\nVER DETALHES\nYuki Tsunoda\nRB F1 Team\nPTS 1\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n22\nVER DETALHES\nLance Stroll\nAston Martin\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n18\nVER DETALHES\nValtteri Bottas\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n77\nVER DETALHES\nRyo Hirakawa\nHaas F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n50\nVER DETALHES\nSergio Pérez\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n11\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-teams-390",
+      "url": "https://andersoncav.github.io/F1/teams.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Andrea Kimi Antonelli / George Russell\n\nPOS 1\n630 PTS\n131\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Lewis Hamilton / Charles Leclerc\n\nPOS 2\n504 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen / Isack Hadjar / Liam Lawson\n\nPOS 3\n380 PTS\n130\nVER DETALHES\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 4\n371 PTS\n203\nVER DETALHES\nRB F1 TEAM\n\nVISA CASH APP RACING BULLS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Liam Lawson / Arvid Lindblad / Yuki Tsunoda\n\nPOS 5\n104 PTS\n0\nVER DETALHES\nALPINE F1 TEAM\n\nBWT ALPINE FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Pierre Gasly / Franco Colapinto\n\nPOS 6\n74 PTS\n1\nVER DETALHES\nHAAS F1 TEAM\n\nTGR HAAS F1 TEAM\n\nPILOTOS NA TEMPORADA Oliver Bearman / Esteban Ocon / Ryo Hirakawa\n\nPOS 7\n30 PTS\n0\nVER DETALHES\nAUDI\n\nAUDI REVOLUT F1 TEAM\n\nPILOTOS NA TEMPORADA Nico Hülkenberg / Gabriel Bortoleto\n\nPOS 8\n23 PTS\nNão disponível\nVER DETALHES\nWILLIAMS\n\nATLASSIAN WILLIAMS F1 TEAM\n\nPILOTOS NA TEMPORADA Carlos Sainz / Alexander Albon\n\nPOS 9\n12 PTS\n114\nVER DETALHES\nASTON MARTIN\n\nASTON MARTIN ARAMCO FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Fernando Alonso / Lance Stroll\n\nPOS 10\n7 PTS\n0\nVER DETALHES\nCADILLAC F1 TEAM\n\nCADILLAC FORMULA 1 TEAM\n\nPILOTOS NA TEMPORADA Valtteri Bottas / Sergio Pérez\n\nPOS 11\n0 PTS\nNão disponível\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-champions-390",
+      "url": "https://andersoncav.github.io/F1/champions.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-calendar-390",
+      "url": "https://andersoncav.github.io/F1/calendar.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR1\n🇦🇺 Australian Grand Prix\n\nAlbert Park Grand Prix Circuit — dom., 8 de março de 2026 às 01:00 BRT\n\nCONCLUÍDA\nR2\n🇨🇳 Chinese Grand Prix\n\nShanghai International Circuit — dom., 15 de março de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR3\n🇯🇵 Japanese Grand Prix\n\nSuzuka Circuit — dom., 29 de março de 2026 às 02:00 BRT\n\nCONCLUÍDA\nR4\n🇺🇸 Miami Grand Prix\n\nMiami International Autodrome — dom., 3 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR5\n🇨🇦 Canadian Grand Prix\n\nCircuit Gilles Villeneuve — dom., 24 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR6\n🇲🇨 Monaco Grand Prix\n\nCircuit de Monaco — dom., 7 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR7\n🇪🇸 Barcelona Grand Prix\n\nCircuit de Barcelona-Catalunya — dom., 14 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR8\n🇦🇹 Austrian Grand Prix\n\nRed Bull Ring — dom., 28 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR9\n🇬🇧 British Grand Prix\n\nSilverstone Circuit — dom., 5 de julho de 2026 às 11:00 BRT\n\nCONCLUÍDA\nR10\n🇧🇪 Belgian Grand Prix\n\nCircuit de Spa-Francorchamps — dom., 19 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR11\n🇭🇺 Hungarian Grand Prix\n\nHungaroring — dom., 26 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR12\n🇳🇱 Dutch Grand Prix\n\nCircuit Park Zandvoort — dom., 23 de agosto de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR13\n🇮🇹 Italian Grand Prix\n\nAutodromo Nazionale di Monza — dom., 6 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR14\n🇪🇸 Spanish Grand Prix\n\nMadring — dom., 13 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR15\n🇦🇿 Azerbaijan Grand Prix\n\nBaku City Circuit — sáb., 26 de setembro de 2026 às 08:00 BRT\n\nCONCLUÍDA\nR16\n🏁 Bahrain Grand Prix in Malaysia\n\nSepang International Circuit — dom., 4 de outubro de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR17\n🇸🇬 Singapore Grand Prix\n\nMarina Bay Street Circuit — dom., 11 de outubro de 2026 às 09:00 BRT\n\nCONCLUÍDA\nR18\n🇺🇸 United States Grand Prix\n\nCircuit of the Americas — dom., 25 de outubro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR19\n🇲🇽 Mexico City Grand Prix\n\nAutódromo Hermanos Rodríguez — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR20\n🇧🇷 Brazilian Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR21\n🇺🇸 Las Vegas Grand Prix\n\nLas Vegas Strip Street Circuit — dom., 22 de novembro d",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-404-390",
+      "url": "https://andersoncav.github.io/F1/404.html",
+      "width": 390,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-index-768",
+      "url": "https://andersoncav.github.io/F1/index.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nBrazilian Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 02h 46m 50s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 19 - México\n\n1ST\nVER\n2:20:28.772\n2ND\nHAM\n+0.799\n3RD\nANT\n+4.006\nCIRCUITO\nAutódromo Hermanos Rodríguez\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tAndrea Kimi Antonelli\t\n\t380\n2\tMax Verstappen\t\n\t261\n3\tLewis Hamilton\t\n\t259\n4\tGeorge Russell\t\n\t250\n5\tCharles Leclerc\t\n\t245\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMercedes\t\n\t630\n2\tFerrari\t\n\t504\n3\tRed Bull\t\n\t380\n4\tMcLaren\t\n\t371\n5\tRB F1 Team\t\n\t104",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-drivers-768",
+      "url": "https://andersoncav.github.io/F1/drivers.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nAndrea Kimi Antonelli\nMercedes\nPTS 380\nVITÓRIAS GP 9\nPOLES GP NÃO DISPONÍVEL\n12\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 261\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n3\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 259\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n44\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 250\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n63\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 245\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n16\nVER DETALHES\nLando Norris\nMcLaren\nPTS 221\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n1\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 150\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n81\nVER DETALHES\nIsack Hadjar\nRed Bull\nPTS 105\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n6\nVER DETALHES\nLiam Lawson\nRB F1 Team / Red Bull\nPTS 79\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n30\nVER DETALHES\nPierre Gasly\nAlpine F1 Team\nPTS 43\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n10\nVER DETALHES\nArvid Lindblad\nRB F1 Team\nPTS 38\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n41\nVER DETALHES\nFranco Colapinto\nAlpine F1 Team\nPTS 31\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n43\nVER DETALHES\nOliver Bearman\nHaas F1 Team\nPTS 23\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n87\nVER DETALHES\nNico Hülkenberg\nAudi\nPTS 13\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n27\nVER DETALHES\nGabriel Bortoleto\nAudi\nPTS 10\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n5\nVER DETALHES\nEsteban Ocon\nHaas F1 Team\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n31\nVER DETALHES\nFernando Alonso\nAston Martin\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n14\nVER DETALHES\nCarlos Sainz\nWilliams\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n55\nVER DETALHES\nAlexander Albon\nWilliams\nPTS 5\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n23\nVER DETALHES\nYuki Tsunoda\nRB F1 Team\nPTS 1\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n22\nVER DETALHES\nLance Stroll\nAston Martin\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n18\nVER DETALHES\nValtteri Bottas\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n77\nVER DETALHES\nRyo Hirakawa\nHaas F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n50\nVER DETALHES\nSergio Pérez\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n11\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-teams-768",
+      "url": "https://andersoncav.github.io/F1/teams.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Andrea Kimi Antonelli / George Russell\n\nPOS 1\n630 PTS\n131\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Lewis Hamilton / Charles Leclerc\n\nPOS 2\n504 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen / Isack Hadjar / Liam Lawson\n\nPOS 3\n380 PTS\n130\nVER DETALHES\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 4\n371 PTS\n203\nVER DETALHES\nRB F1 TEAM\n\nVISA CASH APP RACING BULLS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Liam Lawson / Arvid Lindblad / Yuki Tsunoda\n\nPOS 5\n104 PTS\n0\nVER DETALHES\nALPINE F1 TEAM\n\nBWT ALPINE FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Pierre Gasly / Franco Colapinto\n\nPOS 6\n74 PTS\n1\nVER DETALHES\nHAAS F1 TEAM\n\nTGR HAAS F1 TEAM\n\nPILOTOS NA TEMPORADA Oliver Bearman / Esteban Ocon / Ryo Hirakawa\n\nPOS 7\n30 PTS\n0\nVER DETALHES\nAUDI\n\nAUDI REVOLUT F1 TEAM\n\nPILOTOS NA TEMPORADA Nico Hülkenberg / Gabriel Bortoleto\n\nPOS 8\n23 PTS\nNão disponível\nVER DETALHES\nWILLIAMS\n\nATLASSIAN WILLIAMS F1 TEAM\n\nPILOTOS NA TEMPORADA Carlos Sainz / Alexander Albon\n\nPOS 9\n12 PTS\n114\nVER DETALHES\nASTON MARTIN\n\nASTON MARTIN ARAMCO FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Fernando Alonso / Lance Stroll\n\nPOS 10\n7 PTS\n0\nVER DETALHES\nCADILLAC F1 TEAM\n\nCADILLAC FORMULA 1 TEAM\n\nPILOTOS NA TEMPORADA Valtteri Bottas / Sergio Pérez\n\nPOS 11\n0 PTS\nNão disponível\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-champions-768",
+      "url": "https://andersoncav.github.io/F1/champions.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-calendar-768",
+      "url": "https://andersoncav.github.io/F1/calendar.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR1\n🇦🇺 Australian Grand Prix\n\nAlbert Park Grand Prix Circuit — dom., 8 de março de 2026 às 01:00 BRT\n\nCONCLUÍDA\nR2\n🇨🇳 Chinese Grand Prix\n\nShanghai International Circuit — dom., 15 de março de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR3\n🇯🇵 Japanese Grand Prix\n\nSuzuka Circuit — dom., 29 de março de 2026 às 02:00 BRT\n\nCONCLUÍDA\nR4\n🇺🇸 Miami Grand Prix\n\nMiami International Autodrome — dom., 3 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR5\n🇨🇦 Canadian Grand Prix\n\nCircuit Gilles Villeneuve — dom., 24 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR6\n🇲🇨 Monaco Grand Prix\n\nCircuit de Monaco — dom., 7 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR7\n🇪🇸 Barcelona Grand Prix\n\nCircuit de Barcelona-Catalunya — dom., 14 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR8\n🇦🇹 Austrian Grand Prix\n\nRed Bull Ring — dom., 28 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR9\n🇬🇧 British Grand Prix\n\nSilverstone Circuit — dom., 5 de julho de 2026 às 11:00 BRT\n\nCONCLUÍDA\nR10\n🇧🇪 Belgian Grand Prix\n\nCircuit de Spa-Francorchamps — dom., 19 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR11\n🇭🇺 Hungarian Grand Prix\n\nHungaroring — dom., 26 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR12\n🇳🇱 Dutch Grand Prix\n\nCircuit Park Zandvoort — dom., 23 de agosto de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR13\n🇮🇹 Italian Grand Prix\n\nAutodromo Nazionale di Monza — dom., 6 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR14\n🇪🇸 Spanish Grand Prix\n\nMadring — dom., 13 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR15\n🇦🇿 Azerbaijan Grand Prix\n\nBaku City Circuit — sáb., 26 de setembro de 2026 às 08:00 BRT\n\nCONCLUÍDA\nR16\n🏁 Bahrain Grand Prix in Malaysia\n\nSepang International Circuit — dom., 4 de outubro de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR17\n🇸🇬 Singapore Grand Prix\n\nMarina Bay Street Circuit — dom., 11 de outubro de 2026 às 09:00 BRT\n\nCONCLUÍDA\nR18\n🇺🇸 United States Grand Prix\n\nCircuit of the Americas — dom., 25 de outubro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR19\n🇲🇽 Mexico City Grand Prix\n\nAutódromo Hermanos Rodríguez — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR20\n🇧🇷 Brazilian Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR21\n🇺🇸 Las Vegas Grand Prix\n\nLas Vegas Strip Street Circuit — dom., 22 de novembro d",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-404-768",
+      "url": "https://andersoncav.github.io/F1/404.html",
+      "width": 768,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-index-1024",
+      "url": "https://andersoncav.github.io/F1/index.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nBrazilian Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 02h 46m 37s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 19 - México\n\n1ST\nVER\n2:20:28.772\n2ND\nHAM\n+0.799\n3RD\nANT\n+4.006\nCIRCUITO\nAutódromo Hermanos Rodríguez\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tAndrea Kimi Antonelli\t\n\t380\n2\tMax Verstappen\t\n\t261\n3\tLewis Hamilton\t\n\t259\n4\tGeorge Russell\t\n\t250\n5\tCharles Leclerc\t\n\t245\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMercedes\t\n\t630\n2\tFerrari\t\n\t504\n3\tRed Bull\t\n\t380\n4\tMcLaren\t\n\t371\n5\tRB F1 Team\t\n\t104",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-drivers-1024",
+      "url": "https://andersoncav.github.io/F1/drivers.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nAndrea Kimi Antonelli\nMercedes\nPTS 380\nVITÓRIAS GP 9\nPOLES GP NÃO DISPONÍVEL\n12\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 261\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n3\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 259\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n44\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 250\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n63\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 245\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n16\nVER DETALHES\nLando Norris\nMcLaren\nPTS 221\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n1\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 150\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n81\nVER DETALHES\nIsack Hadjar\nRed Bull\nPTS 105\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n6\nVER DETALHES\nLiam Lawson\nRB F1 Team / Red Bull\nPTS 79\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n30\nVER DETALHES\nPierre Gasly\nAlpine F1 Team\nPTS 43\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n10\nVER DETALHES\nArvid Lindblad\nRB F1 Team\nPTS 38\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n41\nVER DETALHES\nFranco Colapinto\nAlpine F1 Team\nPTS 31\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n43\nVER DETALHES\nOliver Bearman\nHaas F1 Team\nPTS 23\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n87\nVER DETALHES\nNico Hülkenberg\nAudi\nPTS 13\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n27\nVER DETALHES\nGabriel Bortoleto\nAudi\nPTS 10\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n5\nVER DETALHES\nEsteban Ocon\nHaas F1 Team\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n31\nVER DETALHES\nFernando Alonso\nAston Martin\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n14\nVER DETALHES\nCarlos Sainz\nWilliams\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n55\nVER DETALHES\nAlexander Albon\nWilliams\nPTS 5\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n23\nVER DETALHES\nYuki Tsunoda\nRB F1 Team\nPTS 1\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n22\nVER DETALHES\nLance Stroll\nAston Martin\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n18\nVER DETALHES\nValtteri Bottas\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n77\nVER DETALHES\nRyo Hirakawa\nHaas F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n50\nVER DETALHES\nSergio Pérez\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n11\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-teams-1024",
+      "url": "https://andersoncav.github.io/F1/teams.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Andrea Kimi Antonelli / George Russell\n\nPOS 1\n630 PTS\n131\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Lewis Hamilton / Charles Leclerc\n\nPOS 2\n504 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen / Isack Hadjar / Liam Lawson\n\nPOS 3\n380 PTS\n130\nVER DETALHES\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 4\n371 PTS\n203\nVER DETALHES\nRB F1 TEAM\n\nVISA CASH APP RACING BULLS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Liam Lawson / Arvid Lindblad / Yuki Tsunoda\n\nPOS 5\n104 PTS\n0\nVER DETALHES\nALPINE F1 TEAM\n\nBWT ALPINE FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Pierre Gasly / Franco Colapinto\n\nPOS 6\n74 PTS\n1\nVER DETALHES\nHAAS F1 TEAM\n\nTGR HAAS F1 TEAM\n\nPILOTOS NA TEMPORADA Oliver Bearman / Esteban Ocon / Ryo Hirakawa\n\nPOS 7\n30 PTS\n0\nVER DETALHES\nAUDI\n\nAUDI REVOLUT F1 TEAM\n\nPILOTOS NA TEMPORADA Nico Hülkenberg / Gabriel Bortoleto\n\nPOS 8\n23 PTS\nNão disponível\nVER DETALHES\nWILLIAMS\n\nATLASSIAN WILLIAMS F1 TEAM\n\nPILOTOS NA TEMPORADA Carlos Sainz / Alexander Albon\n\nPOS 9\n12 PTS\n114\nVER DETALHES\nASTON MARTIN\n\nASTON MARTIN ARAMCO FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Fernando Alonso / Lance Stroll\n\nPOS 10\n7 PTS\n0\nVER DETALHES\nCADILLAC F1 TEAM\n\nCADILLAC FORMULA 1 TEAM\n\nPILOTOS NA TEMPORADA Valtteri Bottas / Sergio Pérez\n\nPOS 11\n0 PTS\nNão disponível\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-champions-1024",
+      "url": "https://andersoncav.github.io/F1/champions.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-calendar-1024",
+      "url": "https://andersoncav.github.io/F1/calendar.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR1\n🇦🇺 Australian Grand Prix\n\nAlbert Park Grand Prix Circuit — dom., 8 de março de 2026 às 01:00 BRT\n\nCONCLUÍDA\nR2\n🇨🇳 Chinese Grand Prix\n\nShanghai International Circuit — dom., 15 de março de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR3\n🇯🇵 Japanese Grand Prix\n\nSuzuka Circuit — dom., 29 de março de 2026 às 02:00 BRT\n\nCONCLUÍDA\nR4\n🇺🇸 Miami Grand Prix\n\nMiami International Autodrome — dom., 3 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR5\n🇨🇦 Canadian Grand Prix\n\nCircuit Gilles Villeneuve — dom., 24 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR6\n🇲🇨 Monaco Grand Prix\n\nCircuit de Monaco — dom., 7 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR7\n🇪🇸 Barcelona Grand Prix\n\nCircuit de Barcelona-Catalunya — dom., 14 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR8\n🇦🇹 Austrian Grand Prix\n\nRed Bull Ring — dom., 28 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR9\n🇬🇧 British Grand Prix\n\nSilverstone Circuit — dom., 5 de julho de 2026 às 11:00 BRT\n\nCONCLUÍDA\nR10\n🇧🇪 Belgian Grand Prix\n\nCircuit de Spa-Francorchamps — dom., 19 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR11\n🇭🇺 Hungarian Grand Prix\n\nHungaroring — dom., 26 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR12\n🇳🇱 Dutch Grand Prix\n\nCircuit Park Zandvoort — dom., 23 de agosto de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR13\n🇮🇹 Italian Grand Prix\n\nAutodromo Nazionale di Monza — dom., 6 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR14\n🇪🇸 Spanish Grand Prix\n\nMadring — dom., 13 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR15\n🇦🇿 Azerbaijan Grand Prix\n\nBaku City Circuit — sáb., 26 de setembro de 2026 às 08:00 BRT\n\nCONCLUÍDA\nR16\n🏁 Bahrain Grand Prix in Malaysia\n\nSepang International Circuit — dom., 4 de outubro de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR17\n🇸🇬 Singapore Grand Prix\n\nMarina Bay Street Circuit — dom., 11 de outubro de 2026 às 09:00 BRT\n\nCONCLUÍDA\nR18\n🇺🇸 United States Grand Prix\n\nCircuit of the Americas — dom., 25 de outubro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR19\n🇲🇽 Mexico City Grand Prix\n\nAutódromo Hermanos Rodríguez — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR20\n🇧🇷 Brazilian Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR21\n🇺🇸 Las Vegas Grand Prix\n\nLas Vegas Strip Street Circuit — dom., 22 de novembro d",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-404-1024",
+      "url": "https://andersoncav.github.io/F1/404.html",
+      "width": 1024,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-index-1440",
+      "url": "https://andersoncav.github.io/F1/index.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Início",
+      "overflow": false,
+      "text": "F1\n2026\n— DADOS PUBLICADOS\n\nPORTAL FORMULA 1\n\nDados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.\n\nPRÓXIMA CORRIDA\nBrazilian Grand Prix\n\nSão Paulo, Brasil\n\nLARGADA DA CORRIDA EM\n6d 02h 46m 24s\nCIRCUITO\nAutódromo José Carlos Pace\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 8 de novembro de 2026 às 14:00 BRT\n\nÚLTIMA CORRIDA\nMexico City Grand Prix\n\nEtapa 19 - México\n\n1ST\nVER\n2:20:28.772\n2ND\nHAM\n+0.799\n3RD\nANT\n+4.006\nCIRCUITO\nAutódromo Hermanos Rodríguez\nEXTENSÃO\nNão disponível\nDISTÂNCIA\nNão disponível\nVOLTAS\nNão disponível\nESTREIA\nNão disponível\nDATA LOCAL\ndom., 1 de novembro de 2026 às 17:00 BRT\nCLASSIFICAÇÃO RÁPIDA\nTop 5 pilotos · 2026\nPOS\tPILOTO\tEQUIPE\tPTS\n1\tAndrea Kimi Antonelli\t\n\t380\n2\tMax Verstappen\t\n\t261\n3\tLewis Hamilton\t\n\t259\n4\tGeorge Russell\t\n\t250\n5\tCharles Leclerc\t\n\t245\nTop 5 construtores · 2026\nPOS\tEQUIPE\t-\tPTS\n1\tMercedes\t\n\t630\n2\tFerrari\t\n\t504\n3\tRed Bull\t\n\t380\n4\tMcLaren\t\n\t371\n5\tRB F1 Team\t\n\t104",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-drivers-1440",
+      "url": "https://andersoncav.github.io/F1/drivers.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Pilotos",
+      "overflow": false,
+      "text": "WORLD DRIVERS' CHAMPIONSHIP\n\nPILOTOS\n\nDados técnicos e classificação oficial da temporada atual.\n\nBUSCAR POR NOME\nORDENAR POR\nClassificação atual\nNome\nEquipe\nPontos\nVitórias de GP na temporada\nPoles de GP (indisponíveis)\nAndrea Kimi Antonelli\nMercedes\nPTS 380\nVITÓRIAS GP 9\nPOLES GP NÃO DISPONÍVEL\n12\nVER DETALHES\nMax Verstappen\nRed Bull\nPTS 261\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n3\nVER DETALHES\nLewis Hamilton\nFerrari\nPTS 259\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n44\nVER DETALHES\nGeorge Russell\nMercedes\nPTS 250\nVITÓRIAS GP 3\nPOLES GP NÃO DISPONÍVEL\n63\nVER DETALHES\nCharles Leclerc\nFerrari\nPTS 245\nVITÓRIAS GP 1\nPOLES GP NÃO DISPONÍVEL\n16\nVER DETALHES\nLando Norris\nMcLaren\nPTS 221\nVITÓRIAS GP 2\nPOLES GP NÃO DISPONÍVEL\n1\nVER DETALHES\nOscar Piastri\nMcLaren\nPTS 150\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n81\nVER DETALHES\nIsack Hadjar\nRed Bull\nPTS 105\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n6\nVER DETALHES\nLiam Lawson\nRB F1 Team / Red Bull\nPTS 79\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n30\nVER DETALHES\nPierre Gasly\nAlpine F1 Team\nPTS 43\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n10\nVER DETALHES\nArvid Lindblad\nRB F1 Team\nPTS 38\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n41\nVER DETALHES\nFranco Colapinto\nAlpine F1 Team\nPTS 31\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n43\nVER DETALHES\nOliver Bearman\nHaas F1 Team\nPTS 23\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n87\nVER DETALHES\nNico Hülkenberg\nAudi\nPTS 13\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n27\nVER DETALHES\nGabriel Bortoleto\nAudi\nPTS 10\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n5\nVER DETALHES\nEsteban Ocon\nHaas F1 Team\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n31\nVER DETALHES\nFernando Alonso\nAston Martin\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n14\nVER DETALHES\nCarlos Sainz\nWilliams\nPTS 7\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n55\nVER DETALHES\nAlexander Albon\nWilliams\nPTS 5\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n23\nVER DETALHES\nYuki Tsunoda\nRB F1 Team\nPTS 1\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n22\nVER DETALHES\nLance Stroll\nAston Martin\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n18\nVER DETALHES\nValtteri Bottas\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n77\nVER DETALHES\nRyo Hirakawa\nHaas F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n50\nVER DETALHES\nSergio Pérez\nCadillac F1 Team\nPTS 0\nVITÓRIAS GP 0\nPOLES GP NÃO DISPONÍVEL\n11\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-teams-1440",
+      "url": "https://andersoncav.github.io/F1/teams.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Equipes",
+      "overflow": false,
+      "text": "CONSTRUCTORS' CHAMPIONSHIP\n\nEQUIPES\n\nPerformance técnica e classificação de construtores.\n\nORDENAR POR\nClassificação\nNome\nVitórias\nCampeonatos\nMERCEDES\n\nMERCEDES-AMG PETRONAS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Andrea Kimi Antonelli / George Russell\n\nPOS 1\n630 PTS\n131\nVER DETALHES\nFERRARI\n\nSCUDERIA FERRARI HP\n\nPILOTOS NA TEMPORADA Lewis Hamilton / Charles Leclerc\n\nPOS 2\n504 PTS\n248\nVER DETALHES\nRED BULL\n\nORACLE RED BULL RACING\n\nPILOTOS NA TEMPORADA Max Verstappen / Isack Hadjar / Liam Lawson\n\nPOS 3\n380 PTS\n130\nVER DETALHES\nMCLAREN\n\nMCLAREN MASTERCARD F1 TEAM\n\nPILOTOS NA TEMPORADA Lando Norris / Oscar Piastri\n\nPOS 4\n371 PTS\n203\nVER DETALHES\nRB F1 TEAM\n\nVISA CASH APP RACING BULLS FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Liam Lawson / Arvid Lindblad / Yuki Tsunoda\n\nPOS 5\n104 PTS\n0\nVER DETALHES\nALPINE F1 TEAM\n\nBWT ALPINE FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Pierre Gasly / Franco Colapinto\n\nPOS 6\n74 PTS\n1\nVER DETALHES\nHAAS F1 TEAM\n\nTGR HAAS F1 TEAM\n\nPILOTOS NA TEMPORADA Oliver Bearman / Esteban Ocon / Ryo Hirakawa\n\nPOS 7\n30 PTS\n0\nVER DETALHES\nAUDI\n\nAUDI REVOLUT F1 TEAM\n\nPILOTOS NA TEMPORADA Nico Hülkenberg / Gabriel Bortoleto\n\nPOS 8\n23 PTS\nNão disponível\nVER DETALHES\nWILLIAMS\n\nATLASSIAN WILLIAMS F1 TEAM\n\nPILOTOS NA TEMPORADA Carlos Sainz / Alexander Albon\n\nPOS 9\n12 PTS\n114\nVER DETALHES\nASTON MARTIN\n\nASTON MARTIN ARAMCO FORMULA ONE TEAM\n\nPILOTOS NA TEMPORADA Fernando Alonso / Lance Stroll\n\nPOS 10\n7 PTS\n0\nVER DETALHES\nCADILLAC F1 TEAM\n\nCADILLAC FORMULA 1 TEAM\n\nPILOTOS NA TEMPORADA Valtteri Bottas / Sergio Pérez\n\nPOS 11\n0 PTS\nNão disponível\nVER DETALHES",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-champions-1440",
+      "url": "https://andersoncav.github.io/F1/champions.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Campeões",
+      "overflow": false,
+      "text": "CAMPEÕES MUNDIAIS\n\nTodos os campeões da história da Fórmula 1 desde 1950.\n\nFILTRAR POR TÍTULOS\nTodos\n1 título\n2 títulos\n3+ títulos\n5+ títulos\nORDENAR POR\nMais títulos\nNome\nAno do primeiro título\nLewis Hamilton\n\n🇬🇧 Reino Unido\n\nTítulos: 2008, 2014, 2015, 2017, 2018, 2019, 2020\n\nVitórias de GP até 2025: 105\n\n7\nPrimeiro título\n2008\nÚltimo título\n2020\nVitórias de GP até 2025\n105\nEquipes campeãs\nMcLaren / Mercedes\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Picture by Lauren Hurley / No 10 Downing Street. Contains public sector information licensed under the Open Government Licence v3.0 · OGL 3. Miniatura enquadrada.\n\nMichael Schumacher\n\n🇩🇪 Alemanha\n\nTítulos: 1994, 1995, 2000, 2001, 2002, 2003, 2004\n\nVitórias de GP até 2025: 91\n\n7\nPrimeiro título\n1994\nÚltimo título\n2004\nVitórias de GP até 2025\n91\nEquipes campeãs\nBenetton / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Aécio Neves – Wellington Pedro / Imprensa MG; derivatives: F1fans, FMSky · CC BY 2.0. Miniatura enquadrada.\n\nJuan Manuel Fangio\n\n🇦🇷 Argentina\n\nTítulos: 1951, 1954, 1955, 1956, 1957\n\nVitórias de GP até 2025: 24\n\n5\nPrimeiro título\n1951\nÚltimo título\n1957\nVitórias de GP até 2025\n24\nEquipes campeãs\nAlfa Romeo / Maserati / Mercedes / Ferrari\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Bjørn Fjørtoft / Riksarkivet · CC BY 4.0. Miniatura enquadrada.\n\nMax Verstappen\n\n🇳🇱 Paises Baixos\n\nTítulos: 2021, 2022, 2023, 2024\n\nVitórias de GP até 2025: 71\n\n4\nPrimeiro título\n2021\nÚltimo título\n2024\nVitórias de GP até 2025\n71\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Steffen Prößdorf · CC BY-SA 4.0. Miniatura enquadrada.\n\nSebastian Vettel\n\n🇩🇪 Alemanha\n\nTítulos: 2010, 2011, 2012, 2013\n\nVitórias de GP até 2025: 53\n\n4\nPrimeiro título\n2010\nÚltimo título\n2013\nVitórias de GP até 2025\n53\nEquipes campeãs\nRed Bull\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Andrea Diodato · CC BY 4.0. Miniatura enquadrada.\n\nAlain Prost\n\n🇫🇷 Franca\n\nTítulos: 1985, 1986, 1989, 1993\n\nVitórias de GP até 2025: 51\n\n4\nPrimeiro título\n1985\nÚltimo título\n1993\nVitórias de GP até 2025\n51\nEquipes campeãs\nMcLaren / Williams\nFonte: F1 Hall of Fame · títulos até 2025\n\nFoto: Thesupermat · CC BY-SA 4.0. Miniatura enquadrada.\n\nAyrton Senna\n\n🇧🇷 Brasil\n\nTítulos: 1988, 1990, 1991\n\nVitórias de GP até 2025: 41\n\n3\nPrimeiro título\n1988\nÚltimo título\n1991\nVitórias de GP até 2025\n41\nEquipes campeãs\nMcL",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-calendar-1440",
+      "url": "https://andersoncav.github.io/F1/calendar.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | Calendário",
+      "overflow": false,
+      "text": "OFFICIAL RACE SCHEDULE\n\nCALENDÁRIO\n\nCalendário da temporada informada pela API e resultados publicados.\n\nTemporada 2026 · conclusão exige resultado publicado. Horários exibidos no seu fuso.\n\nR1\n🇦🇺 Australian Grand Prix\n\nAlbert Park Grand Prix Circuit — dom., 8 de março de 2026 às 01:00 BRT\n\nCONCLUÍDA\nR2\n🇨🇳 Chinese Grand Prix\n\nShanghai International Circuit — dom., 15 de março de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR3\n🇯🇵 Japanese Grand Prix\n\nSuzuka Circuit — dom., 29 de março de 2026 às 02:00 BRT\n\nCONCLUÍDA\nR4\n🇺🇸 Miami Grand Prix\n\nMiami International Autodrome — dom., 3 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR5\n🇨🇦 Canadian Grand Prix\n\nCircuit Gilles Villeneuve — dom., 24 de maio de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR6\n🇲🇨 Monaco Grand Prix\n\nCircuit de Monaco — dom., 7 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR7\n🇪🇸 Barcelona Grand Prix\n\nCircuit de Barcelona-Catalunya — dom., 14 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR8\n🇦🇹 Austrian Grand Prix\n\nRed Bull Ring — dom., 28 de junho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR9\n🇬🇧 British Grand Prix\n\nSilverstone Circuit — dom., 5 de julho de 2026 às 11:00 BRT\n\nCONCLUÍDA\nR10\n🇧🇪 Belgian Grand Prix\n\nCircuit de Spa-Francorchamps — dom., 19 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR11\n🇭🇺 Hungarian Grand Prix\n\nHungaroring — dom., 26 de julho de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR12\n🇳🇱 Dutch Grand Prix\n\nCircuit Park Zandvoort — dom., 23 de agosto de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR13\n🇮🇹 Italian Grand Prix\n\nAutodromo Nazionale di Monza — dom., 6 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR14\n🇪🇸 Spanish Grand Prix\n\nMadring — dom., 13 de setembro de 2026 às 10:00 BRT\n\nCONCLUÍDA\nR15\n🇦🇿 Azerbaijan Grand Prix\n\nBaku City Circuit — sáb., 26 de setembro de 2026 às 08:00 BRT\n\nCONCLUÍDA\nR16\n🏁 Bahrain Grand Prix in Malaysia\n\nSepang International Circuit — dom., 4 de outubro de 2026 às 04:00 BRT\n\nCONCLUÍDA\nR17\n🇸🇬 Singapore Grand Prix\n\nMarina Bay Street Circuit — dom., 11 de outubro de 2026 às 09:00 BRT\n\nCONCLUÍDA\nR18\n🇺🇸 United States Grand Prix\n\nCircuit of the Americas — dom., 25 de outubro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR19\n🇲🇽 Mexico City Grand Prix\n\nAutódromo Hermanos Rodríguez — dom., 1 de novembro de 2026 às 17:00 BRT\n\nCONCLUÍDA\nR20\n🇧🇷 Brazilian Grand Prix\n\nAutódromo José Carlos Pace — dom., 8 de novembro de 2026 às 14:00 BRT\n\nPRÓXIMA\nR21\n🇺🇸 Las Vegas Grand Prix\n\nLas Vegas Strip Street Circuit — dom., 22 de novembro d",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    },
+    {
+      "name": "production-404-1440",
+      "url": "https://andersoncav.github.io/F1/404.html",
+      "width": 1440,
+      "errors": [],
+      "title": "Portal Formula 1 | 404",
+      "overflow": false,
+      "text": "BANDEIRA VERMELHA\n\nVolta anulada\n\nA página que você tentou acessar não existe ou foi movida.\n\nVOLTAR PARA A HOME",
+      "fonts": [
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+        "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap"
+      ]
+    }
+  ],
+  "performance": [
+    {
+      "run": 1,
+      "lcp": 1480,
+      "cls": 0.2749088787112276,
+      "blockingTime": 14,
+      "fcp": 688,
+      "requests": 29,
+      "resources": [
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/css/styles-v7.css",
+          "bytes": 22035,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/css/animations.css?v=2.0",
+          "bytes": 646,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/main-v10.js",
+          "bytes": 19347,
+          "type": "script"
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap",
+          "bytes": 0,
+          "type": "css"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/season.js",
+          "bytes": 5047,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/data-model.js",
+          "bytes": 9129,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/api.js",
+          "bytes": 8683,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/static-data.js",
+          "bytes": 5198,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/ui-utils.js",
+          "bytes": 5472,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/driver-metadata.js",
+          "bytes": 6446,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/constructor-metadata.js",
+          "bytes": 8276,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/champion-history.js",
+          "bytes": 33396,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/circuit-metadata.js",
+          "bytes": 4918,
+          "type": "script"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/current/races.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "http://127.0.0.1:49716/favicon.ico",
+          "bytes": 0,
+          "type": "other"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/last/results.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/driverStandings.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/constructorStandings.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/results/1.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/mclaren/lannor01/2026mclarenlannor01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/mclaren/oscpia01/2026mclarenoscpia01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/redbullracing/maxver01/2026redbullracingmaxver01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/mclaren/2026mclarenlogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/redbullracing/2026redbullracinglogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/ferrari/2026ferrarilogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/mercedes/2026mercedeslogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://flagsapi.com/BR/flat/64.png",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackinterlagosdetailed.webp",
+          "bytes": 0,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "lcp": 1408,
+      "cls": 0.2749088787112276,
+      "blockingTime": 12,
+      "fcp": 692,
+      "requests": 29,
+      "resources": [
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/css/styles-v7.css",
+          "bytes": 22035,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/css/animations.css?v=2.0",
+          "bytes": 646,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/main-v10.js",
+          "bytes": 19347,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/season.js",
+          "bytes": 5047,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/data-model.js",
+          "bytes": 9129,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/api.js",
+          "bytes": 8683,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/static-data.js",
+          "bytes": 5198,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/ui-utils.js",
+          "bytes": 5472,
+          "type": "script"
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap",
+          "bytes": 0,
+          "type": "css"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/driver-metadata.js",
+          "bytes": 6446,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/constructor-metadata.js",
+          "bytes": 8276,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/champion-history.js",
+          "bytes": 33396,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/circuit-metadata.js",
+          "bytes": 4918,
+          "type": "script"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/current/races.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "http://127.0.0.1:49716/favicon.ico",
+          "bytes": 0,
+          "type": "other"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/last/results.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/driverStandings.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/constructorStandings.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/results/1.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/mclaren/lannor01/2026mclarenlannor01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/mclaren/oscpia01/2026mclarenoscpia01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/redbullracing/maxver01/2026redbullracingmaxver01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/mclaren/2026mclarenlogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/redbullracing/2026redbullracinglogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/ferrari/2026ferrarilogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/mercedes/2026mercedeslogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://flagsapi.com/BR/flat/64.png",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackinterlagosdetailed.webp",
+          "bytes": 0,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "lcp": 1500,
+      "cls": 0.2749088787112276,
+      "blockingTime": 14,
+      "fcp": 708,
+      "requests": 29,
+      "resources": [
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/css/styles-v7.css",
+          "bytes": 22035,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/css/animations.css?v=2.0",
+          "bytes": 646,
+          "type": "link"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/main-v10.js",
+          "bytes": 19347,
+          "type": "script"
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Roboto+Mono:wght@400;700&display=swap",
+          "bytes": 0,
+          "type": "css"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/season.js",
+          "bytes": 5047,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/data-model.js",
+          "bytes": 9129,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/api.js",
+          "bytes": 8683,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/static-data.js",
+          "bytes": 5198,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/ui-utils.js",
+          "bytes": 5472,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/driver-metadata.js",
+          "bytes": 6446,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/constructor-metadata.js",
+          "bytes": 8276,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/champion-history.js",
+          "bytes": 33396,
+          "type": "script"
+        },
+        {
+          "name": "http://127.0.0.1:49716/F1/assets/js/circuit-metadata.js",
+          "bytes": 4918,
+          "type": "script"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/current/races.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "http://127.0.0.1:49716/favicon.ico",
+          "bytes": 0,
+          "type": "other"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/last/results.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/driverStandings.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/constructorStandings.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://api.jolpi.ca/ergast/f1/2026/results/1.json?limit=100",
+          "bytes": 0,
+          "type": "fetch"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/mclaren/lannor01/2026mclarenlannor01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/mclaren/oscpia01/2026mclarenoscpia01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fill,w_720/q_auto/v1740000001/common/f1/2026/redbullracing/maxver01/2026redbullracingmaxver01right.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/mclaren/2026mclarenlogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/redbullracing/2026redbullracinglogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/ferrari/2026ferrarilogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/mercedes/2026mercedeslogowhite.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://flagsapi.com/BR/flat/64.png",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackinterlagosdetailed.webp",
+          "bytes": 0,
+          "type": "img"
+        }
+      ]
+    }
+  ]
+}

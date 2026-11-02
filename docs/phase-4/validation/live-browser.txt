@@ -1,0 +1,25 @@
+
+> f1-portal@1.0.0 test:browser:live
+> node --test tests/browser/live.browser.mjs
+
+▶ live external services with real browser network and no resource mocks
+  ✔ live index.html (1446.2203ms)
+  ✔ live drivers.html (1314.7569ms)
+  ✔ live teams.html (593.6804ms)
+  ✔ live champions.html (1938.8401ms)
+  ✔ live calendar.html (84.3791ms)
+  ✔ live 404.html (32.6114ms)
+✔ live external services with real browser network and no resource mocks (6083.3615ms)
+ℹ Champion photographs: 35 decoded; 0 local fallbacks.
+ℹ Real external HTTP summary: {"fonts.googleapis.com HTTP 200":6,"fonts.gstatic.com HTTP 200":24,"api.jolpi.ca HTTP 200":8,"media.formula1.com HTTP 200":28,"thumb.wikimedia.org HTTP 200":34,"upload.wikimedia.org HTTP 200":1}
+ℹ Real failed requests: {"media.formula1.com net::ERR_ABORTED":11,"flagsapi.com net::ERR_ABORTED":10}
+ℹ Provider probe: {"url":"https://media.formula1.com/image/upload/c_fit,h_704/q_auto/v1740000001/common/f1/2026/track/2026trackmexicocitydetailed.webp","status":200,"type":"image/webp"}
+ℹ Provider probe: {"url":"https://flagsapi.com/BR/flat/64.png","status":200,"type":"image/png"}
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6677.9277

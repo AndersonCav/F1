@@ -1,0 +1,1266 @@
+[
+  {
+    "status": " M",
+    "path": "404.html"
+  },
+  {
+    "status": " M",
+    "path": "assets/css/styles-v7.css"
+  },
+  {
+    "status": " M",
+    "path": "assets/js/calendar.js"
+  },
+  {
+    "status": " M",
+    "path": "assets/js/champions.js"
+  },
+  {
+    "status": " M",
+    "path": "assets/js/drivers-v10.js"
+  },
+  {
+    "status": " M",
+    "path": "assets/js/main-v10.js"
+  },
+  {
+    "status": " M",
+    "path": "assets/js/static-data.js"
+  },
+  {
+    "status": " M",
+    "path": "assets/js/teams-v10.js"
+  },
+  {
+    "status": " M",
+    "path": "assets/js/ui-utils.js"
+  },
+  {
+    "status": " M",
+    "path": "calendar.html"
+  },
+  {
+    "status": " M",
+    "path": "champions.html"
+  },
+  {
+    "status": " M",
+    "path": "drivers.html"
+  },
+  {
+    "status": " M",
+    "path": "index.html"
+  },
+  {
+    "status": " M",
+    "path": "manifest.json"
+  },
+  {
+    "status": " M",
+    "path": "package-lock.json"
+  },
+  {
+    "status": " M",
+    "path": "package.json"
+  },
+  {
+    "status": " M",
+    "path": "scripts/build.mjs"
+  },
+  {
+    "status": " M",
+    "path": "scripts/check-budget.mjs"
+  },
+  {
+    "status": " M",
+    "path": "scripts/verify-dist.mjs"
+  },
+  {
+    "status": " M",
+    "path": "sw.js"
+  },
+  {
+    "status": " M",
+    "path": "teams.html"
+  },
+  {
+    "status": " M",
+    "path": "tests/browser/champion-images.browser.mjs"
+  },
+  {
+    "status": " M",
+    "path": "tests/browser/champion-images.live.mjs"
+  },
+  {
+    "status": " M",
+    "path": "tests/browser/phase1.browser.mjs"
+  },
+  {
+    "status": " M",
+    "path": "tests/browser/phase2.browser.mjs"
+  },
+  {
+    "status": " M",
+    "path": "tests/champion-images.test.js"
+  },
+  {
+    "status": " M",
+    "path": "tests/dist-integrity.test.js"
+  },
+  {
+    "status": " M",
+    "path": "tests/helpers/http-server.js"
+  },
+  {
+    "status": " M",
+    "path": "tests/helpers/sw-harness.js"
+  },
+  {
+    "status": " M",
+    "path": "tests/quality-gates.test.js"
+  },
+  {
+    "status": " M",
+    "path": "tests/service-worker.test.js"
+  },
+  {
+    "status": "??",
+    "path": "assets/images/icon-192.png"
+  },
+  {
+    "status": "??",
+    "path": "assets/images/icon-512.png"
+  },
+  {
+    "status": "??",
+    "path": "assets/images/social-preview.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/BASELINE.md"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/REPORT.md"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-404-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-calendar-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1024-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1024-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1440-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1440-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-320-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-320-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-390-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-390-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-768-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-768-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-champions-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-drivers-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-index-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/local-teams-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after-live/results.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-404-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-calendar-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1024-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1024-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1440-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1440-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-320-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-320-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-390-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-390-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-768-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-768-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-champions-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-drivers-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-index-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-1024-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-1440-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-320-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-390-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-768-viewport.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/local-teams-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/after/results.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-404-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-404-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-404-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-404-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-404-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-calendar-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-calendar-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-calendar-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-calendar-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-calendar-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-champions-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-champions-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-champions-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-champions-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-champions-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-drivers-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-drivers-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-drivers-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-drivers-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-drivers-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-index-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-index-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-index-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-index-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-index-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-teams-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-teams-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-teams-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-teams-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/local-teams-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-404-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-404-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-404-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-404-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-404-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-calendar-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-calendar-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-calendar-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-calendar-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-calendar-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-champions-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-champions-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-champions-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-champions-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-champions-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-drivers-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-drivers-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-drivers-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-drivers-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-drivers-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-index-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-index-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-index-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-index-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-index-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-teams-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-teams-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-teams-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-teams-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/production-teams-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/before/results.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/brand-source.svg"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/files-changed.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/desktop-first.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/desktop-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/desktop-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/identity-contact-sheet.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/mobile-first.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/mobile-last.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/mobile-middle.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/live-images/results.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-404-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-404-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-404-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-404-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-404-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-calendar-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-calendar-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-calendar-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-calendar-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-calendar-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-champions-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-champions-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-champions-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-champions-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-champions-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-drivers-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-drivers-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-drivers-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-drivers-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-drivers-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-index-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-index-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-index-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-index-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-index-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-teams-1024.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-teams-1440.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-teams-320.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-teams-390.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/local-teams-768.png"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/preview/results.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/baseline-node-tests.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/browser-results.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/budget.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/build.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/commands.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/controlled-browser.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/csp.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/dist.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/git-status.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/git-whitespace.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/live-api.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/live-api.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/live-browser.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/live-images.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/manifest-browser.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/node-tests.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/npm-ci.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/phase2-browser-results.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/preserved-contracts.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/production-performance.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/public-availability.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/service-worker.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/summary.json"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/syntax.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/visual-audit.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/visual-live.txt"
+  },
+  {
+    "status": "??",
+    "path": "docs/phase-4/validation/whitespace.txt"
+  },
+  {
+    "status": "??",
+    "path": "robots.txt"
+  },
+  {
+    "status": "??",
+    "path": "scripts/audit-phase4.mjs"
+  },
+  {
+    "status": "??",
+    "path": "scripts/create-brand-assets.mjs"
+  },
+  {
+    "status": "??",
+    "path": "scripts/measure-phase4-production.mjs"
+  },
+  {
+    "status": "??",
+    "path": "sitemap.xml"
+  },
+  {
+    "status": "??",
+    "path": "tests/browser/phase4.browser.mjs"
+  },
+  {
+    "status": "??",
+    "path": "tests/helpers/contrast.js"
+  },
+  {
+    "status": "??",
+    "path": "tests/helpers/phase4-fixtures.js"
+  },
+  {
+    "status": "??",
+    "path": "tests/phase4.test.js"
+  }
+]

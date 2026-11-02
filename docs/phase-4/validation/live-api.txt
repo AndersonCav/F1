@@ -1,0 +1,22 @@
+
+> f1-portal@1.0.0 test:api:live
+> node --test tests/browser/live-api.mjs
+
+(node:33656) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ live Jolpica sporting endpoints and representative official historical results
+  ✔ current alias supplies a concrete season and complete schedule (0.6153ms)
+  ✔ driver standings resolve the same explicit season, preserving all replacements and team changes (49.6523ms)
+  ✔ constructor standings and published winners remain season-scoped (584.7444ms)
+  ✔ 2025 Norris final points and wins match the official FIA classification (689.7516ms)
+  ✔ 1950 Farina and 2025 McLaren historical winners are preserved independently of the active season (1322.4373ms)
+  ✔ next-season response is either a valid published schedule or an explicitly empty valid season (541.469ms)
+✔ live Jolpica sporting endpoints and representative official historical results (3953.6713ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4026.632

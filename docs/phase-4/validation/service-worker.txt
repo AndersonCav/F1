@@ -1,0 +1,25 @@
+✔ installation caches the complete shell and bypasses HTTP cache (25.077ms)
+✔ activation deletes only obsolete app caches for this mount and exact legacy names (1.0747ms)
+✔ failed install (404) preserves previous worker cache and reports failure (1.441ms)
+✔ failed install (429) preserves previous worker cache and reports failure (1.9033ms)
+✔ failed install (500) preserves previous worker cache and reports failure (1.3184ms)
+✔ failed install (html-for-js) preserves previous worker cache and reports failure (1.904ms)
+✔ failed install (redirect) preserves previous worker cache and reports failure (1.5701ms)
+✔ API, cross-origin, sibling app, and non-GET requests bypass the worker completely (0.7067ms)
+✔ offline shell supports directory aliases and query strings at https://example.test/ (4.1096ms)
+✔ offline shell supports directory aliases and query strings at https://example.test/F1/ (2.1757ms)
+✔ runtime HTTP 404 is never persisted (0.578ms)
+✔ runtime HTTP 429 is never persisted (0.4058ms)
+✔ runtime HTTP 500 is never persisted (0.3562ms)
+✔ HTML masquerading as JavaScript is never persisted; misses fail predictably offline (1.4454ms)
+✔ offline unknown navigation returns the cached 404 without writing arbitrary URLs (0.6598ms)
+✔ CacheStorage denial still allows the network shell and a predictable offline response (0.8357ms)
+✔ cache write failure does not reject a successful network response (0.7105ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 131.0314

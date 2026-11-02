@@ -18,10 +18,10 @@ test('Production artifact dist/ integrity and isolated serving', async t => {
   await t.test('verifyDist() passes on fresh build', async () => {
     const result = await verifyDist({ distDir, silent: true });
     assert.equal(result.verified, true);
-    assert.equal(result.fileCount, 27);
+    assert.equal(result.fileCount, 32);
   });
 
-  await t.test('dist/ contains exactly 27 files and zero development artifacts', async () => {
+  await t.test('dist/ contains exactly 32 files and zero development artifacts', async () => {
     async function getFiles(dir) {
       const entries = await readdir(dir, { withFileTypes: true });
       const files = [];
@@ -33,7 +33,7 @@ test('Production artifact dist/ integrity and isolated serving', async t => {
       return files;
     }
     const files = await getFiles(distDir);
-    assert.equal(files.length, 27);
+    assert.equal(files.length, 32);
 
     // Assert absence of development files
     const forbidden = ['package.json', 'package-lock.json', '.gitignore', 'README.md', 'sw.js.map'];
@@ -56,7 +56,7 @@ test('Production artifact dist/ integrity and isolated serving', async t => {
       const assetsMatch = swRaw.match(/const\s+ASSETS_TO_CACHE\s*=\s*\[([\s\S]*?)\];/);
       assert.ok(assetsMatch, 'ASSETS_TO_CACHE found');
       const precachePaths = [...assetsMatch[1].matchAll(/['"](\.\/[^'"]+)['"]/g)].map(m => m[1]);
-      assert.equal(precachePaths.length, 25);
+      assert.equal(precachePaths.length, 27);
 
       // Verify every precache resource over HTTP from isolated dist server
       for (const rel of precachePaths) {
@@ -83,7 +83,7 @@ test('Production artifact dist/ integrity and isolated serving', async t => {
       // Verify unknown nested route returns 404 with 404.html content
       const missingRes = await fetch(`${server.origin}/F1/nested/unknown/route`);
       assert.equal(missingRes.status, 404);
-      assert.match(await missingRes.text(), /Volta anulada/);
+      assert.match(await missingRes.text(), /Página não encontrada/);
 
       // Security check: path traversal attempting to escape dist/ fails
       const escape1 = await fetch(`${server.origin}/F1/../package.json`);
@@ -123,17 +123,17 @@ test('Production artifact dist/ integrity and isolated serving', async t => {
       await page.waitForFunction(() => navigator.serviceWorker.controller);
       await page.evaluate(() => navigator.serviceWorker.ready);
 
-      // 2. Verify all 25 shell resources are precached in CacheStorage
+      // 2. Verify all 27 shell resources are precached in CacheStorage
       const cachedUrls = await page.evaluate(async () => {
         const keys = await caches.keys();
-        const staticKey = keys.find(k => k.includes('static-v5'));
+        const staticKey = keys.find(k => k.includes('static-v6'));
         if (!staticKey) return null;
         const cache = await caches.open(staticKey);
         const reqs = await cache.keys();
         return reqs.map(r => new URL(r.url).pathname);
       });
-      assert.ok(cachedUrls, 'static-v5 cache must exist in CacheStorage');
-      assert.equal(cachedUrls.length, 25, `Expected 25 cached resources, got ${cachedUrls.length}`);
+      assert.ok(cachedUrls, 'static-v6 cache must exist in CacheStorage');
+      assert.equal(cachedUrls.length, 27, `Expected 27 cached resources, got ${cachedUrls.length}`);
 
       // 3. Navigate between pages in dist
       for (const pageName of ['drivers.html', 'teams.html', 'champions.html', 'calendar.html', 'index.html']) {

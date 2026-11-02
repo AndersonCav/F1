@@ -1,0 +1,46 @@
+[
+  {
+    "name": "npm-ci",
+    "exitCode": 0
+  },
+  {
+    "name": "syntax",
+    "exitCode": 0
+  },
+  {
+    "name": "csp",
+    "exitCode": 0
+  },
+  {
+    "name": "whitespace",
+    "exitCode": 0
+  },
+  {
+    "name": "node-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "controlled-browser",
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "exitCode": 0
+  },
+  {
+    "name": "dist",
+    "exitCode": 0
+  },
+  {
+    "name": "budget",
+    "exitCode": 0
+  },
+  {
+    "name": "service-worker",
+    "exitCode": 0
+  },
+  {
+    "name": "git-whitespace",
+    "exitCode": 0
+  }
+]

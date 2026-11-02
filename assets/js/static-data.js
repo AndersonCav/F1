@@ -176,6 +176,8 @@ export function setupNavActiveState() {
   document.querySelectorAll(".nav-item[data-page]").forEach((item) => {
     const page = item.getAttribute("data-page");
     item.classList.toggle("is-active", page === current);
+    if (page === current) item.setAttribute('aria-current', 'page');
+    else item.removeAttribute('aria-current');
   });
 }
 

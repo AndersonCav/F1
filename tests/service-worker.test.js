@@ -29,7 +29,7 @@ for (const failure of ['404', '429', '500', 'html-for-js', 'redirect']) {
         return response;
       }
       const extension = request.url.split('.').pop();
-      return new Response('ok', { headers: { 'Content-Type': { html: 'text/html', css: 'text/css', js: 'text/javascript', svg: 'image/svg+xml', json: 'application/json' }[extension] } });
+      return new Response('ok', { headers: { 'Content-Type': { html: 'text/html', css: 'text/css', js: 'text/javascript', png: 'image/png', svg: 'image/svg+xml', json: 'application/json' }[extension] } });
     } });
     await worker.caches.open('f1-portal-v2');
     await assert.rejects(worker.lifecycle('install'));
@@ -57,7 +57,7 @@ for (const base of ['https://example.test/', 'https://example.test/F1/']) {
     const worker = createWorker({ base, network: async request => {
       if (offline) throw new TypeError('offline');
       const extension = request.url.split('.').pop();
-      return new Response('cached-shell', { headers: { 'Content-Type': { html: 'text/html', css: 'text/css', js: 'text/javascript', svg: 'image/svg+xml', json: 'application/json' }[extension] } });
+      return new Response('cached-shell', { headers: { 'Content-Type': { html: 'text/html', css: 'text/css', js: 'text/javascript', png: 'image/png', svg: 'image/svg+xml', json: 'application/json' }[extension] } });
     } });
     await worker.lifecycle('install');
     offline = true;

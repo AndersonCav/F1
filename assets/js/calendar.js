@@ -10,21 +10,27 @@ function createRaceItem(race, status) {
   const card = document.createElement("article");
   card.className = `card calendar-item ${status} ${status === 'completed' ? 'past' : status === 'upcoming' ? 'next' : 'future'} reveal-up`.trim();
   card.dataset.status = status;
+  card.id = `race-${race.season}-${race.round}`;
+  card.tabIndex = -1;
 
   const round = document.createElement("div");
   round.className = "round";
   round.textContent = `R${race.round}`;
 
   const info = document.createElement("div");
-  const title = document.createElement("h3");
+  const title = document.createElement("h2");
   title.className = "card-title";
   title.textContent = `${toFlag(race.Circuit.Location.country)} ${getOfficialRaceName(race.raceName, race.season)}`;
 
   const subtitle = document.createElement("p");
   subtitle.className = "card-subtitle";
-  subtitle.textContent = `${race.Circuit.circuitName} — ${formatRaceDate(race.date, race.time)}`;
+  subtitle.textContent = race.Circuit.circuitName;
+  const date = document.createElement('time');
+  date.className = 'race-date';
+  date.dateTime = race.time ? `${race.date}T${race.time}` : race.date;
+  date.textContent = formatRaceDate(race.date, race.time);
 
-  info.append(title, subtitle);
+  info.append(title, date, subtitle);
 
   const side = document.createElement("div");
   if (status === "upcoming") {
@@ -50,10 +56,11 @@ function createRaceItem(race, status) {
 
 function renderCalendar(races, results = []) {
   window.clearTimeout(statusTimer);
+  const focusedRaceId = document.activeElement?.closest('.calendar-item')?.id;
   if (!races.length) {
     const empty = document.createElement("article");
     empty.className = "state-card";
-    empty.textContent = "Calendário indisponível para esta temporada.";
+    empty.textContent = "O calendário desta temporada ainda não foi publicado. Consulte novamente mais tarde.";
     stateContainer.replaceChildren(empty);
     return;
   }
@@ -74,6 +81,7 @@ function renderCalendar(races, results = []) {
   const existing = stateContainer.querySelector(':scope > .list');
   if (existing) existing.replaceWith(list);
   else stateContainer.replaceChildren(list);
+  if (focusedRaceId) document.getElementById(focusedRaceId)?.focus({ preventScroll: true });
   // Reclassify at the next known start/day boundary; this does not claim a live feed.
   const tomorrow = Date.parse(`${new Date(now).toISOString().slice(0, 10)}T00:00:00Z`) + 86400000;
   const boundary = Math.min(tomorrow, ...races.map(raceStart).filter(time => time !== null && time > now));
@@ -92,6 +100,21 @@ async function loadCalendar() {
     heading.className = 'muted';
     heading.textContent = `Temporada ${result.season || 'não informada'} · conclusão exige resultado publicado. Horários exibidos no seu fuso.`;
     stateContainer.prepend(heading);
+    if (!winners) {
+      const note = document.createElement('p');
+      note.className = 'data-note';
+      note.textContent = 'Os resultados não puderam ser consultados. A conclusão das etapas não está confirmada nesta consulta.';
+      stateContainer.insertBefore(note, heading.nextSibling);
+    }
+    const nextRace = nextScheduledRace(result.items, confirmedRaceKeys(result.items, winners?.items || []));
+    if (nextRace) {
+      const jump = document.createElement('a');
+      jump.className = 'text-link';
+      jump.href = `#race-${nextRace.season}-${nextRace.round}`;
+      jump.textContent = 'Ir à próxima corrida programada';
+      stateContainer.insertBefore(jump, heading.nextSibling);
+      jump.addEventListener('click', () => document.getElementById(`race-${nextRace.season}-${nextRace.round}`)?.focus());
+    }
     const confirmed = confirmedRaceKeys(result.items, winners?.items || []);
     if (seasonPhase(result.items, confirmed) === 'completed') {
       const next = await fetchScheduleBySeason(result.season + 1).catch(() => null);

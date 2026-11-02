@@ -2,23 +2,38 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portal Formula 1 com dados publicados da temporada informada pela API.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Consulte o próximo Grande Prêmio, resultados publicados e classificação de pilotos e construtores. Portal independente de Fórmula 1.">
   
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://andersoncav.github.io/F1/">
-  <meta property="og:title" content="F1 Portal | Dados em Tempo Real">
-  <meta property="og:description" content="Acompanhe o calendário, classificação e estatísticas da Fórmula 1 em um portal ultra-rápido e moderno.">
-  <meta property="og:image" content="https://andersoncav.github.io/F1/assets/images/placeholder-driver.svg">
+  <meta property="og:title" content="Portal Formula 1 | Início">
+  <meta property="og:description" content="Consulte o próximo Grande Prêmio, resultados publicados e classificação de pilotos e construtores. Portal independente de Fórmula 1.">
+  <meta property="og:image" content="https://andersoncav.github.io/F1/assets/images/social-preview.png">
 
   <!-- Security: Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-bAlT4Xas+DFqu/JUoDS4KpGkXXG1hOeVl2wmdHKme3E='; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src https://fonts.gstatic.com; img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org https://thumb.wikimedia.org; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-TjOCLl65wSHj1vuh+QBVy7pEY6HGWDtpn53AmrVj04M='; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src https://fonts.gstatic.com; img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org https://thumb.wikimedia.org; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
 
   <title>Portal Formula 1 | Início</title>
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link rel="canonical" href="https://andersoncav.github.io/F1/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="F1 Portal">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="F1 Portal — calendário, classificação e história. Portal independente.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portal Formula 1 | Início">
+  <meta name="twitter:description" content="Consulte o próximo Grande Prêmio, resultados publicados e classificação de pilotos e construtores. Portal independente de Fórmula 1.">
+  <meta name="twitter:image" content="https://andersoncav.github.io/F1/assets/images/social-preview.png">
+  <meta name="twitter:image:alt" content="F1 Portal — calendário, classificação e história. Portal independente.">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles-v7.css">
   <link rel="stylesheet" href="assets/css/animations.css?v=2.0">
   <link rel="manifest" href="manifest.json">
@@ -28,7 +43,7 @@
   <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
   <aside class="sidebar" aria-label="Navegação principal">
     <div class="brand">F1 PORTAL</div>
-    <nav>
+    <nav aria-label="Navegação principal">
       <a class="nav-item" data-page="index.html" href="index.html">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 10.5h2V21h5v-6h4v6h5V10.5h2z"/></svg>
         <span>Início</span>
@@ -52,11 +67,12 @@
     </nav>
   </aside>
 
-  <main id="main-content" class="content home-content">
-    <header class="hero reveal-up">
+  <main tabindex="-1" id="main-content" class="content home-content">
+    <header class="hero reveal-up" itemscope itemtype="https://schema.org/WebSite">
+      <meta itemprop="url" content="https://andersoncav.github.io/F1/">
       <p class="eyebrow">F1 <span id="current-year"></span> — DADOS PUBLICADOS</p>
-      <h1>Portal Formula 1</h1>
-      <p>Dados técnicos de pilotos, equipes e corridas da principal categoria do automobilismo.</p>
+      <h1 itemprop="name">Portal Formula 1</h1>
+      <p itemprop="description">Seu próximo Grande Prêmio, os últimos resultados e a disputa pelo título. Portal independente com dados publicados.</p>
     </header>
 
     <section class="section" aria-labelledby="next-race-title">
@@ -73,6 +89,7 @@
       <h2 id="quick-table-title">Classificação rápida</h2>
       <div id="quick-standings-state"></div>
     </section>
+    <noscript><p class="state-card">Ative o JavaScript para consultar os dados publicados da temporada. Sem conexão, os últimos dados salvos podem estar disponíveis.</p></noscript>
   </main>
 
   <nav class="bottom-nav" aria-label="Navegação mobile">

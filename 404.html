@@ -3,29 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-bAlT4Xas+DFqu/JUoDS4KpGkXXG1hOeVl2wmdHKme3E='; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src https://fonts.gstatic.com; img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org https://thumb.wikimedia.org; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
-  <link rel="canonical" href="https://andersoncav.github.io/F1/">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-TjOCLl65wSHj1vuh+QBVy7pEY6HGWDtpn53AmrVj04M='; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src https://fonts.gstatic.com; img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org https://thumb.wikimedia.org; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <link rel="home" href="https://andersoncav.github.io/F1/">
   <script>
     // A Pages 404 is also served at nested URLs. Resolve its assets before parsing them.
-    const project = new URL(document.querySelector('link[rel="canonical"]').href).pathname.split('/').filter(Boolean).pop();
+    const project = new URL(document.querySelector('link[rel="home"]').href).pathname.split('/').filter(Boolean).pop();
     const base = document.createElement('base');
     base.href = new URL(location.pathname.split('/')[1] === project ? project + '/' : './', location.origin + '/').href;
     document.head.appendChild(base);
   </script>
-  <title>Portal Formula 1 | 404</title>
+  <title>Portal Formula 1 | Página não encontrada</title>
+  <meta name="description" content="Esta página não foi encontrada. Volte ao F1 Portal para consultar calendário, pilotos, equipes e campeões.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles-v7.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#e10600">
 </head>
 <body class="error-page">
   <main class="error-card" role="main">
-    <p class="eyebrow">Bandeira vermelha</p>
-    <h1>Volta anulada</h1>
+    <p class="eyebrow">404 · Bandeira vermelha</p>
+    <h1>Página não encontrada</h1>
     <p>A página que você tentou acessar não existe ou foi movida.</p>
-    <a class="button" href="index.html">Voltar para a home</a>
+    <a class="button" href="index.html">Voltar ao início</a>
   </main>
 </body>
 </html>

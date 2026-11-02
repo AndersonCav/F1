@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-02T14:42:16.333Z",
+  "note": "New assets are local only; publication explicitly forbidden in this task.",
+  "checks": [
+    {
+      "url": "https://andersoncav.github.io/F1/assets/images/social-preview.png",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://andersoncav.github.io/F1/assets/images/icon-192.png",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://andersoncav.github.io/F1/sitemap.xml",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://andersoncav.github.io/F1/robots.txt",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    }
+  ]
+}

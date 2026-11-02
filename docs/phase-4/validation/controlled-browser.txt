@@ -1,0 +1,76 @@
+
+> f1-portal@1.0.0 test:browser
+> node --test tests/browser/phase1.browser.mjs tests/browser/champion-images.browser.mjs tests/browser/phase2.browser.mjs tests/browser/phase4.browser.mjs
+
+▶ controlled champion image reliability (fixture images are not photograph evidence)
+  ✔ lazy dimensions, accessible source/license credits and correct association survive sorting/filtering (1497.0638ms)
+  ✔ all 35 unavailable sources use one decoded local fallback, preserving alt and dimensions (375.0582ms)
+  ✔ offline gallery degrades to the shell placeholder without caching any photographs (645.8846ms)
+  ✔ Phase 1 v3 upgrades to v6 after old clients close, preserving unrelated caches (5976.098ms)
+✔ controlled champion image reliability (fixture images are not photograph evidence) (8997.7195ms)
+▶ Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibility
+  ✔ fresh /F1/ installation, all pages, desktop/mobile links, reduced motion and inline style compatibility (2582.9936ms)
+  ✔ offline application-shell navigation, saved data, manual refresh failure and unknown nested route (1885.2933ms)
+  ✔ API unavailability without saved data gives an accessible retry state (1171.7682ms)
+  ✔ successful manual refresh bypasses a fresh entry and records the new validation time (1282.8063ms)
+  ✔ CSP actively blocks an unauthorized image origin (433.849ms)
+  ✔ all external images and the placeholder can fail without repeated retries (422.8194ms)
+  ✔ storage denial keeps network content and refresh functional (1291.9008ms)
+  ✔ local root installation and nested server 404 resolve assets/home correctly (462.3371ms)
+  ✔ missing required asset rejects installation without activating an incomplete shell (272.5755ms)
+  ✔ actual broken v2 baseline fails on its four obsolete asset paths (384.0626ms)
+  ✔ actual v13 worker from eaa7335 upgrades after old clients close and preserves unrelated caches (4048.1832ms)
+✔ Phase 1 real Chromium lifecycle, navigation, CSP, recovery and compatibility (14860.0483ms)
+▶ Phase 2 deterministic Chrome sporting-data scenarios
+  ✔ all driver sorting options, accent search, query state and expanded details compose (1804.1362ms)
+  ✔ profile endpoint failure preserves valid standings, honest poles and permanent-number fallback (386.292ms)
+  ✔ replacement drivers and multi-constructor history are season participants with API points (1312.7086ms)
+  ✔ calendar before start, at start and after published results in America/Sao_Paulo (532.4021ms)
+  ✔ calendar before start, at start and after published results in Pacific/Honolulu (580.6076ms)
+  ✔ calendar before start, at start and after published results in Asia/Tokyo (438.3756ms)
+  ✔ countdown stops at the scheduled instant without claiming live race status (321.4129ms)
+  ✔ date-only next event uses truthful fallback rather than a fabricated noon (345.0928ms)
+  ✔ final scheduled start without results stays pending and does not request a new season (329.3166ms)
+  ✔ dashboard podium follows actual published finishing positions in unordered responses (293.1893ms)
+  ✔ confirmed final race and unpublished next season show an offseason state (252.8234ms)
+  ✔ confirmed final race and unavailable next season show an offseason state (320.2939ms)
+  ✔ published upcoming season keeps its year and neutral event name after calendar-year rollover (429.4013ms)
+  ✔ valid empty upcoming season shows unpublished states without request-failure alerts (329.9372ms)
+  ✔ incomplete API refresh keeps previously verified standings and the original timestamp (453.2523ms)
+  ✔ all primary pages retain mobile navigation and fit 320px and 390px widths (1052.6002ms)
+  ✔ actual Phase 1.1 v4 shell upgrades to v6 after all old clients close (5260.9901ms)
+✔ Phase 2 deterministic Chrome sporting-data scenarios (15000.6074ms)
+▶ Phase 4 production-only UX and accessibility
+  ✔ axe WCAG 2.2 AA: index.html at 390px (1878.7706ms)
+  ✔ axe WCAG 2.2 AA: drivers.html at 390px (1813.6098ms)
+  ✔ axe WCAG 2.2 AA: teams.html at 390px (1513.7414ms)
+  ✔ axe WCAG 2.2 AA: champions.html at 390px (2125.8145ms)
+  ✔ axe WCAG 2.2 AA: calendar.html at 390px (1279.3387ms)
+  ✔ axe WCAG 2.2 AA: 404.html at 390px (1052.6737ms)
+  ✔ axe WCAG 2.2 AA: index.html at 1440px (1446.8911ms)
+  ✔ axe WCAG 2.2 AA: drivers.html at 1440px (1295.4162ms)
+  ✔ axe WCAG 2.2 AA: teams.html at 1440px (1213.1228ms)
+  ✔ axe WCAG 2.2 AA: champions.html at 1440px (1690.4324ms)
+  ✔ axe WCAG 2.2 AA: calendar.html at 1440px (1012.881ms)
+  ✔ axe WCAG 2.2 AA: 404.html at 1440px (826.7411ms)
+  ✔ computed text and required control contrasts meet AA, including gradient/grid worst cases (667.4014ms)
+  ✔ five destinations navigate with correct current-page state on mobile and desktop (1322.3762ms)
+  ✔ drivers.html: keyboard disclosure keeps focus, controls hidden panel and closes other card (312.2851ms)
+  ✔ teams.html: keyboard disclosure keeps focus, controls hidden panel and closes other card (305.6703ms)
+  ✔ driver query and sorting preserve focus/state; legacy poles URL falls back honestly (330.7032ms)
+  ✔ champion search composes with title filter/sort and preserves all photo credits (367.4887ms)
+  ✔ empty search and unavailable API offer understandable feedback and recovery (375.6843ms)
+  ✔ calendar distinguishes published, upcoming and unknown; next link moves keyboard focus (309.2168ms)
+  ✔ reflow and keyboard focus are visible above bottom navigation at narrow, enlarged and landscape layouts (2188.5585ms)
+  ✔ stress: long names, circuit titles, large points and missing images reflow without clipped controls (376.8008ms)
+  ✔ static HTML remains meaningful without JavaScript and branded assets resolve from dist (293.1325ms)
+  ✔ released v5 upgrades atomically to v6 with offline icons, preserving old clients and unrelated caches (5062.3803ms)
+✔ Phase 4 production-only UX and accessibility (29790.5704ms)
+ℹ tests 60
+ℹ suites 0
+ℹ pass 60
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 30513.7783

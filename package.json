@@ -14,12 +14,13 @@
     "sync:csp": "node scripts/sync-csp.mjs --write",
     "check:all": "npm run check:syntax && npm run check:csp && npm run check:whitespace && npm run build && npm run check:dist && npm run check:budget && npm test",
     "preview": "node scripts/preview.mjs",
-    "test:browser": "node --test tests/browser/phase1.browser.mjs tests/browser/champion-images.browser.mjs tests/browser/phase2.browser.mjs",
+    "test:browser": "node --test tests/browser/phase1.browser.mjs tests/browser/champion-images.browser.mjs tests/browser/phase2.browser.mjs tests/browser/phase4.browser.mjs",
     "test:browser:live": "node --test tests/browser/live.browser.mjs",
     "audit:images:live": "node --test tests/browser/champion-images.live.mjs",
     "test:api:live": "node --test tests/browser/live-api.mjs"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
     "playwright": "1.57.0"
   }
 }

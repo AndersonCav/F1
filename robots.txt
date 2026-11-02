@@ -1,0 +1,4 @@
+# Project-level discovery only. Host-level robots belongs at andersoncav.github.io/robots.txt.
+User-agent: *
+Allow: /F1/
+Sitemap: https://andersoncav.github.io/F1/sitemap.xml

@@ -1,0 +1,6 @@
+
+> f1-portal@1.0.0 check:whitespace
+> node scripts/check-whitespace.mjs
+
+[check-whitespace] Running Git whitespace check...
+[check-whitespace] PASSED: No whitespace issues found.

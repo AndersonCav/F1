@@ -2,23 +2,38 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lista de equipes e dados técnicos da Fórmula 1.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Consulte a classificação dos construtores de Fórmula 1, pilotos participantes e dados técnicos com referência de temporada e conquistas históricas.">
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://andersoncav.github.io/F1/teams.html">
-  <meta property="og:title" content="Equipes F1 | Construtores">
-  <meta property="og:description" content="Informações sobre as escuderias, motores, sedes e classificação de construtores.">
-  <meta property="og:image" content="https://andersoncav.github.io/F1/assets/images/placeholder-driver.svg">
+  <meta property="og:title" content="Portal Formula 1 | Equipes">
+  <meta property="og:description" content="Consulte a classificação dos construtores de Fórmula 1, pilotos participantes e dados técnicos com referência de temporada e conquistas históricas.">
+  <meta property="og:image" content="https://andersoncav.github.io/F1/assets/images/social-preview.png">
 
   <!-- Security: Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-bAlT4Xas+DFqu/JUoDS4KpGkXXG1hOeVl2wmdHKme3E='; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src https://fonts.gstatic.com; img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org https://thumb.wikimedia.org; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-TjOCLl65wSHj1vuh+QBVy7pEY6HGWDtpn53AmrVj04M='; script-src-attr 'none'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'none'; font-src https://fonts.gstatic.com; img-src 'self' data: https://media.formula1.com https://flagsapi.com https://upload.wikimedia.org https://thumb.wikimedia.org; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
 
   <title>Portal Formula 1 | Equipes</title>
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link rel="canonical" href="https://andersoncav.github.io/F1/teams.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="F1 Portal">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="F1 Portal — calendário, classificação e história. Portal independente.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portal Formula 1 | Equipes">
+  <meta name="twitter:description" content="Consulte a classificação dos construtores de Fórmula 1, pilotos participantes e dados técnicos com referência de temporada e conquistas históricas.">
+  <meta name="twitter:image" content="https://andersoncav.github.io/F1/assets/images/social-preview.png">
+  <meta name="twitter:image:alt" content="F1 Portal — calendário, classificação e história. Portal independente.">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles-v7.css">
   <link rel="stylesheet" href="assets/css/animations.css?v=2.0">
   <link rel="manifest" href="manifest.json">
@@ -28,7 +43,7 @@
   <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
   <aside class="sidebar" aria-label="Navegação principal">
     <div class="brand">F1 PORTAL</div>
-    <nav>
+    <nav aria-label="Navegação principal">
       <a class="nav-item" data-page="index.html" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 10.5h2V21h5v-6h4v6h5V10.5h2z"/></svg><span>Início</span></a>
       <a class="nav-item" data-page="teams.html" href="teams.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h2l2-4h5l1.5 4H21v4h-2a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H3zm4-1h4.2L10.4 10H8z"/></svg><span>Equipes</span></a>
       <a class="nav-item" data-page="drivers.html" href="drivers.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5m0 2c-4.4 0-8 2-8 4.5V21h16v-2.5c0-2.5-3.6-4.5-8-4.5"/></svg><span>Pilotos</span></a>
@@ -37,11 +52,12 @@
     </nav>
   </aside>
 
-  <main id="main-content" class="content">
+  <main tabindex="-1" id="main-content" class="content">
     <header class="page-header reveal-up">
-      <p class="eyebrow">CONSTRUCTORS' CHAMPIONSHIP</p>
+      <p class="eyebrow">MUNDIAL DE CONSTRUTORES</p>
       <h1>Equipes</h1>
       <p>Performance técnica e classificação de construtores.</p>
+      <p id="season-label" class="data-note">Consultando temporada…</p>
     </header>
 
     <section class="toolbar" aria-label="Filtros de equipes">
@@ -50,13 +66,14 @@
         <select id="sort-select">
           <option value="standing">Classificação</option>
           <option value="name">Nome</option>
-          <option value="wins">Vitórias</option>
-          <option value="championships">Campeonatos</option>
+          <option value="wins">Vitórias históricas até 2025</option>
+          <option value="championships">Títulos de construtores até 2025</option>
         </select>
       </label>
     </section>
 
-    <section id="teams-state" aria-live="polite"></section>
+    <section id="teams-state" aria-label="Classificação de construtores"></section>
+    <noscript><p class="state-card">Ative o JavaScript para consultar os dados publicados da temporada. Sem conexão, os últimos dados salvos podem estar disponíveis.</p></noscript>
   </main>
 
   <nav class="bottom-nav" aria-label="Navegação mobile">
