@@ -103,6 +103,7 @@ jobs:
           path: dist/
           retention-days: 1
           if-no-files-found: error
+          include-hidden-files: true
 
       - name: Upload build metadata
         uses: actions/upload-artifact@v4
@@ -111,6 +112,7 @@ jobs:
           path: build-metadata/
           retention-days: 1
           if-no-files-found: error
+          include-hidden-files: true
 
   deploy:
     name: Deploy to GitHub Pages
