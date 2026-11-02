@@ -1,0 +1,16 @@
+▶ live champion photograph audit: real HTTP, reviewed bytes and Chrome decoding
+  ✔ desktop: all 35 real photographs decode, match approved sources and never use placeholders (2373.49ms)
+  ✔ mobile: 35 genuine photographs, accessible credits, no overflow and reduced-motion support (1187.3943ms)
+  ✔ intentionally unavailable third-party source produces exactly one local fallback (1900.7795ms)
+  ✔ offline navigation retains all 35 records, decoded local fallbacks and the 27-resource shell (981.8143ms)
+✔ live champion photograph audit: real HTTP, reviewed bytes and Chrome decoding (7239.432ms)
+ℹ Evidence and gallery screenshots: C:\Users\ander\AppData\Local\Temp\f1-phase5-live-zFmDmv
+ℹ Normal desktop photograph loads: 35; placeholders are reported separately.
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8081.4027

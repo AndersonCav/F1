@@ -1,0 +1,48 @@
+
+> f1-portal-experience@0.1.0 test:browser
+> node --test tests/browser.mjs
+
+▶ Phase 5 isolated production preview
+  ✔ all seven routes have no horizontal page overflow at 320px (1360.7944ms)
+  ✔ all seven routes have no horizontal page overflow at 375px (1036.8555ms)
+  ✔ all seven routes have no horizontal page overflow at 390px (1029.3362ms)
+  ✔ all seven routes have no horizontal page overflow at 768px (995.5676ms)
+  ✔ all seven routes have no horizontal page overflow at 1024px (1111.0852ms)
+  ✔ all seven routes have no horizontal page overflow at 1440px (1365.1296ms)
+  ✔ axe WCAG 2.2 AA: / at 390px (2232.6526ms)
+  ✔ axe WCAG 2.2 AA: /drivers at 390px (3201.5042ms)
+  ✔ axe WCAG 2.2 AA: /constructors at 390px (2227.4812ms)
+  ✔ axe WCAG 2.2 AA: /champions at 390px (2553.4789ms)
+  ✔ axe WCAG 2.2 AA: /calendar at 390px (2079.5113ms)
+  ✔ axe WCAG 2.2 AA: /race-center?round=19 at 390px (1873.6381ms)
+  ✔ axe WCAG 2.2 AA: /compare?a=hamilton&b=norris at 390px (1682.3213ms)
+  ✔ axe WCAG 2.2 AA: / at 1440px (2156.1499ms)
+  ✔ axe WCAG 2.2 AA: /drivers at 1440px (2991.8283ms)
+  ✔ axe WCAG 2.2 AA: /constructors at 1440px (2011.3176ms)
+  ✔ axe WCAG 2.2 AA: /champions at 1440px (2380.6098ms)
+  ✔ axe WCAG 2.2 AA: /calendar at 1440px (2104.9941ms)
+  ✔ axe WCAG 2.2 AA: /race-center?round=19 at 1440px (1997.9487ms)
+  ✔ axe WCAG 2.2 AA: /compare?a=hamilton&b=norris at 1440px (1674.4448ms)
+  ✔ driver query, constructor filter, sort and two-driver comparison (1127.9319ms)
+  ✔ constructor search, native disclosure and driver navigation (675.5871ms)
+  ✔ champion search, era, sort and complete photo attribution (703.9988ms)
+  ✔ calendar statuses, next focus and event selection (803.043ms)
+  ✔ Race Center changes season and session without fabricating telemetry (688.0815ms)
+  ✔ desktop navigation uses SPA routes without duplicate API requests (1039.3694ms)
+  ✔ mobile drawer traps keyboard focus and restores its opener (783.0975ms)
+  ✔ reduced motion and touch targets in meaningful landscape viewport (806.3437ms)
+  ✔ loading states and retry stay accessible (531.4741ms)
+  ✔ empty states and retry stay accessible (570.2126ms)
+  ✔ error states and retry stay accessible (635.6859ms)
+  ✔ unknown route has a working recovery destination (753.0948ms)
+  ✔ long-name layout and missing image fallback remain usable (848.7753ms)
+  ✔ scoped offline shell reloads visited routes with cached API data (1496.4436ms)
+✔ Phase 5 isolated production preview (51019.2815ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52527.9302

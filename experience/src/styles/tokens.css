@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("@fontsource/titillium-web/files/titillium-web-latin-400-normal.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("@fontsource/titillium-web/files/titillium-web-latin-600-normal.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("@fontsource/titillium-web/files/titillium-web-latin-700-normal.woff2")
+    format("woff2");
+}
+:root {
+  color-scheme: dark;
+  --canvas: #101114;
+  --surface: #191b20;
+  --surface-raised: #202329;
+  --line: #34373f;
+  --text: #f4f4f6;
+  --muted: #b2b5bf;
+  --red: #e10600;
+  --red-text: #ff817a;
+  --success: #85d8ba;
+  --warning: #e8c388;
+  --focus: #f4d680;
+  --font: "Titillium Web", "Segoe UI", sans-serif;
+  --mono: "Consolas", "SFMono-Regular", monospace;
+  --sidebar: 228px;
+  --radius: 6px;
+}

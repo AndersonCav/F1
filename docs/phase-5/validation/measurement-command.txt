@@ -1,0 +1,10 @@
+
+> f1-portal-experience@0.1.0 measure
+> node scripts/measure.mjs
+
+[laboratory] phase4 run 1: {"lcpMs":1224,"cls":0.04868209453627184,"totalBlockingWorkMs":74,"longTasks":[{"startTime":2406.300000011921,"duration":124}],"fcpMs":848,"tbtDiagnosticMs":74,"observationEndMs":6243.600000023842}
+[laboratory] phase4 run 2: {"lcpMs":1232,"cls":0.04868209453627184,"totalBlockingWorkMs":71,"longTasks":[{"startTime":1530.7000000178814,"duration":121}],"fcpMs":756,"tbtDiagnosticMs":71,"observationEndMs":6280.200000017881}
+[laboratory] phase4 run 3: {"lcpMs":1268,"cls":0.04868209453627184,"totalBlockingWorkMs":122,"longTasks":[{"startTime":1597.7999999821186,"duration":172}],"fcpMs":808,"tbtDiagnosticMs":122,"observationEndMs":6338.799999982119}
+[laboratory] phase5 run 1: {"lcpMs":1968,"cls":0.08655619093422277,"totalBlockingWorkMs":797,"longTasks":[{"startTime":848.7999999821186,"duration":355},{"startTime":1341.199999988079,"duration":98},{"startTime":1461.9000000059605,"duration":422},{"startTime":1952.0999999940395,"duration":122}],"fcpMs":1240,"tbtDiagnosticMs":492,"observationEndMs":6149.5999999940395}
+[laboratory] phase5 run 2: {"lcpMs":1788,"cls":0.08655619093422277,"totalBlockingWorkMs":747,"longTasks":[{"startTime":848.4000000059605,"duration":368},{"startTime":1260.4000000059605,"duration":104},{"startTime":1384.4000000059605,"duration":370},{"startTime":1811.699999988079,"duration":105}],"fcpMs":1236,"tbtDiagnosticMs":429,"observationEndMs":6170.5}
+[laboratory] phase5 run 3: {"lcpMs":1820,"cls":0.08655619093422277,"totalBlockingWorkMs":777,"longTasks":[{"startTime":840.5,"duration":457},{"startTime":1346.800000011921,"duration":106},{"startTime":1470.5999999940395,"duration":328},{"startTime":1849.800000011921,"duration":86}],"fcpMs":1320,"tbtDiagnosticMs":370,"observationEndMs":6225.800000011921}

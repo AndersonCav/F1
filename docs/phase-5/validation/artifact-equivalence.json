@@ -1,0 +1,8 @@
+{
+  "existingBuildFilesUnchanged": 25,
+  "changedExistingFiles": [],
+  "addedFiles": [
+    "third-party-notices.txt"
+  ],
+  "purpose": "Add complete runtime/font license notices; executable assets remain byte-identical to tested and measured build."
+}

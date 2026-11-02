@@ -1,0 +1,5 @@
+// Bootstrap 6 source is deliberately selective: layout and form foundations only.
+// Vue owns the DOM. No Bootstrap JavaScript or optional positioning/calendar peers.
+@use "bootstrap/scss/layout/containers";
+@use "bootstrap/scss/layout/grid";
+@use "bootstrap/scss/forms/labels";

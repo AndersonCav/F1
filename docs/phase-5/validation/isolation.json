@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-11-02T16:36:36.377Z",
+  "branch": "main",
+  "head": "952f31ad630e06223a6e0784b83d1dbaa8e04bdd",
+  "originalFilesCompared": 421,
+  "changedOriginalFiles": [],
+  "staged": [],
+  "unstaged": [],
+  "untrackedCount": 101,
+  "productionCsp": "http-equiv=\"Content-Security-Policy\"\n      content=\"default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'none'; img-src 'self' https://media.formula1.com https://upload.wikimedia.org https://thumb.wikimedia.org; font-src 'self'; connect-src 'self' https://api.jolpi.ca; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests\"\n    /",
+  "offlineScope": "/F1/experience/",
+  "offlineCoreFiles": [
+    "assets/DashboardView-C7__BgMW.js",
+    "assets/DataState-CyUP_fqn.js",
+    "assets/PageHeader-PmRRonNy.js",
+    "assets/Portrait-v6RDnAJT.js",
+    "assets/RaceStatus-fEttxAAI.js",
+    "assets/index-CWX3-hHV.css",
+    "assets/index-mvFBVKl7.js",
+    "assets/placeholder-driver-DMEyeSkM.svg",
+    "assets/titillium-web-latin-400-normal-BmGsO8Gb.woff2",
+    "assets/titillium-web-latin-600-normal-DBtSc4_g.woff2",
+    "assets/titillium-web-latin-700-normal-YDdGQjzo.woff2",
+    "favicon.svg",
+    "index.html"
+  ],
+  "failures": [],
+  "noCommitPushMergeDeploymentOrRemoteSettingsChanges": true
+}

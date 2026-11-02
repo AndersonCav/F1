@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-11-02T16:33:29.532Z",
+  "limits": {
+    "totalBytes": 665600,
+    "jsBytes": 368640,
+    "cssBytes": 102400,
+    "initialCodeGzipBytes": 97280
+  },
+  "actual": {
+    "totalBytes": 303238,
+    "jsBytes": 199028,
+    "cssBytes": 49476,
+    "initialCodeGzipBytes": 62530
+  },
+  "initialFiles": [
+    "assets/index-mvFBVKl7.js",
+    "assets/index-CWX3-hHV.css",
+    "index.html"
+  ],
+  "files": [
+    {
+      "path": ".vite/manifest.json",
+      "bytes": 5521,
+      "gzip": 884
+    },
+    {
+      "path": "assets/CalendarView-BqeD0lVa.js",
+      "bytes": 3320,
+      "gzip": 1710
+    },
+    {
+      "path": "assets/ChampionsView-0onTUC_B.js",
+      "bytes": 4336,
+      "gzip": 1991
+    },
+    {
+      "path": "assets/CompareView-nCfdmat8.js",
+      "bytes": 1933,
+      "gzip": 1041
+    },
+    {
+      "path": "assets/ComparisonPanel-m5ocIkTp.js",
+      "bytes": 2835,
+      "gzip": 1354
+    },
+    {
+      "path": "assets/ConstructorsView-CQbLnGDb.js",
+      "bytes": 4402,
+      "gzip": 2068
+    },
+    {
+      "path": "assets/DashboardView-C7__BgMW.js",
+      "bytes": 8575,
+      "gzip": 3305
+    },
+    {
+      "path": "assets/DataState-CyUP_fqn.js",
+      "bytes": 1323,
+      "gzip": 751
+    },
+    {
+      "path": "assets/DriversView-CLNEY74m.js",
+      "bytes": 5467,
+      "gzip": 2510
+    },
+    {
+      "path": "assets/index-CWX3-hHV.css",
+      "bytes": 49476,
+      "gzip": 9904
+    },
+    {
+      "path": "assets/index-mvFBVKl7.js",
+      "bytes": 153977,
+      "gzip": 51831
+    },
+    {
+      "path": "assets/NotFoundView-CB42Vnno.js",
+      "bytes": 487,
+      "gzip": 393
+    },
+    {
+      "path": "assets/PageHeader-PmRRonNy.js",
+      "bytes": 524,
+      "gzip": 371
+    },
+    {
+      "path": "assets/placeholder-driver-DMEyeSkM.svg",
+      "bytes": 310,
+      "gzip": 225
+    },
+    {
+      "path": "assets/Portrait-v6RDnAJT.js",
+      "bytes": 844,
+      "gzip": 566
+    },
+    {
+      "path": "assets/RaceCenterView-DU0zYvz5.js",
+      "bytes": 8166,
+      "gzip": 3472
+    },
+    {
+      "path": "assets/RaceStatus-fEttxAAI.js",
+      "bytes": 473,
+      "gzip": 352
+    },
+    {
+      "path": "assets/titillium-web-latin-400-normal-BmGsO8Gb.woff2",
+      "bytes": 12344,
+      "gzip": 12367
+    },
+    {
+      "path": "assets/titillium-web-latin-600-normal-DBtSc4_g.woff2",
+      "bytes": 12116,
+      "gzip": 12139
+    },
+    {
+      "path": "assets/titillium-web-latin-700-normal-YDdGQjzo.woff2",
+      "bytes": 11732,
+      "gzip": 11755
+    },
+    {
+      "path": "assets/useQuery-yLukyDRw.js",
+      "bytes": 354,
+      "gzip": 274
+    },
+    {
+      "path": "experience-sw.js",
+      "bytes": 2012,
+      "gzip": 953
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 190,
+      "gzip": 166
+    },
+    {
+      "path": "index.html",
+      "bytes": 1746,
+      "gzip": 795
+    },
+    {
+      "path": "offline-manifest.json",
+      "bytes": 595,
+      "gzip": 325
+    },
+    {
+      "path": "third-party-notices.txt",
+      "bytes": 10180,
+      "gzip": 2639
+    }
+  ],
+  "notes": "Initial static entry excludes the lazy dashboard, font files, remote data and photos. Browser network measurements record those separately. Gzip is a deterministic estimate; Browser measurements record actual HTTP content encodings and transfers separately."
+}

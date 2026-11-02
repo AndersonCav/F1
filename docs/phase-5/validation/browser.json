@@ -1,0 +1,1111 @@
+{
+  "browser": "156.0.8078.80",
+  "recordedAt": "2026-11-02T15:31:39.018Z",
+  "generatedAt": "2026-11-02T16:27:51.525Z",
+  "controlledData": "Real recorded Jolpica data, fixed reference clock; remote photos replaced with local SVG for deterministic tests. Empty/error/loading cases are controlled test states.",
+  "scenarios": [
+    "responsive seven routes 320",
+    "responsive seven routes 375",
+    "responsive seven routes 390",
+    "responsive seven routes 768",
+    "responsive seven routes 1024",
+    "responsive seven routes 1440",
+    "axe / 390",
+    "axe /drivers 390",
+    "axe /constructors 390",
+    "axe /champions 390",
+    "axe /calendar 390",
+    "axe /race-center?round=19 390",
+    "axe /compare?a=hamilton&b=norris 390",
+    "axe / 1440",
+    "axe /drivers 1440",
+    "axe /constructors 1440",
+    "axe /champions 1440",
+    "axe /calendar 1440",
+    "axe /race-center?round=19 1440",
+    "axe /compare?a=hamilton&b=norris 1440",
+    "driver controls and comparison",
+    "constructor controls",
+    "champion controls and credits",
+    "calendar status and results",
+    "race season session and missing telemetry",
+    "SPA navigation and request deduplication",
+    "mobile drawer keyboard",
+    "landscape reduced motion and touch targets",
+    "loading accessible state",
+    "empty accessible state",
+    "error accessible state",
+    "route recovery",
+    "long-name and missing image",
+    "offline reload scoped worker"
+  ],
+  "axe": [
+    {
+      "width": 390,
+      "path": "/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".hero-round"
+            ],
+            [
+              ".status-badge"
+            ],
+            [
+              ".hero-top > .eyebrow"
+            ],
+            [
+              ".hero-kicker"
+            ],
+            [
+              ".hero-content > h2"
+            ],
+            [
+              "h2 > span"
+            ],
+            [
+              ".circuit-name"
+            ],
+            [
+              "p:nth-child(5)"
+            ],
+            [
+              ".hero-bottom > div > .eyebrow"
+            ],
+            [
+              "time"
+            ],
+            [
+              ".countdown"
+            ],
+            [
+              ".primary"
+            ],
+            [
+              ".eyebrow > .red"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 41
+    },
+    {
+      "width": 390,
+      "path": "/drivers",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "article:nth-child(1) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(1) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(1) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(2) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(2) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(2) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(3) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(3) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(3) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(4) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(4) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(4) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(5) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(5) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(5) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(6) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(6) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(6) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(7) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(7) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(7) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(8) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(8) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(8) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(9) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(9) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(9) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(10) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(10) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(10) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(11) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(11) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(11) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(12) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(12) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(12) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(13) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(13) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(13) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(14) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(14) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(14) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(15) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(15) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(15) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(16) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(16) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(16) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(17) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(17) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(17) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(18) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(18) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(18) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(19) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(19) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(19) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(20) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(20) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(20) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(21) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(21) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(21) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(22) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(22) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(22) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(23) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(23) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(23) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(24) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(24) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(24) > .driver-image > .photo-source"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 45
+    },
+    {
+      "width": 390,
+      "path": "/constructors",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 47
+    },
+    {
+      "width": 390,
+      "path": "/champions",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "article:nth-child(1) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(1) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(2) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(2) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(3) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(3) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(4) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(4) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(5) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(5) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(6) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(6) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(7) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(7) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(8) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(8) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(9) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(9) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(10) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(10) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(11) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(11) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(12) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(12) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(13) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(13) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(14) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(14) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(15) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(15) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(16) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(16) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(17) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(17) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(18) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(18) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(19) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(19) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(20) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(20) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(21) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(21) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(22) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(22) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(23) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(23) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(24) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(24) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(25) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(25) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(26) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(26) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(27) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(27) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(28) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(28) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(29) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(29) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(30) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(30) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(31) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(31) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(32) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(32) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(33) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(33) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(34) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(34) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(35) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(35) > .champion-image > .champion-titles > small"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 44
+    },
+    {
+      "width": 390,
+      "path": "/calendar",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40
+    },
+    {
+      "width": 390,
+      "path": "/race-center?round=19",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 46
+    },
+    {
+      "width": 390,
+      "path": "/compare?a=hamilton&b=norris",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".hero-round"
+            ],
+            [
+              ".status-badge"
+            ],
+            [
+              ".hero-top > .eyebrow"
+            ],
+            [
+              ".hero-kicker"
+            ],
+            [
+              ".hero-content > h2"
+            ],
+            [
+              "h2 > span"
+            ],
+            [
+              ".circuit-name"
+            ],
+            [
+              "p:nth-child(5)"
+            ],
+            [
+              ".hero-bottom > div > .eyebrow"
+            ],
+            [
+              "time"
+            ],
+            [
+              ".countdown"
+            ],
+            [
+              ".primary"
+            ],
+            [
+              ".eyebrow > .red"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 40
+    },
+    {
+      "width": 1440,
+      "path": "/drivers",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "article:nth-child(1) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(1) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(1) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(2) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(2) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(2) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(3) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(3) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(3) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(4) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(4) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(4) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(5) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(5) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(5) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(6) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(6) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(6) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(7) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(7) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(7) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(8) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(8) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(8) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(9) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(9) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(9) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(10) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(10) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(10) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(11) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(11) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(11) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(12) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(12) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(12) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(13) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(13) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(13) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(14) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(14) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(14) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(15) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(15) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(15) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(16) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(16) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(16) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(17) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(17) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(17) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(18) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(18) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(18) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(19) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(19) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(19) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(20) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(20) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(20) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(21) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(21) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(21) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(22) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(22) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(22) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(23) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(23) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(23) > .driver-image > .photo-source"
+            ],
+            [
+              "article:nth-child(24) > .driver-image > .driver-rank"
+            ],
+            [
+              "article:nth-child(24) > .driver-image > .driver-number[aria-hidden=\"true\"]"
+            ],
+            [
+              "article:nth-child(24) > .driver-image > .photo-source"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 45
+    },
+    {
+      "width": 1440,
+      "path": "/constructors",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 46
+    },
+    {
+      "width": 1440,
+      "path": "/champions",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".archive-number"
+            ],
+            [
+              "article:nth-child(1) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(1) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(2) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(2) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(3) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(3) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(4) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(4) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(5) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(5) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(6) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(6) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(7) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(7) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(8) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(8) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(9) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(9) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(10) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(10) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(11) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(11) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(12) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(12) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(13) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(13) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(14) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(14) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(15) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(15) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(16) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(16) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(17) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(17) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(18) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(18) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(19) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(19) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(20) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(20) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(21) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(21) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(22) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(22) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(23) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(23) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(24) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(24) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(25) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(25) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(26) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(26) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(27) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(27) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(28) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(28) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(29) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(29) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(30) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(30) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(31) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(31) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(32) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(32) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(33) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(33) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(34) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(34) > .champion-image > .champion-titles > small"
+            ],
+            [
+              "article:nth-child(35) > .champion-image > .champion-titles > strong"
+            ],
+            [
+              "article:nth-child(35) > .champion-image > .champion-titles > small"
+            ]
+          ]
+        }
+      ],
+      "passedRules": 43
+    },
+    {
+      "width": 1440,
+      "path": "/calendar",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 40
+    },
+    {
+      "width": 1440,
+      "path": "/race-center?round=19",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 45
+    },
+    {
+      "width": 1440,
+      "path": "/compare?a=hamilton&b=norris",
+      "violations": [],
+      "incomplete": [],
+      "passedRules": 39
+    }
+  ]
+}

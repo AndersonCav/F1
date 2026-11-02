@@ -1,0 +1,18 @@
+(node:32520) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ live Jolpica sporting endpoints and representative official historical results
+  ✔ current alias supplies a concrete season and complete schedule (0.9201ms)
+  ✔ driver standings resolve the same explicit season, preserving all replacements and team changes (29.8219ms)
+  ✔ constructor standings and published winners remain season-scoped (231.7846ms)
+  ✔ 2025 Norris final points and wins match the official FIA classification (749.2477ms)
+  ✔ 1950 Farina and 2025 McLaren historical winners are preserved independently of the active season (1347.0499ms)
+  ✔ next-season response is either a valid published schedule or an explicitly empty valid season (696.0909ms)
+✔ live Jolpica sporting endpoints and representative official historical results (3461.2351ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3631.2184

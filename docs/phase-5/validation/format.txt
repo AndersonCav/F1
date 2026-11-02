@@ -1,0 +1,7 @@
+src/adapters/portal.js 76ms
+src/components/common/Portrait.vue 43ms
+src/components/dashboard/Leaderboard.vue 25ms
+src/views/DashboardView.vue 50ms
+tests/adapters.test.js 21ms
+tests/components.test.js 16ms
+tests/store.test.js 7ms (unchanged)

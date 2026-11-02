@@ -1,0 +1,21 @@
+▶ live external services with real browser network and no resource mocks
+  ✔ live index.html (1160.2964ms)
+  ✔ live drivers.html (1283.5109ms)
+  ✔ live teams.html (648.7913ms)
+  ✔ live champions.html (308.9555ms)
+  ✔ live calendar.html (133.4339ms)
+  ✔ live 404.html (52.1833ms)
+✔ live external services with real browser network and no resource mocks (7800.6016ms)
+ℹ Champion photographs: 35 decoded; 0 local fallbacks.
+ℹ Real external HTTP summary: {"fonts.googleapis.com HTTP 200":6,"fonts.gstatic.com HTTP 200":24,"api.jolpi.ca HTTP 200":8,"media.formula1.com HTTP 200":38,"flagsapi.com HTTP 200":6,"thumb.wikimedia.org HTTP 200":34,"upload.wikimedia.org HTTP 200":1}
+ℹ Real failed requests: {"flagsapi.com net::ERR_ABORTED":4,"media.formula1.com net::ERR_ABORTED":1}
+ℹ Provider probe: {"url":"https://flagsapi.com/BR/flat/64.png","status":200,"type":"image/png"}
+ℹ Provider probe: {"url":"https://media.formula1.com/image/upload/c_lfill,w_64/q_auto/v1740000001/common/f1/2026/haas/2026haaslogowhite.webp","status":200,"type":"image/webp"}
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9081.7846

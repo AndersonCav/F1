@@ -1,0 +1,52 @@
+{
+  "phaseStatus": "PHASE_5_COMPLETE_WITH_DEBT",
+  "generatedAt": "2026-11-02T16:19:01.568Z",
+  "newTests": {
+    "adapters": 28,
+    "components": 17,
+    "sharedState": 6,
+    "total": 51
+  },
+  "newBrowser": {
+    "runnerReported": 35,
+    "leafScenarios": 34,
+    "axeAudits": 14,
+    "axeViolations": 0
+  },
+  "legacy": {
+    "native": 253,
+    "controlledBrowserRunnerReported": 60,
+    "liveApiRunnerReported": 7,
+    "livePagesRunnerReported": 7,
+    "liveImagesRunnerReported": 5
+  },
+  "performance": {
+    "phase4": {
+      "lcpMs": 1232,
+      "cls": 0.04868209453627184,
+      "fcpMs": 808,
+      "tbtDiagnosticMs": 74,
+      "totalTransferredBytes": 285233,
+      "jsTransferBytes": 28716,
+      "cssTransferBytes": 5822,
+      "requests": 34
+    },
+    "phase5": {
+      "lcpMs": 1820,
+      "cls": 0.08655619093422277,
+      "fcpMs": 1240,
+      "tbtDiagnosticMs": 429,
+      "totalTransferredBytes": 191834,
+      "jsTransferBytes": 59837,
+      "cssTransferBytes": 10269,
+      "requests": 24
+    }
+  },
+  "bundle": {
+    "totalBytes": 303238,
+    "jsBytes": 199028,
+    "cssBytes": 49476,
+    "initialCodeGzipBytes": 62530
+  },
+  "runtimeAuditVulnerabilities": 0
+}
